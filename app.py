@@ -50,8 +50,8 @@ CITY_COLORS = {
 # --- Data Loading ---
 
 @st.cache_data(ttl=300)
-def load_data() -> pd.DataFrame:
-    """Load 12MM sheet data for the three cities."""
+def load_data(_city_cols: dict[str, int]) -> pd.DataFrame:
+    """Load 12MM sheet data for all configured cities."""
     df = pd.read_excel(
         EXCEL_PATH,
         sheet_name=SHEET_NAME,
@@ -71,7 +71,7 @@ def load_data() -> pd.DataFrame:
             continue
 
         record = {"Date": date}
-        for city, col_idx in CITY_COLUMNS.items():
+        for city, col_idx in _city_cols.items():
             val = row.iloc[col_idx] if col_idx < len(row) else None
             if pd.isna(val) or val in ("-", "H", "", "#DIV/0!", "#REF!"):
                 record[city] = None
@@ -109,7 +109,7 @@ st.caption("12MM rebar prices across 10 cities (SteelMint)")
 # --- Load Data ---
 
 try:
-    df = load_data()
+    df = load_data(CITY_COLUMNS)
 except FileNotFoundError:
     st.error(f"Excel file not found: `{EXCEL_PATH}`")
     st.stop()
