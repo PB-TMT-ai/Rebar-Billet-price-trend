@@ -1,4 +1,4 @@
-const isDev = process.env.NODE_ENV === 'development'
+const isDev = import.meta.env.DEV
 
 export const logger = {
   info: (msg: string, data?: unknown) => console.log(`[INFO] ${msg}`, data || ''),

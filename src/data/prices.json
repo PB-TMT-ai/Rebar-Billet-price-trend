@@ -1,0 +1,9170 @@
+[
+  {
+    "date": "2021-04-01",
+    "Raipur": 44800.0,
+    "Delhi/NCR": 45700.0,
+    "Durgapur": 45750.0
+  },
+  {
+    "date": "2021-04-02",
+    "Raipur": 45100.0,
+    "Delhi/NCR": 46300.0,
+    "Durgapur": 46000.0
+  },
+  {
+    "date": "2021-04-03",
+    "Raipur": 44900.0,
+    "Delhi/NCR": 46300.0,
+    "Durgapur": 46500.0
+  },
+  {
+    "date": "2021-04-05",
+    "Raipur": 44900.0,
+    "Delhi/NCR": 46500.0,
+    "Durgapur": 46500.0
+  },
+  {
+    "date": "2021-04-06",
+    "Raipur": 45100.0,
+    "Delhi/NCR": 47100.0,
+    "Durgapur": 46500.0
+  },
+  {
+    "date": "2021-04-07",
+    "Raipur": 44900.0,
+    "Delhi/NCR": 47100.0,
+    "Durgapur": 46500.0
+  },
+  {
+    "date": "2021-04-08",
+    "Raipur": 44700.0,
+    "Delhi/NCR": 47000.0,
+    "Durgapur": 46500.0
+  },
+  {
+    "date": "2021-04-09",
+    "Raipur": 44300.0,
+    "Delhi/NCR": 46400.0,
+    "Durgapur": 46300.0
+  },
+  {
+    "date": "2021-04-10",
+    "Raipur": 44300.0,
+    "Delhi/NCR": 46300.0,
+    "Durgapur": 45750.0
+  },
+  {
+    "date": "2021-04-12",
+    "Raipur": 44900.0,
+    "Delhi/NCR": 46600.0,
+    "Durgapur": 46000.0
+  },
+  {
+    "date": "2021-04-13",
+    "Raipur": 44900.0,
+    "Delhi/NCR": 46300.0,
+    "Durgapur": 45700.0
+  },
+  {
+    "date": "2021-04-14",
+    "Raipur": 44900.0,
+    "Delhi/NCR": 46400.0,
+    "Durgapur": 45750.0
+  },
+  {
+    "date": "2021-04-15",
+    "Raipur": 46400.0,
+    "Delhi/NCR": 46900.0,
+    "Durgapur": 46300.0
+  },
+  {
+    "date": "2021-04-16",
+    "Raipur": 47300.0,
+    "Delhi/NCR": 47500.0,
+    "Durgapur": 47000.0
+  },
+  {
+    "date": "2021-04-17",
+    "Raipur": 47300.0,
+    "Delhi/NCR": 47800.0,
+    "Durgapur": 47000.0
+  },
+  {
+    "date": "2021-04-19",
+    "Raipur": 47000.0,
+    "Delhi/NCR": 48500.0,
+    "Durgapur": 46500.0
+  },
+  {
+    "date": "2021-04-20",
+    "Raipur": 46000.0,
+    "Delhi/NCR": 48300.0,
+    "Durgapur": 45800.0
+  },
+  {
+    "date": "2021-04-21",
+    "Raipur": 45900.0,
+    "Delhi/NCR": 48300.0,
+    "Durgapur": 45800.0
+  },
+  {
+    "date": "2021-04-22",
+    "Raipur": 46000.0,
+    "Delhi/NCR": 47800.0,
+    "Durgapur": 46500.0
+  },
+  {
+    "date": "2021-04-23",
+    "Raipur": 46200.0,
+    "Delhi/NCR": 48600.0,
+    "Durgapur": 46800.0
+  },
+  {
+    "date": "2021-04-24",
+    "Raipur": 46100.0,
+    "Delhi/NCR": 48500.0,
+    "Durgapur": 46500.0
+  },
+  {
+    "date": "2021-04-26",
+    "Raipur": 45800.0,
+    "Delhi/NCR": 48500.0,
+    "Durgapur": 46500.0
+  },
+  {
+    "date": "2021-04-27",
+    "Raipur": 45600.0,
+    "Delhi/NCR": 48500.0,
+    "Durgapur": 46500.0
+  },
+  {
+    "date": "2021-04-28",
+    "Raipur": 45600.0,
+    "Delhi/NCR": 48600.0,
+    "Durgapur": 47000.0
+  },
+  {
+    "date": "2021-04-29",
+    "Raipur": 45800.0,
+    "Delhi/NCR": 48700.0,
+    "Durgapur": 47500.0
+  },
+  {
+    "date": "2021-04-30",
+    "Raipur": 45700.0,
+    "Delhi/NCR": 48800.0,
+    "Durgapur": 47300.0
+  },
+  {
+    "date": "2021-05-01",
+    "Raipur": 46100.0,
+    "Delhi/NCR": 49000.0,
+    "Durgapur": 47500.0
+  },
+  {
+    "date": "2021-05-03",
+    "Raipur": 46600.0,
+    "Delhi/NCR": 49500.0,
+    "Durgapur": 48500.0
+  },
+  {
+    "date": "2021-05-04",
+    "Raipur": 46600.0,
+    "Delhi/NCR": 49500.0,
+    "Durgapur": 48800.0
+  },
+  {
+    "date": "2021-05-05",
+    "Raipur": 46300.0,
+    "Delhi/NCR": 49600.0,
+    "Durgapur": 48500.0
+  },
+  {
+    "date": "2021-05-06",
+    "Raipur": 45800.0,
+    "Delhi/NCR": 49500.0,
+    "Durgapur": 47700.0
+  },
+  {
+    "date": "2021-05-07",
+    "Raipur": 45800.0,
+    "Delhi/NCR": 49600.0,
+    "Durgapur": 48200.0
+  },
+  {
+    "date": "2021-05-08",
+    "Raipur": 46300.0,
+    "Delhi/NCR": 50300.0,
+    "Durgapur": 48800.0
+  },
+  {
+    "date": "2021-05-10",
+    "Raipur": 46400.0,
+    "Delhi/NCR": 50300.0,
+    "Durgapur": 49300.0
+  },
+  {
+    "date": "2021-05-11",
+    "Raipur": 47400.0,
+    "Delhi/NCR": 50700.0,
+    "Durgapur": 49600.0
+  },
+  {
+    "date": "2021-05-12",
+    "Raipur": 47600.0,
+    "Delhi/NCR": 50800.0,
+    "Durgapur": 50000.0
+  },
+  {
+    "date": "2021-05-13",
+    "Raipur": 48000.0,
+    "Delhi/NCR": 50800.0,
+    "Durgapur": 50250.0
+  },
+  {
+    "date": "2021-05-14",
+    "Raipur": 47600.0,
+    "Delhi/NCR": 50600.0,
+    "Durgapur": 49250.0
+  },
+  {
+    "date": "2021-05-15",
+    "Raipur": 47600.0,
+    "Delhi/NCR": 50200.0,
+    "Durgapur": 48750.0
+  },
+  {
+    "date": "2021-05-17",
+    "Raipur": 47600.0,
+    "Delhi/NCR": 50000.0,
+    "Durgapur": 48750.0
+  },
+  {
+    "date": "2021-05-18",
+    "Raipur": 47000.0,
+    "Delhi/NCR": 50000.0,
+    "Durgapur": 48250.0
+  },
+  {
+    "date": "2021-05-19",
+    "Raipur": 46200.0,
+    "Delhi/NCR": 49500.0,
+    "Durgapur": 47750.0
+  },
+  {
+    "date": "2021-05-20",
+    "Raipur": 46300.0,
+    "Delhi/NCR": 49300.0,
+    "Durgapur": 47700.0
+  },
+  {
+    "date": "2021-05-21",
+    "Raipur": 45500.0,
+    "Delhi/NCR": 48700.0,
+    "Durgapur": 47000.0
+  },
+  {
+    "date": "2021-05-22",
+    "Raipur": 45600.0,
+    "Delhi/NCR": 49300.0,
+    "Durgapur": 47700.0
+  },
+  {
+    "date": "2021-05-24",
+    "Raipur": 45400.0,
+    "Delhi/NCR": 49000.0,
+    "Durgapur": 47000.0
+  },
+  {
+    "date": "2021-05-25",
+    "Raipur": 45200.0,
+    "Delhi/NCR": 48400.0,
+    "Durgapur": 46750.0
+  },
+  {
+    "date": "2021-05-26",
+    "Raipur": 44900.0,
+    "Delhi/NCR": 47500.0,
+    "Durgapur": 45750.0
+  },
+  {
+    "date": "2021-05-27",
+    "Raipur": 44300.0,
+    "Delhi/NCR": 47200.0,
+    "Durgapur": 45500.0
+  },
+  {
+    "date": "2021-05-28",
+    "Raipur": 44700.0,
+    "Delhi/NCR": 47600.0,
+    "Durgapur": 45750.0
+  },
+  {
+    "date": "2021-05-29",
+    "Raipur": 44700.0,
+    "Delhi/NCR": 47500.0,
+    "Durgapur": 45500.0
+  },
+  {
+    "date": "2021-05-31",
+    "Raipur": 44900.0,
+    "Delhi/NCR": 47600.0,
+    "Durgapur": 45700.0
+  },
+  {
+    "date": "2021-06-01",
+    "Raipur": 45300.0,
+    "Delhi/NCR": 47800.0,
+    "Durgapur": 46100.0
+  },
+  {
+    "date": "2021-06-02",
+    "Raipur": 46200.0,
+    "Delhi/NCR": 48500.0,
+    "Durgapur": 46500.0
+  },
+  {
+    "date": "2021-06-03",
+    "Raipur": 46600.0,
+    "Delhi/NCR": 48900.0,
+    "Durgapur": 47000.0
+  },
+  {
+    "date": "2021-06-04",
+    "Raipur": 46700.0,
+    "Delhi/NCR": 49600.0,
+    "Durgapur": 47800.0
+  },
+  {
+    "date": "2021-06-05",
+    "Raipur": 46800.0,
+    "Delhi/NCR": 50300.0,
+    "Durgapur": 48000.0
+  },
+  {
+    "date": "2021-06-07",
+    "Raipur": 46600.0,
+    "Delhi/NCR": 50000.0,
+    "Durgapur": 47500.0
+  },
+  {
+    "date": "2021-06-08",
+    "Raipur": 46000.0,
+    "Delhi/NCR": 49900.0,
+    "Durgapur": 47500.0
+  },
+  {
+    "date": "2021-06-09",
+    "Raipur": 46000.0,
+    "Delhi/NCR": 49500.0,
+    "Durgapur": 47000.0
+  },
+  {
+    "date": "2021-06-10",
+    "Raipur": 46100.0,
+    "Delhi/NCR": 49700.0,
+    "Durgapur": 47250.0
+  },
+  {
+    "date": "2021-06-11",
+    "Raipur": 46600.0,
+    "Delhi/NCR": 49800.0,
+    "Durgapur": 47250.0
+  },
+  {
+    "date": "2021-06-12",
+    "Raipur": 46600.0,
+    "Delhi/NCR": 49800.0,
+    "Durgapur": 47250.0
+  },
+  {
+    "date": "2021-06-14",
+    "Raipur": 46200.0,
+    "Delhi/NCR": 49100.0,
+    "Durgapur": 47000.0
+  },
+  {
+    "date": "2021-06-15",
+    "Raipur": 46200.0,
+    "Delhi/NCR": 49100.0,
+    "Durgapur": 46750.0
+  },
+  {
+    "date": "2021-06-16",
+    "Raipur": 46000.0,
+    "Delhi/NCR": 49000.0,
+    "Durgapur": 46000.0
+  },
+  {
+    "date": "2021-06-17",
+    "Raipur": 45600.0,
+    "Delhi/NCR": 48900.0,
+    "Durgapur": 45500.0
+  },
+  {
+    "date": "2021-06-18",
+    "Raipur": 45600.0,
+    "Delhi/NCR": 48200.0,
+    "Durgapur": 45200.0
+  },
+  {
+    "date": "2021-06-19",
+    "Raipur": 45700.0,
+    "Delhi/NCR": 48200.0,
+    "Durgapur": 45750.0
+  },
+  {
+    "date": "2021-06-21",
+    "Raipur": 45300.0,
+    "Delhi/NCR": 48400.0,
+    "Durgapur": 45250.0
+  },
+  {
+    "date": "2021-06-22",
+    "Raipur": 45000.0,
+    "Delhi/NCR": 47800.0,
+    "Durgapur": 44500.0
+  },
+  {
+    "date": "2021-06-23",
+    "Raipur": 44600.0,
+    "Delhi/NCR": 47600.0,
+    "Durgapur": 44500.0
+  },
+  {
+    "date": "2021-06-24",
+    "Raipur": 44500.0,
+    "Delhi/NCR": 47500.0,
+    "Durgapur": 44500.0
+  },
+  {
+    "date": "2021-06-25",
+    "Raipur": 44300.0,
+    "Delhi/NCR": 47000.0,
+    "Durgapur": 44000.0
+  },
+  {
+    "date": "2021-06-26",
+    "Raipur": 44100.0,
+    "Delhi/NCR": 47000.0,
+    "Durgapur": 44000.0
+  },
+  {
+    "date": "2021-06-28",
+    "Raipur": 43800.0,
+    "Delhi/NCR": 46800.0,
+    "Durgapur": 43750.0
+  },
+  {
+    "date": "2021-06-29",
+    "Raipur": 43500.0,
+    "Delhi/NCR": 46400.0,
+    "Durgapur": 43700.0
+  },
+  {
+    "date": "2021-06-30",
+    "Raipur": 43600.0,
+    "Delhi/NCR": 46500.0,
+    "Durgapur": 43750.0
+  },
+  {
+    "date": "2021-07-01",
+    "Raipur": 43300.0,
+    "Delhi/NCR": 46400.0,
+    "Durgapur": 43500.0
+  },
+  {
+    "date": "2021-07-02",
+    "Raipur": 43200.0,
+    "Delhi/NCR": 46400.0,
+    "Durgapur": 43200.0
+  },
+  {
+    "date": "2021-07-03",
+    "Raipur": 43200.0,
+    "Delhi/NCR": 46200.0,
+    "Durgapur": 43200.0
+  },
+  {
+    "date": "2021-07-05",
+    "Raipur": 43300.0,
+    "Delhi/NCR": 46200.0,
+    "Durgapur": 43250.0
+  },
+  {
+    "date": "2021-07-06",
+    "Raipur": 43200.0,
+    "Delhi/NCR": 46100.0,
+    "Durgapur": 42750.0
+  },
+  {
+    "date": "2021-07-07",
+    "Raipur": 43100.0,
+    "Delhi/NCR": 46100.0,
+    "Durgapur": 42750.0
+  },
+  {
+    "date": "2021-07-08",
+    "Raipur": 43000.0,
+    "Delhi/NCR": 46000.0,
+    "Durgapur": 42750.0
+  },
+  {
+    "date": "2021-07-09",
+    "Raipur": 43000.0,
+    "Delhi/NCR": 46100.0,
+    "Durgapur": 42750.0
+  },
+  {
+    "date": "2021-07-10",
+    "Raipur": 43500.0,
+    "Delhi/NCR": 46300.0,
+    "Durgapur": 43150.0
+  },
+  {
+    "date": "2021-07-12",
+    "Raipur": 44100.0,
+    "Delhi/NCR": 46400.0,
+    "Durgapur": 43750.0
+  },
+  {
+    "date": "2021-07-13",
+    "Raipur": 43900.0,
+    "Delhi/NCR": 46200.0,
+    "Durgapur": 43400.0
+  },
+  {
+    "date": "2021-07-14",
+    "Raipur": 43500.0,
+    "Delhi/NCR": 45800.0,
+    "Durgapur": 43300.0
+  },
+  {
+    "date": "2021-07-15",
+    "Raipur": 43800.0,
+    "Delhi/NCR": 45600.0,
+    "Durgapur": 43300.0
+  },
+  {
+    "date": "2021-07-16",
+    "Raipur": 43800.0,
+    "Delhi/NCR": 45500.0,
+    "Durgapur": 43200.0
+  },
+  {
+    "date": "2021-07-17",
+    "Raipur": 44100.0,
+    "Delhi/NCR": 46000.0,
+    "Durgapur": 43500.0
+  },
+  {
+    "date": "2021-07-19",
+    "Raipur": 44300.0,
+    "Delhi/NCR": 46100.0,
+    "Durgapur": 44100.0
+  },
+  {
+    "date": "2021-07-20",
+    "Raipur": 44700.0,
+    "Delhi/NCR": 46300.0,
+    "Durgapur": 44300.0
+  },
+  {
+    "date": "2021-07-21",
+    "Raipur": 45000.0,
+    "Delhi/NCR": 46300.0,
+    "Durgapur": 44500.0
+  },
+  {
+    "date": "2021-07-22",
+    "Raipur": 44700.0,
+    "Delhi/NCR": 46300.0,
+    "Durgapur": 44700.0
+  },
+  {
+    "date": "2021-07-23",
+    "Raipur": 44700.0,
+    "Delhi/NCR": 46200.0,
+    "Durgapur": 44250.0
+  },
+  {
+    "date": "2021-07-24",
+    "Raipur": 44700.0,
+    "Delhi/NCR": 46700.0,
+    "Durgapur": 44000.0
+  },
+  {
+    "date": "2021-07-26",
+    "Raipur": 44600.0,
+    "Delhi/NCR": 46800.0,
+    "Durgapur": 44250.0
+  },
+  {
+    "date": "2021-07-27",
+    "Raipur": 44500.0,
+    "Delhi/NCR": 46700.0,
+    "Durgapur": 44500.0
+  },
+  {
+    "date": "2021-07-28",
+    "Raipur": 44500.0,
+    "Delhi/NCR": 47000.0,
+    "Durgapur": 44500.0
+  },
+  {
+    "date": "2021-07-29",
+    "Raipur": 45100.0,
+    "Delhi/NCR": 47500.0,
+    "Durgapur": 45000.0
+  },
+  {
+    "date": "2021-07-30",
+    "Raipur": 45000.0,
+    "Delhi/NCR": 47300.0,
+    "Durgapur": 45000.0
+  },
+  {
+    "date": "2021-07-31",
+    "Raipur": 45200.0,
+    "Delhi/NCR": 47600.0,
+    "Durgapur": 45800.0
+  },
+  {
+    "date": "2021-08-02",
+    "Raipur": 45400.0,
+    "Delhi/NCR": 47800.0,
+    "Durgapur": 45800.0
+  },
+  {
+    "date": "2021-08-03",
+    "Raipur": 45400.0,
+    "Delhi/NCR": 47400.0,
+    "Durgapur": 45500.0
+  },
+  {
+    "date": "2021-08-04",
+    "Raipur": 45500.0,
+    "Delhi/NCR": 47600.0,
+    "Durgapur": 45500.0
+  },
+  {
+    "date": "2021-08-05",
+    "Raipur": 45400.0,
+    "Delhi/NCR": 47600.0,
+    "Durgapur": 45500.0
+  },
+  {
+    "date": "2021-08-06",
+    "Raipur": 45100.0,
+    "Delhi/NCR": 47300.0,
+    "Durgapur": 45300.0
+  },
+  {
+    "date": "2021-08-07",
+    "Raipur": 44900.0,
+    "Delhi/NCR": 47300.0,
+    "Durgapur": 45000.0
+  },
+  {
+    "date": "2021-08-09",
+    "Raipur": 44700.0,
+    "Delhi/NCR": 47300.0,
+    "Durgapur": 45000.0
+  },
+  {
+    "date": "2021-08-10",
+    "Raipur": 44600.0,
+    "Delhi/NCR": 47500.0,
+    "Durgapur": 44800.0
+  },
+  {
+    "date": "2021-08-11",
+    "Raipur": 45200.0,
+    "Delhi/NCR": 47800.0,
+    "Durgapur": 45000.0
+  },
+  {
+    "date": "2021-08-12",
+    "Raipur": 45400.0,
+    "Delhi/NCR": 48000.0,
+    "Durgapur": 45300.0
+  },
+  {
+    "date": "2021-08-13",
+    "Raipur": 45600.0,
+    "Delhi/NCR": 48200.0,
+    "Durgapur": 45300.0
+  },
+  {
+    "date": "2021-08-14",
+    "Raipur": 45600.0,
+    "Delhi/NCR": 48200.0,
+    "Durgapur": 45500.0
+  },
+  {
+    "date": "2021-08-16",
+    "Raipur": 45700.0,
+    "Delhi/NCR": 48400.0,
+    "Durgapur": 45700.0
+  },
+  {
+    "date": "2021-08-17",
+    "Raipur": 45800.0,
+    "Delhi/NCR": 48400.0,
+    "Durgapur": 45800.0
+  },
+  {
+    "date": "2021-08-18",
+    "Raipur": 45700.0,
+    "Delhi/NCR": 48100.0,
+    "Durgapur": 45500.0
+  },
+  {
+    "date": "2021-08-19",
+    "Raipur": 45700.0,
+    "Delhi/NCR": 48100.0,
+    "Durgapur": 45300.0
+  },
+  {
+    "date": "2021-08-20",
+    "Raipur": 45600.0,
+    "Delhi/NCR": 48100.0,
+    "Durgapur": 45200.0
+  },
+  {
+    "date": "2021-08-21",
+    "Raipur": 45500.0,
+    "Delhi/NCR": 47800.0,
+    "Durgapur": 45000.0
+  },
+  {
+    "date": "2021-08-23",
+    "Raipur": 45300.0,
+    "Delhi/NCR": 47800.0,
+    "Durgapur": 44500.0
+  },
+  {
+    "date": "2021-08-24",
+    "Raipur": 44800.0,
+    "Delhi/NCR": 47600.0,
+    "Durgapur": 44500.0
+  },
+  {
+    "date": "2021-08-25",
+    "Raipur": 44800.0,
+    "Delhi/NCR": 47600.0,
+    "Durgapur": 44700.0
+  },
+  {
+    "date": "2021-08-26",
+    "Raipur": 44400.0,
+    "Delhi/NCR": 47200.0,
+    "Durgapur": 44250.0
+  },
+  {
+    "date": "2021-08-27",
+    "Raipur": 44200.0,
+    "Delhi/NCR": 47000.0,
+    "Durgapur": 43850.0
+  },
+  {
+    "date": "2021-08-28",
+    "Raipur": 44300.0,
+    "Delhi/NCR": 47000.0,
+    "Durgapur": 43750.0
+  },
+  {
+    "date": "2021-08-30",
+    "Raipur": 44200.0,
+    "Delhi/NCR": 47000.0,
+    "Durgapur": 43500.0
+  },
+  {
+    "date": "2021-08-31",
+    "Raipur": 44400.0,
+    "Delhi/NCR": 46900.0,
+    "Durgapur": 43500.0
+  },
+  {
+    "date": "2021-09-01",
+    "Raipur": 44700.0,
+    "Delhi/NCR": 47300.0,
+    "Durgapur": 44000.0
+  },
+  {
+    "date": "2021-09-02",
+    "Raipur": 44700.0,
+    "Delhi/NCR": 47000.0,
+    "Durgapur": 43800.0
+  },
+  {
+    "date": "2021-09-03",
+    "Raipur": 44700.0,
+    "Delhi/NCR": 47300.0,
+    "Durgapur": 43800.0
+  },
+  {
+    "date": "2021-09-04",
+    "Raipur": 44400.0,
+    "Delhi/NCR": 47600.0,
+    "Durgapur": 43750.0
+  },
+  {
+    "date": "2021-09-06",
+    "Raipur": 44200.0,
+    "Delhi/NCR": 47400.0,
+    "Durgapur": 43500.0
+  },
+  {
+    "date": "2021-09-07",
+    "Raipur": 44100.0,
+    "Delhi/NCR": 47200.0,
+    "Durgapur": 43250.0
+  },
+  {
+    "date": "2021-09-08",
+    "Raipur": 43900.0,
+    "Delhi/NCR": 47100.0,
+    "Durgapur": 43100.0
+  },
+  {
+    "date": "2021-09-09",
+    "Raipur": 44100.0,
+    "Delhi/NCR": 47100.0,
+    "Durgapur": 43250.0
+  },
+  {
+    "date": "2021-09-10",
+    "Raipur": 44500.0,
+    "Delhi/NCR": 47400.0,
+    "Durgapur": 43600.0
+  },
+  {
+    "date": "2021-09-11",
+    "Raipur": 44500.0,
+    "Delhi/NCR": 47000.0,
+    "Durgapur": 43700.0
+  },
+  {
+    "date": "2021-09-13",
+    "Raipur": 44200.0,
+    "Delhi/NCR": 47000.0,
+    "Durgapur": 44200.0
+  },
+  {
+    "date": "2021-09-14",
+    "Raipur": 44400.0,
+    "Delhi/NCR": 47400.0,
+    "Durgapur": 44500.0
+  },
+  {
+    "date": "2021-09-15",
+    "Raipur": 44400.0,
+    "Delhi/NCR": 47400.0,
+    "Durgapur": 44500.0
+  },
+  {
+    "date": "2021-09-16",
+    "Raipur": 44100.0,
+    "Delhi/NCR": 47200.0,
+    "Durgapur": 44500.0
+  },
+  {
+    "date": "2021-09-17",
+    "Raipur": 44300.0,
+    "Delhi/NCR": 47200.0,
+    "Durgapur": 44800.0
+  },
+  {
+    "date": "2021-09-18",
+    "Raipur": 44400.0,
+    "Delhi/NCR": 47200.0,
+    "Durgapur": 44800.0
+  },
+  {
+    "date": "2021-09-20",
+    "Raipur": 45000.0,
+    "Delhi/NCR": 47400.0,
+    "Durgapur": 45000.0
+  },
+  {
+    "date": "2021-09-21",
+    "Raipur": 45100.0,
+    "Delhi/NCR": 47800.0,
+    "Durgapur": 44800.0
+  },
+  {
+    "date": "2021-09-22",
+    "Raipur": 45000.0,
+    "Delhi/NCR": 47600.0,
+    "Durgapur": 44500.0
+  },
+  {
+    "date": "2021-09-23",
+    "Raipur": 44500.0,
+    "Delhi/NCR": 47800.0,
+    "Durgapur": 44300.0
+  },
+  {
+    "date": "2021-09-24",
+    "Raipur": 44700.0,
+    "Delhi/NCR": 48000.0,
+    "Durgapur": 44700.0
+  },
+  {
+    "date": "2021-09-25",
+    "Raipur": 44700.0,
+    "Delhi/NCR": 47800.0,
+    "Durgapur": 44500.0
+  },
+  {
+    "date": "2021-09-27",
+    "Raipur": 44700.0,
+    "Delhi/NCR": 48000.0,
+    "Durgapur": 44800.0
+  },
+  {
+    "date": "2021-09-28",
+    "Raipur": 45200.0,
+    "Delhi/NCR": 48500.0,
+    "Durgapur": 45200.0
+  },
+  {
+    "date": "2021-09-29",
+    "Raipur": 45700.0,
+    "Delhi/NCR": 48800.0,
+    "Durgapur": 45500.0
+  },
+  {
+    "date": "2021-09-30",
+    "Raipur": 47700.0,
+    "Delhi/NCR": 49300.0,
+    "Durgapur": 47500.0
+  },
+  {
+    "date": "2021-10-01",
+    "Raipur": 49800.0,
+    "Delhi/NCR": 51200.0,
+    "Durgapur": 49700.0
+  },
+  {
+    "date": "2021-10-04",
+    "Raipur": 49800.0,
+    "Delhi/NCR": 52500.0,
+    "Durgapur": 50200.0
+  },
+  {
+    "date": "2021-10-05",
+    "Raipur": 49700.0,
+    "Delhi/NCR": 52800.0,
+    "Durgapur": 50200.0
+  },
+  {
+    "date": "2021-10-06",
+    "Raipur": 49800.0,
+    "Delhi/NCR": 52600.0,
+    "Durgapur": 49700.0
+  },
+  {
+    "date": "2021-10-07",
+    "Raipur": 49200.0,
+    "Delhi/NCR": 52600.0,
+    "Durgapur": 49500.0
+  },
+  {
+    "date": "2021-10-08",
+    "Raipur": 48500.0,
+    "Delhi/NCR": 51800.0,
+    "Durgapur": 48900.0
+  },
+  {
+    "date": "2021-10-09",
+    "Raipur": 48800.0,
+    "Delhi/NCR": 52700.0,
+    "Durgapur": 49200.0
+  },
+  {
+    "date": "2021-10-11",
+    "Raipur": 51800.0,
+    "Delhi/NCR": 54600.0,
+    "Durgapur": 51000.0
+  },
+  {
+    "date": "2021-10-12",
+    "Raipur": 52200.0,
+    "Delhi/NCR": 55000.0,
+    "Durgapur": 51000.0
+  },
+  {
+    "date": "2021-10-13",
+    "Raipur": 52100.0,
+    "Delhi/NCR": 54600.0,
+    "Durgapur": null
+  },
+  {
+    "date": "2021-10-14",
+    "Raipur": 51900.0,
+    "Delhi/NCR": 55200.0,
+    "Durgapur": null
+  },
+  {
+    "date": "2021-10-16",
+    "Raipur": 52500.0,
+    "Delhi/NCR": 56500.0,
+    "Durgapur": 51500.0
+  },
+  {
+    "date": "2021-10-18",
+    "Raipur": 52500.0,
+    "Delhi/NCR": 56500.0,
+    "Durgapur": 51500.0
+  },
+  {
+    "date": "2021-10-19",
+    "Raipur": 51900.0,
+    "Delhi/NCR": 56500.0,
+    "Durgapur": 51700.0
+  },
+  {
+    "date": "2021-10-20",
+    "Raipur": 51400.0,
+    "Delhi/NCR": 55500.0,
+    "Durgapur": 51700.0
+  },
+  {
+    "date": "2021-10-21",
+    "Raipur": 50800.0,
+    "Delhi/NCR": 55500.0,
+    "Durgapur": 51500.0
+  },
+  {
+    "date": "2021-10-22",
+    "Raipur": 50800.0,
+    "Delhi/NCR": 55100.0,
+    "Durgapur": 51200.0
+  },
+  {
+    "date": "2021-10-23",
+    "Raipur": 50000.0,
+    "Delhi/NCR": 55000.0,
+    "Durgapur": 50500.0
+  },
+  {
+    "date": "2021-10-25",
+    "Raipur": 50000.0,
+    "Delhi/NCR": 53800.0,
+    "Durgapur": 49500.0
+  },
+  {
+    "date": "2021-10-26",
+    "Raipur": 49500.0,
+    "Delhi/NCR": 53500.0,
+    "Durgapur": 48800.0
+  },
+  {
+    "date": "2021-10-27",
+    "Raipur": 49800.0,
+    "Delhi/NCR": 53700.0,
+    "Durgapur": 49900.0
+  },
+  {
+    "date": "2021-10-28",
+    "Raipur": 50000.0,
+    "Delhi/NCR": 53400.0,
+    "Durgapur": 49900.0
+  },
+  {
+    "date": "2021-10-29",
+    "Raipur": 50100.0,
+    "Delhi/NCR": 53400.0,
+    "Durgapur": 50000.0
+  },
+  {
+    "date": "2021-10-30",
+    "Raipur": 50000.0,
+    "Delhi/NCR": 53200.0,
+    "Durgapur": 50000.0
+  },
+  {
+    "date": "2021-11-01",
+    "Raipur": 50000.0,
+    "Delhi/NCR": 53500.0,
+    "Durgapur": 49800.0
+  },
+  {
+    "date": "2021-11-02",
+    "Raipur": 50000.0,
+    "Delhi/NCR": 53500.0,
+    "Durgapur": 49500.0
+  },
+  {
+    "date": "2021-11-03",
+    "Raipur": 49900.0,
+    "Delhi/NCR": 53300.0,
+    "Durgapur": 49300.0
+  },
+  {
+    "date": "2021-11-06",
+    "Raipur": 49900.0,
+    "Delhi/NCR": 52400.0,
+    "Durgapur": 49000.0
+  },
+  {
+    "date": "2021-11-08",
+    "Raipur": 49500.0,
+    "Delhi/NCR": 52000.0,
+    "Durgapur": 48500.0
+  },
+  {
+    "date": "2021-11-09",
+    "Raipur": 48700.0,
+    "Delhi/NCR": 52000.0,
+    "Durgapur": 47500.0
+  },
+  {
+    "date": "2021-11-10",
+    "Raipur": 47800.0,
+    "Delhi/NCR": 51000.0,
+    "Durgapur": 47500.0
+  },
+  {
+    "date": "2021-11-11",
+    "Raipur": 47800.0,
+    "Delhi/NCR": 51000.0,
+    "Durgapur": 46800.0
+  },
+  {
+    "date": "2021-11-12",
+    "Raipur": 47400.0,
+    "Delhi/NCR": 50300.0,
+    "Durgapur": 47000.0
+  },
+  {
+    "date": "2021-11-13",
+    "Raipur": 47200.0,
+    "Delhi/NCR": 50300.0,
+    "Durgapur": 46700.0
+  },
+  {
+    "date": "2021-11-15",
+    "Raipur": 46200.0,
+    "Delhi/NCR": null,
+    "Durgapur": 45500.0
+  },
+  {
+    "date": "2021-11-16",
+    "Raipur": 45700.0,
+    "Delhi/NCR": 48200.0,
+    "Durgapur": 45100.0
+  },
+  {
+    "date": "2021-11-17",
+    "Raipur": 45700.0,
+    "Delhi/NCR": 48200.0,
+    "Durgapur": 45600.0
+  },
+  {
+    "date": "2021-11-18",
+    "Raipur": 45700.0,
+    "Delhi/NCR": 48000.0,
+    "Durgapur": 45600.0
+  },
+  {
+    "date": "2021-11-19",
+    "Raipur": 45800.0,
+    "Delhi/NCR": 48500.0,
+    "Durgapur": 45500.0
+  },
+  {
+    "date": "2021-11-20",
+    "Raipur": 46000.0,
+    "Delhi/NCR": 48700.0,
+    "Durgapur": 45800.0
+  },
+  {
+    "date": "2021-11-22",
+    "Raipur": 45500.0,
+    "Delhi/NCR": 48200.0,
+    "Durgapur": 45400.0
+  },
+  {
+    "date": "2021-11-23",
+    "Raipur": 44900.0,
+    "Delhi/NCR": 48000.0,
+    "Durgapur": 45000.0
+  },
+  {
+    "date": "2021-11-24",
+    "Raipur": 44900.0,
+    "Delhi/NCR": 48000.0,
+    "Durgapur": 45400.0
+  },
+  {
+    "date": "2021-11-25",
+    "Raipur": 44500.0,
+    "Delhi/NCR": 48000.0,
+    "Durgapur": 45000.0
+  },
+  {
+    "date": "2021-11-26",
+    "Raipur": 45000.0,
+    "Delhi/NCR": 48200.0,
+    "Durgapur": 45300.0
+  },
+  {
+    "date": "2021-11-27",
+    "Raipur": 45000.0,
+    "Delhi/NCR": 48200.0,
+    "Durgapur": 45100.0
+  },
+  {
+    "date": "2021-11-29",
+    "Raipur": 45000.0,
+    "Delhi/NCR": 48300.0,
+    "Durgapur": 45200.0
+  },
+  {
+    "date": "2021-11-30",
+    "Raipur": 45400.0,
+    "Delhi/NCR": 49200.0,
+    "Durgapur": 45500.0
+  },
+  {
+    "date": "2021-12-01",
+    "Raipur": 45200.0,
+    "Delhi/NCR": 49200.0,
+    "Durgapur": 45500.0
+  },
+  {
+    "date": "2021-12-02",
+    "Raipur": 45200.0,
+    "Delhi/NCR": 49200.0,
+    "Durgapur": 45300.0
+  },
+  {
+    "date": "2021-12-03",
+    "Raipur": 44500.0,
+    "Delhi/NCR": 48500.0,
+    "Durgapur": 45000.0
+  },
+  {
+    "date": "2021-12-04",
+    "Raipur": 44000.0,
+    "Delhi/NCR": 47800.0,
+    "Durgapur": 44500.0
+  },
+  {
+    "date": "2021-12-06",
+    "Raipur": 43400.0,
+    "Delhi/NCR": 47400.0,
+    "Durgapur": 44000.0
+  },
+  {
+    "date": "2021-12-07",
+    "Raipur": 43700.0,
+    "Delhi/NCR": 47400.0,
+    "Durgapur": 44300.0
+  },
+  {
+    "date": "2021-12-08",
+    "Raipur": 44800.0,
+    "Delhi/NCR": 47400.0,
+    "Durgapur": 44500.0
+  },
+  {
+    "date": "2021-12-09",
+    "Raipur": 45300.0,
+    "Delhi/NCR": 47700.0,
+    "Durgapur": 45200.0
+  },
+  {
+    "date": "2021-12-10",
+    "Raipur": 45300.0,
+    "Delhi/NCR": 47700.0,
+    "Durgapur": 44800.0
+  },
+  {
+    "date": "2021-12-11",
+    "Raipur": 45100.0,
+    "Delhi/NCR": 47700.0,
+    "Durgapur": 45000.0
+  },
+  {
+    "date": "2021-12-13",
+    "Raipur": 46000.0,
+    "Delhi/NCR": 47800.0,
+    "Durgapur": 45500.0
+  },
+  {
+    "date": "2021-12-14",
+    "Raipur": 46000.0,
+    "Delhi/NCR": 47800.0,
+    "Durgapur": 46000.0
+  },
+  {
+    "date": "2021-12-15",
+    "Raipur": 45700.0,
+    "Delhi/NCR": 47600.0,
+    "Durgapur": 46000.0
+  },
+  {
+    "date": "2021-12-16",
+    "Raipur": 45600.0,
+    "Delhi/NCR": 47600.0,
+    "Durgapur": 46000.0
+  },
+  {
+    "date": "2021-12-17",
+    "Raipur": 45400.0,
+    "Delhi/NCR": 48200.0,
+    "Durgapur": 45800.0
+  },
+  {
+    "date": "2021-12-18",
+    "Raipur": 45000.0,
+    "Delhi/NCR": 48000.0,
+    "Durgapur": 45600.0
+  },
+  {
+    "date": "2021-12-20",
+    "Raipur": 44800.0,
+    "Delhi/NCR": 48000.0,
+    "Durgapur": 45300.0
+  },
+  {
+    "date": "2021-12-21",
+    "Raipur": 44300.0,
+    "Delhi/NCR": 47700.0,
+    "Durgapur": 45000.0
+  },
+  {
+    "date": "2021-12-22",
+    "Raipur": 44700.0,
+    "Delhi/NCR": 47700.0,
+    "Durgapur": 45200.0
+  },
+  {
+    "date": "2021-12-23",
+    "Raipur": 44700.0,
+    "Delhi/NCR": 47700.0,
+    "Durgapur": 45600.0
+  },
+  {
+    "date": "2021-12-24",
+    "Raipur": 45300.0,
+    "Delhi/NCR": 48300.0,
+    "Durgapur": 46300.0
+  },
+  {
+    "date": "2021-12-27",
+    "Raipur": 46800.0,
+    "Delhi/NCR": 49700.0,
+    "Durgapur": 47200.0
+  },
+  {
+    "date": "2021-12-28",
+    "Raipur": 46200.0,
+    "Delhi/NCR": 49700.0,
+    "Durgapur": 47200.0
+  },
+  {
+    "date": "2021-12-29",
+    "Raipur": 46000.0,
+    "Delhi/NCR": 50000.0,
+    "Durgapur": 47000.0
+  },
+  {
+    "date": "2021-12-30",
+    "Raipur": 46000.0,
+    "Delhi/NCR": 50200.0,
+    "Durgapur": 47000.0
+  },
+  {
+    "date": "2021-12-31",
+    "Raipur": 46500.0,
+    "Delhi/NCR": 51000.0,
+    "Durgapur": 47500.0
+  },
+  {
+    "date": "2022-01-01",
+    "Raipur": 46400.0,
+    "Delhi/NCR": 51000.0,
+    "Durgapur": 47500.0
+  },
+  {
+    "date": "2022-01-03",
+    "Raipur": 46600.0,
+    "Delhi/NCR": 51200.0,
+    "Durgapur": 48000.0
+  },
+  {
+    "date": "2022-01-04",
+    "Raipur": 46600.0,
+    "Delhi/NCR": 51000.0,
+    "Durgapur": 47700.0
+  },
+  {
+    "date": "2022-01-05",
+    "Raipur": 45800.0,
+    "Delhi/NCR": 50200.0,
+    "Durgapur": 47000.0
+  },
+  {
+    "date": "2022-01-06",
+    "Raipur": 46000.0,
+    "Delhi/NCR": 49700.0,
+    "Durgapur": 46800.0
+  },
+  {
+    "date": "2022-01-07",
+    "Raipur": 46800.0,
+    "Delhi/NCR": 50200.0,
+    "Durgapur": 47300.0
+  },
+  {
+    "date": "2022-01-08",
+    "Raipur": 46900.0,
+    "Delhi/NCR": 50700.0,
+    "Durgapur": 48000.0
+  },
+  {
+    "date": "2022-01-10",
+    "Raipur": 47100.0,
+    "Delhi/NCR": 50700.0,
+    "Durgapur": 48000.0
+  },
+  {
+    "date": "2022-01-11",
+    "Raipur": 47600.0,
+    "Delhi/NCR": 50800.0,
+    "Durgapur": 48500.0
+  },
+  {
+    "date": "2022-01-12",
+    "Raipur": 47700.0,
+    "Delhi/NCR": 50800.0,
+    "Durgapur": 49000.0
+  },
+  {
+    "date": "2022-01-13",
+    "Raipur": 48300.0,
+    "Delhi/NCR": 51000.0,
+    "Durgapur": 49300.0
+  },
+  {
+    "date": "2022-01-14",
+    "Raipur": 48300.0,
+    "Delhi/NCR": 51000.0,
+    "Durgapur": 49500.0
+  },
+  {
+    "date": "2022-01-15",
+    "Raipur": 48200.0,
+    "Delhi/NCR": 51200.0,
+    "Durgapur": 49300.0
+  },
+  {
+    "date": "2022-01-17",
+    "Raipur": 48600.0,
+    "Delhi/NCR": 51200.0,
+    "Durgapur": 50500.0
+  },
+  {
+    "date": "2022-01-18",
+    "Raipur": 48500.0,
+    "Delhi/NCR": 51000.0,
+    "Durgapur": 50500.0
+  },
+  {
+    "date": "2022-01-19",
+    "Raipur": 48200.0,
+    "Delhi/NCR": 51500.0,
+    "Durgapur": 50200.0
+  },
+  {
+    "date": "2022-01-20",
+    "Raipur": 48800.0,
+    "Delhi/NCR": 51500.0,
+    "Durgapur": 50500.0
+  },
+  {
+    "date": "2022-01-21",
+    "Raipur": 48800.0,
+    "Delhi/NCR": 51500.0,
+    "Durgapur": 50500.0
+  },
+  {
+    "date": "2022-01-22",
+    "Raipur": 48600.0,
+    "Delhi/NCR": 51500.0,
+    "Durgapur": 50700.0
+  },
+  {
+    "date": "2022-01-24",
+    "Raipur": 49500.0,
+    "Delhi/NCR": 51700.0,
+    "Durgapur": 50700.0
+  },
+  {
+    "date": "2022-01-25",
+    "Raipur": 49800.0,
+    "Delhi/NCR": 52200.0,
+    "Durgapur": 51000.0
+  },
+  {
+    "date": "2022-01-27",
+    "Raipur": 50800.0,
+    "Delhi/NCR": 52600.0,
+    "Durgapur": 51500.0
+  },
+  {
+    "date": "2022-01-28",
+    "Raipur": 50800.0,
+    "Delhi/NCR": 52600.0,
+    "Durgapur": 51500.0
+  },
+  {
+    "date": "2022-01-29",
+    "Raipur": 51900.0,
+    "Delhi/NCR": 53500.0,
+    "Durgapur": 52000.0
+  },
+  {
+    "date": "2022-01-31",
+    "Raipur": 51800.0,
+    "Delhi/NCR": 54000.0,
+    "Durgapur": 51800.0
+  },
+  {
+    "date": "2022-02-01",
+    "Raipur": 51200.0,
+    "Delhi/NCR": 54200.0,
+    "Durgapur": 52100.0
+  },
+  {
+    "date": "2022-02-02",
+    "Raipur": 51500.0,
+    "Delhi/NCR": 54500.0,
+    "Durgapur": 52500.0
+  },
+  {
+    "date": "2022-02-03",
+    "Raipur": 51300.0,
+    "Delhi/NCR": 54700.0,
+    "Durgapur": 52500.0
+  },
+  {
+    "date": "2022-02-04",
+    "Raipur": 51800.0,
+    "Delhi/NCR": 54700.0,
+    "Durgapur": 52500.0
+  },
+  {
+    "date": "2022-02-05",
+    "Raipur": 51800.0,
+    "Delhi/NCR": 55200.0,
+    "Durgapur": 52800.0
+  },
+  {
+    "date": "2022-02-07",
+    "Raipur": 51700.0,
+    "Delhi/NCR": 55200.0,
+    "Durgapur": 52800.0
+  },
+  {
+    "date": "2022-02-08",
+    "Raipur": 52000.0,
+    "Delhi/NCR": 55500.0,
+    "Durgapur": 52500.0
+  },
+  {
+    "date": "2022-02-09",
+    "Raipur": 51900.0,
+    "Delhi/NCR": 55200.0,
+    "Durgapur": 52200.0
+  },
+  {
+    "date": "2022-02-10",
+    "Raipur": 51600.0,
+    "Delhi/NCR": 55000.0,
+    "Durgapur": 51800.0
+  },
+  {
+    "date": "2022-02-11",
+    "Raipur": 51300.0,
+    "Delhi/NCR": 54500.0,
+    "Durgapur": 51500.0
+  },
+  {
+    "date": "2022-02-12",
+    "Raipur": 51200.0,
+    "Delhi/NCR": 54200.0,
+    "Durgapur": 51200.0
+  },
+  {
+    "date": "2022-02-14",
+    "Raipur": 51300.0,
+    "Delhi/NCR": 53800.0,
+    "Durgapur": 51200.0
+  },
+  {
+    "date": "2022-02-15",
+    "Raipur": 51400.0,
+    "Delhi/NCR": 53600.0,
+    "Durgapur": 51100.0
+  },
+  {
+    "date": "2022-02-16",
+    "Raipur": 52500.0,
+    "Delhi/NCR": 54000.0,
+    "Durgapur": 51300.0
+  },
+  {
+    "date": "2022-02-17",
+    "Raipur": 52800.0,
+    "Delhi/NCR": 54500.0,
+    "Durgapur": 52000.0
+  },
+  {
+    "date": "2022-02-18",
+    "Raipur": 52800.0,
+    "Delhi/NCR": 54500.0,
+    "Durgapur": 52500.0
+  },
+  {
+    "date": "2022-02-19",
+    "Raipur": 53100.0,
+    "Delhi/NCR": 54500.0,
+    "Durgapur": 53200.0
+  },
+  {
+    "date": "2022-02-21",
+    "Raipur": 53000.0,
+    "Delhi/NCR": 54700.0,
+    "Durgapur": 53500.0
+  },
+  {
+    "date": "2022-02-22",
+    "Raipur": 52900.0,
+    "Delhi/NCR": 55700.0,
+    "Durgapur": 53100.0
+  },
+  {
+    "date": "2022-02-23",
+    "Raipur": 53000.0,
+    "Delhi/NCR": 56200.0,
+    "Durgapur": 53000.0
+  },
+  {
+    "date": "2022-02-24",
+    "Raipur": 53800.0,
+    "Delhi/NCR": 56400.0,
+    "Durgapur": 53500.0
+  },
+  {
+    "date": "2022-02-25",
+    "Raipur": 54700.0,
+    "Delhi/NCR": 56400.0,
+    "Durgapur": 53800.0
+  },
+  {
+    "date": "2022-02-26",
+    "Raipur": 54700.0,
+    "Delhi/NCR": 56900.0,
+    "Durgapur": 54500.0
+  },
+  {
+    "date": "2022-02-28",
+    "Raipur": 57300.0,
+    "Delhi/NCR": 58500.0,
+    "Durgapur": 56000.0
+  },
+  {
+    "date": "2022-03-01",
+    "Raipur": 58000.0,
+    "Delhi/NCR": 59200.0,
+    "Durgapur": 56500.0
+  },
+  {
+    "date": "2022-03-02",
+    "Raipur": 58700.0,
+    "Delhi/NCR": 59500.0,
+    "Durgapur": 57000.0
+  },
+  {
+    "date": "2022-03-03",
+    "Raipur": 60000.0,
+    "Delhi/NCR": 61500.0,
+    "Durgapur": 59000.0
+  },
+  {
+    "date": "2022-03-04",
+    "Raipur": 62000.0,
+    "Delhi/NCR": 62100.0,
+    "Durgapur": 60000.0
+  },
+  {
+    "date": "2022-03-05",
+    "Raipur": 63000.0,
+    "Delhi/NCR": 62500.0,
+    "Durgapur": 61500.0
+  },
+  {
+    "date": "2022-03-07",
+    "Raipur": 65200.0,
+    "Delhi/NCR": 64000.0,
+    "Durgapur": 64000.0
+  },
+  {
+    "date": "2022-03-08",
+    "Raipur": 65000.0,
+    "Delhi/NCR": 68500.0,
+    "Durgapur": 64000.0
+  },
+  {
+    "date": "2022-03-09",
+    "Raipur": 65800.0,
+    "Delhi/NCR": 71200.0,
+    "Durgapur": 66500.0
+  },
+  {
+    "date": "2022-03-10",
+    "Raipur": 66100.0,
+    "Delhi/NCR": 72000.0,
+    "Durgapur": 66500.0
+  },
+  {
+    "date": "2022-03-11",
+    "Raipur": 66100.0,
+    "Delhi/NCR": 72300.0,
+    "Durgapur": 66000.0
+  },
+  {
+    "date": "2022-03-12",
+    "Raipur": 65000.0,
+    "Delhi/NCR": 72000.0,
+    "Durgapur": 65000.0
+  },
+  {
+    "date": "2022-03-14",
+    "Raipur": 64000.0,
+    "Delhi/NCR": 71500.0,
+    "Durgapur": 62500.0
+  },
+  {
+    "date": "2022-03-15",
+    "Raipur": 62000.0,
+    "Delhi/NCR": 71000.0,
+    "Durgapur": 61000.0
+  },
+  {
+    "date": "2022-03-16",
+    "Raipur": 62500.0,
+    "Delhi/NCR": null,
+    "Durgapur": 63000.0
+  },
+  {
+    "date": "2022-03-17",
+    "Raipur": 62800.0,
+    "Delhi/NCR": 70000.0,
+    "Durgapur": 62500.0
+  },
+  {
+    "date": "2022-03-21",
+    "Raipur": 64300.0,
+    "Delhi/NCR": 70000.0,
+    "Durgapur": 65000.0
+  },
+  {
+    "date": "2022-03-22",
+    "Raipur": 64600.0,
+    "Delhi/NCR": 71000.0,
+    "Durgapur": 65200.0
+  },
+  {
+    "date": "2022-03-23",
+    "Raipur": 64500.0,
+    "Delhi/NCR": 71000.0,
+    "Durgapur": 64700.0
+  },
+  {
+    "date": "2022-03-24",
+    "Raipur": 64500.0,
+    "Delhi/NCR": 69700.0,
+    "Durgapur": 64800.0
+  },
+  {
+    "date": "2022-03-25",
+    "Raipur": 63700.0,
+    "Delhi/NCR": 69700.0,
+    "Durgapur": 63200.0
+  },
+  {
+    "date": "2022-03-26",
+    "Raipur": 62900.0,
+    "Delhi/NCR": 68200.0,
+    "Durgapur": 63200.0
+  },
+  {
+    "date": "2022-03-28",
+    "Raipur": 62000.0,
+    "Delhi/NCR": 68500.0,
+    "Durgapur": 62500.0
+  },
+  {
+    "date": "2022-03-29",
+    "Raipur": 61800.0,
+    "Delhi/NCR": 68500.0,
+    "Durgapur": 62000.0
+  },
+  {
+    "date": "2022-03-30",
+    "Raipur": 61700.0,
+    "Delhi/NCR": 67700.0,
+    "Durgapur": 61500.0
+  },
+  {
+    "date": "2022-03-31",
+    "Raipur": 61000.0,
+    "Delhi/NCR": 66700.0,
+    "Durgapur": 61300.0
+  },
+  {
+    "date": "2022-04-01",
+    "Raipur": 61200.0,
+    "Delhi/NCR": 66700.0,
+    "Durgapur": 62000.0
+  },
+  {
+    "date": "2022-04-02",
+    "Raipur": 61300.0,
+    "Delhi/NCR": 66400.0,
+    "Durgapur": 62300.0
+  },
+  {
+    "date": "2022-04-04",
+    "Raipur": 61300.0,
+    "Delhi/NCR": 66400.0,
+    "Durgapur": 61800.0
+  },
+  {
+    "date": "2022-04-05",
+    "Raipur": 60500.0,
+    "Delhi/NCR": 65200.0,
+    "Durgapur": 61000.0
+  },
+  {
+    "date": "2022-04-06",
+    "Raipur": 59700.0,
+    "Delhi/NCR": 64200.0,
+    "Durgapur": 60000.0
+  },
+  {
+    "date": "2022-04-07",
+    "Raipur": 59700.0,
+    "Delhi/NCR": 64200.0,
+    "Durgapur": 60500.0
+  },
+  {
+    "date": "2022-04-08",
+    "Raipur": 59100.0,
+    "Delhi/NCR": 63800.0,
+    "Durgapur": 60000.0
+  },
+  {
+    "date": "2022-04-09",
+    "Raipur": 59100.0,
+    "Delhi/NCR": 62700.0,
+    "Durgapur": 59700.0
+  },
+  {
+    "date": "2022-04-11",
+    "Raipur": 58000.0,
+    "Delhi/NCR": 61200.0,
+    "Durgapur": 58700.0
+  },
+  {
+    "date": "2022-04-12",
+    "Raipur": 58400.0,
+    "Delhi/NCR": 60500.0,
+    "Durgapur": 58300.0
+  },
+  {
+    "date": "2022-04-13",
+    "Raipur": 59100.0,
+    "Delhi/NCR": 61500.0,
+    "Durgapur": 59700.0
+  },
+  {
+    "date": "2022-04-14",
+    "Raipur": 59500.0,
+    "Delhi/NCR": 61500.0,
+    "Durgapur": 59700.0
+  },
+  {
+    "date": "2022-04-15",
+    "Raipur": 60600.0,
+    "Delhi/NCR": 62000.0,
+    "Durgapur": 61500.0
+  },
+  {
+    "date": "2022-04-16",
+    "Raipur": 60800.0,
+    "Delhi/NCR": 64700.0,
+    "Durgapur": 61500.0
+  },
+  {
+    "date": "2022-04-18",
+    "Raipur": 63200.0,
+    "Delhi/NCR": 66800.0,
+    "Durgapur": 63300.0
+  },
+  {
+    "date": "2022-04-19",
+    "Raipur": 63200.0,
+    "Delhi/NCR": 66800.0,
+    "Durgapur": 62800.0
+  },
+  {
+    "date": "2022-04-20",
+    "Raipur": 63200.0,
+    "Delhi/NCR": 66700.0,
+    "Durgapur": 62300.0
+  },
+  {
+    "date": "2022-04-21",
+    "Raipur": 63000.0,
+    "Delhi/NCR": 66700.0,
+    "Durgapur": 61800.0
+  },
+  {
+    "date": "2022-04-22",
+    "Raipur": 62000.0,
+    "Delhi/NCR": 66700.0,
+    "Durgapur": 60500.0
+  },
+  {
+    "date": "2022-04-23",
+    "Raipur": 61200.0,
+    "Delhi/NCR": 65200.0,
+    "Durgapur": 60500.0
+  },
+  {
+    "date": "2022-04-25",
+    "Raipur": 60000.0,
+    "Delhi/NCR": 63700.0,
+    "Durgapur": 59500.0
+  },
+  {
+    "date": "2022-04-26",
+    "Raipur": 60000.0,
+    "Delhi/NCR": 62500.0,
+    "Durgapur": 59000.0
+  },
+  {
+    "date": "2022-04-27",
+    "Raipur": 60200.0,
+    "Delhi/NCR": 62000.0,
+    "Durgapur": 58500.0
+  },
+  {
+    "date": "2022-04-28",
+    "Raipur": 60400.0,
+    "Delhi/NCR": 62500.0,
+    "Durgapur": 60000.0
+  },
+  {
+    "date": "2022-04-29",
+    "Raipur": 60900.0,
+    "Delhi/NCR": 65000.0,
+    "Durgapur": 61000.0
+  },
+  {
+    "date": "2022-04-30",
+    "Raipur": 60700.0,
+    "Delhi/NCR": 65000.0,
+    "Durgapur": 60500.0
+  },
+  {
+    "date": "2022-05-02",
+    "Raipur": 60600.0,
+    "Delhi/NCR": 65200.0,
+    "Durgapur": 60500.0
+  },
+  {
+    "date": "2022-05-03",
+    "Raipur": 60200.0,
+    "Delhi/NCR": 65000.0,
+    "Durgapur": 60000.0
+  },
+  {
+    "date": "2022-05-04",
+    "Raipur": 59500.0,
+    "Delhi/NCR": 64000.0,
+    "Durgapur": 59000.0
+  },
+  {
+    "date": "2022-05-05",
+    "Raipur": 59000.0,
+    "Delhi/NCR": 63500.0,
+    "Durgapur": 58500.0
+  },
+  {
+    "date": "2022-05-06",
+    "Raipur": 59000.0,
+    "Delhi/NCR": 63500.0,
+    "Durgapur": 59000.0
+  },
+  {
+    "date": "2022-05-07",
+    "Raipur": 59200.0,
+    "Delhi/NCR": 64200.0,
+    "Durgapur": 59700.0
+  },
+  {
+    "date": "2022-05-09",
+    "Raipur": 59000.0,
+    "Delhi/NCR": 65000.0,
+    "Durgapur": 59000.0
+  },
+  {
+    "date": "2022-05-10",
+    "Raipur": 58500.0,
+    "Delhi/NCR": 63500.0,
+    "Durgapur": 58000.0
+  },
+  {
+    "date": "2022-05-11",
+    "Raipur": 58200.0,
+    "Delhi/NCR": 61700.0,
+    "Durgapur": 57000.0
+  },
+  {
+    "date": "2022-05-12",
+    "Raipur": 57700.0,
+    "Delhi/NCR": 62000.0,
+    "Durgapur": 57500.0
+  },
+  {
+    "date": "2022-05-13",
+    "Raipur": 57700.0,
+    "Delhi/NCR": 62000.0,
+    "Durgapur": 57000.0
+  },
+  {
+    "date": "2022-05-14",
+    "Raipur": 57700.0,
+    "Delhi/NCR": 62000.0,
+    "Durgapur": 57000.0
+  },
+  {
+    "date": "2022-05-16",
+    "Raipur": 57400.0,
+    "Delhi/NCR": 60700.0,
+    "Durgapur": 56500.0
+  },
+  {
+    "date": "2022-05-17",
+    "Raipur": 56500.0,
+    "Delhi/NCR": 59600.0,
+    "Durgapur": 55500.0
+  },
+  {
+    "date": "2022-05-18",
+    "Raipur": 56300.0,
+    "Delhi/NCR": 59600.0,
+    "Durgapur": 55000.0
+  },
+  {
+    "date": "2022-05-19",
+    "Raipur": 56000.0,
+    "Delhi/NCR": 60000.0,
+    "Durgapur": 55000.0
+  },
+  {
+    "date": "2022-05-20",
+    "Raipur": 56000.0,
+    "Delhi/NCR": 60000.0,
+    "Durgapur": 55500.0
+  },
+  {
+    "date": "2022-05-21",
+    "Raipur": 55500.0,
+    "Delhi/NCR": 60200.0,
+    "Durgapur": 55500.0
+  },
+  {
+    "date": "2022-05-23",
+    "Raipur": 53500.0,
+    "Delhi/NCR": 58200.0,
+    "Durgapur": 52000.0
+  },
+  {
+    "date": "2022-05-24",
+    "Raipur": 53000.0,
+    "Delhi/NCR": 57000.0,
+    "Durgapur": 52000.0
+  },
+  {
+    "date": "2022-05-25",
+    "Raipur": 51800.0,
+    "Delhi/NCR": 54700.0,
+    "Durgapur": 51000.0
+  },
+  {
+    "date": "2022-05-26",
+    "Raipur": 50800.0,
+    "Delhi/NCR": 53700.0,
+    "Durgapur": 50000.0
+  },
+  {
+    "date": "2022-05-27",
+    "Raipur": 49500.0,
+    "Delhi/NCR": 53700.0,
+    "Durgapur": 49500.0
+  },
+  {
+    "date": "2022-05-28",
+    "Raipur": 49700.0,
+    "Delhi/NCR": 53700.0,
+    "Durgapur": 49500.0
+  },
+  {
+    "date": "2022-05-30",
+    "Raipur": 50700.0,
+    "Delhi/NCR": 55000.0,
+    "Durgapur": 50500.0
+  },
+  {
+    "date": "2022-05-31",
+    "Raipur": 50000.0,
+    "Delhi/NCR": 54500.0,
+    "Durgapur": 50000.0
+  },
+  {
+    "date": "2022-06-01",
+    "Raipur": 49400.0,
+    "Delhi/NCR": 54000.0,
+    "Durgapur": 48500.0
+  },
+  {
+    "date": "2022-06-02",
+    "Raipur": 49400.0,
+    "Delhi/NCR": 54000.0,
+    "Durgapur": 49000.0
+  },
+  {
+    "date": "2022-06-03",
+    "Raipur": 49800.0,
+    "Delhi/NCR": 55000.0,
+    "Durgapur": 50000.0
+  },
+  {
+    "date": "2022-06-04",
+    "Raipur": 50000.0,
+    "Delhi/NCR": 55000.0,
+    "Durgapur": 49500.0
+  },
+  {
+    "date": "2022-06-06",
+    "Raipur": 50000.0,
+    "Delhi/NCR": 55700.0,
+    "Durgapur": 49500.0
+  },
+  {
+    "date": "2022-06-07",
+    "Raipur": 49900.0,
+    "Delhi/NCR": 55700.0,
+    "Durgapur": 49500.0
+  },
+  {
+    "date": "2022-06-08",
+    "Raipur": 49900.0,
+    "Delhi/NCR": 55500.0,
+    "Durgapur": 49000.0
+  },
+  {
+    "date": "2022-06-09",
+    "Raipur": 49500.0,
+    "Delhi/NCR": 54700.0,
+    "Durgapur": 49000.0
+  },
+  {
+    "date": "2022-06-10",
+    "Raipur": 49600.0,
+    "Delhi/NCR": 55000.0,
+    "Durgapur": 48500.0
+  },
+  {
+    "date": "2022-06-11",
+    "Raipur": 49900.0,
+    "Delhi/NCR": 55000.0,
+    "Durgapur": 48700.0
+  },
+  {
+    "date": "2022-06-13",
+    "Raipur": 50100.0,
+    "Delhi/NCR": 56200.0,
+    "Durgapur": 49500.0
+  },
+  {
+    "date": "2022-06-14",
+    "Raipur": 50100.0,
+    "Delhi/NCR": 56200.0,
+    "Durgapur": 49500.0
+  },
+  {
+    "date": "2022-06-15",
+    "Raipur": 50400.0,
+    "Delhi/NCR": 56200.0,
+    "Durgapur": 49500.0
+  },
+  {
+    "date": "2022-06-16",
+    "Raipur": 51000.0,
+    "Delhi/NCR": 56600.0,
+    "Durgapur": 50000.0
+  },
+  {
+    "date": "2022-06-17",
+    "Raipur": 51200.0,
+    "Delhi/NCR": 56700.0,
+    "Durgapur": 50500.0
+  },
+  {
+    "date": "2022-06-18",
+    "Raipur": 51400.0,
+    "Delhi/NCR": 57000.0,
+    "Durgapur": 50500.0
+  },
+  {
+    "date": "2022-06-20",
+    "Raipur": 51000.0,
+    "Delhi/NCR": 56500.0,
+    "Durgapur": 50500.0
+  },
+  {
+    "date": "2022-06-21",
+    "Raipur": 50900.0,
+    "Delhi/NCR": 55200.0,
+    "Durgapur": 50000.0
+  },
+  {
+    "date": "2022-06-22",
+    "Raipur": 51100.0,
+    "Delhi/NCR": 55200.0,
+    "Durgapur": 50500.0
+  },
+  {
+    "date": "2022-06-23",
+    "Raipur": 51400.0,
+    "Delhi/NCR": 56500.0,
+    "Durgapur": 51500.0
+  },
+  {
+    "date": "2022-06-24",
+    "Raipur": 51600.0,
+    "Delhi/NCR": 56500.0,
+    "Durgapur": 52000.0
+  },
+  {
+    "date": "2022-06-25",
+    "Raipur": 51500.0,
+    "Delhi/NCR": 56700.0,
+    "Durgapur": 52000.0
+  },
+  {
+    "date": "2022-06-27",
+    "Raipur": 52600.0,
+    "Delhi/NCR": 57000.0,
+    "Durgapur": 52800.0
+  },
+  {
+    "date": "2022-06-28",
+    "Raipur": 52800.0,
+    "Delhi/NCR": 57400.0,
+    "Durgapur": 53500.0
+  },
+  {
+    "date": "2022-06-29",
+    "Raipur": 52800.0,
+    "Delhi/NCR": 57400.0,
+    "Durgapur": 53500.0
+  },
+  {
+    "date": "2022-06-30",
+    "Raipur": 52800.0,
+    "Delhi/NCR": 56900.0,
+    "Durgapur": 53000.0
+  },
+  {
+    "date": "2022-07-01",
+    "Raipur": 52600.0,
+    "Delhi/NCR": 56900.0,
+    "Durgapur": 53500.0
+  },
+  {
+    "date": "2022-07-02",
+    "Raipur": 52600.0,
+    "Delhi/NCR": 56900.0,
+    "Durgapur": 53500.0
+  },
+  {
+    "date": "2022-07-04",
+    "Raipur": 52300.0,
+    "Delhi/NCR": 57000.0,
+    "Durgapur": 53500.0
+  },
+  {
+    "date": "2022-07-05",
+    "Raipur": 52400.0,
+    "Delhi/NCR": 56500.0,
+    "Durgapur": 53500.0
+  },
+  {
+    "date": "2022-07-06",
+    "Raipur": 52600.0,
+    "Delhi/NCR": 56700.0,
+    "Durgapur": 53500.0
+  },
+  {
+    "date": "2022-07-07",
+    "Raipur": 53300.0,
+    "Delhi/NCR": 57200.0,
+    "Durgapur": 54500.0
+  },
+  {
+    "date": "2022-07-08",
+    "Raipur": 53900.0,
+    "Delhi/NCR": 58000.0,
+    "Durgapur": 56000.0
+  },
+  {
+    "date": "2022-07-09",
+    "Raipur": 54100.0,
+    "Delhi/NCR": 58500.0,
+    "Durgapur": 56000.0
+  },
+  {
+    "date": "2022-07-11",
+    "Raipur": 54600.0,
+    "Delhi/NCR": 58800.0,
+    "Durgapur": 56500.0
+  },
+  {
+    "date": "2022-07-12",
+    "Raipur": 55500.0,
+    "Delhi/NCR": 59500.0,
+    "Durgapur": 56500.0
+  },
+  {
+    "date": "2022-07-13",
+    "Raipur": 55100.0,
+    "Delhi/NCR": 59500.0,
+    "Durgapur": 56000.0
+  },
+  {
+    "date": "2022-07-14",
+    "Raipur": 54400.0,
+    "Delhi/NCR": 59200.0,
+    "Durgapur": 55000.0
+  },
+  {
+    "date": "2022-07-15",
+    "Raipur": 53900.0,
+    "Delhi/NCR": 58700.0,
+    "Durgapur": 55000.0
+  },
+  {
+    "date": "2022-07-16",
+    "Raipur": 53500.0,
+    "Delhi/NCR": 58200.0,
+    "Durgapur": 54500.0
+  },
+  {
+    "date": "2022-07-18",
+    "Raipur": 52700.0,
+    "Delhi/NCR": 58300.0,
+    "Durgapur": 54000.0
+  },
+  {
+    "date": "2022-07-19",
+    "Raipur": 52100.0,
+    "Delhi/NCR": 58000.0,
+    "Durgapur": 53500.0
+  },
+  {
+    "date": "2022-07-20",
+    "Raipur": 51900.0,
+    "Delhi/NCR": 57000.0,
+    "Durgapur": 53000.0
+  },
+  {
+    "date": "2022-07-21",
+    "Raipur": 51300.0,
+    "Delhi/NCR": 56800.0,
+    "Durgapur": 52500.0
+  },
+  {
+    "date": "2022-07-22",
+    "Raipur": 51200.0,
+    "Delhi/NCR": 56800.0,
+    "Durgapur": 52500.0
+  },
+  {
+    "date": "2022-07-23",
+    "Raipur": 51000.0,
+    "Delhi/NCR": 56500.0,
+    "Durgapur": 52500.0
+  },
+  {
+    "date": "2022-07-25",
+    "Raipur": 50800.0,
+    "Delhi/NCR": 56500.0,
+    "Durgapur": 51700.0
+  },
+  {
+    "date": "2022-07-26",
+    "Raipur": 51500.0,
+    "Delhi/NCR": 57000.0,
+    "Durgapur": 53000.0
+  },
+  {
+    "date": "2022-07-27",
+    "Raipur": 51700.0,
+    "Delhi/NCR": 57500.0,
+    "Durgapur": 53500.0
+  },
+  {
+    "date": "2022-07-28",
+    "Raipur": 52000.0,
+    "Delhi/NCR": 57500.0,
+    "Durgapur": 53500.0
+  },
+  {
+    "date": "2022-07-29",
+    "Raipur": 52500.0,
+    "Delhi/NCR": 57700.0,
+    "Durgapur": 53500.0
+  },
+  {
+    "date": "2022-07-30",
+    "Raipur": 52400.0,
+    "Delhi/NCR": 57400.0,
+    "Durgapur": 53000.0
+  },
+  {
+    "date": "2022-08-01",
+    "Raipur": 52900.0,
+    "Delhi/NCR": 57800.0,
+    "Durgapur": 53500.0
+  },
+  {
+    "date": "2022-08-02",
+    "Raipur": 53000.0,
+    "Delhi/NCR": 58000.0,
+    "Durgapur": 54000.0
+  },
+  {
+    "date": "2022-08-03",
+    "Raipur": 52700.0,
+    "Delhi/NCR": 58500.0,
+    "Durgapur": 53750.0
+  },
+  {
+    "date": "2022-08-04",
+    "Raipur": 52300.0,
+    "Delhi/NCR": 58200.0,
+    "Durgapur": 53300.0
+  },
+  {
+    "date": "2022-08-05",
+    "Raipur": 51500.0,
+    "Delhi/NCR": 57700.0,
+    "Durgapur": 52800.0
+  },
+  {
+    "date": "2022-08-06",
+    "Raipur": 51400.0,
+    "Delhi/NCR": 57400.0,
+    "Durgapur": 52300.0
+  },
+  {
+    "date": "2022-08-08",
+    "Raipur": 51400.0,
+    "Delhi/NCR": 56400.0,
+    "Durgapur": 52000.0
+  },
+  {
+    "date": "2022-08-09",
+    "Raipur": 51600.0,
+    "Delhi/NCR": 56200.0,
+    "Durgapur": 51700.0
+  },
+  {
+    "date": "2022-08-10",
+    "Raipur": 52000.0,
+    "Delhi/NCR": 56600.0,
+    "Durgapur": 52700.0
+  },
+  {
+    "date": "2022-08-12",
+    "Raipur": 52700.0,
+    "Delhi/NCR": 57200.0,
+    "Durgapur": 53500.0
+  },
+  {
+    "date": "2022-08-13",
+    "Raipur": 52400.0,
+    "Delhi/NCR": 57300.0,
+    "Durgapur": 53000.0
+  },
+  {
+    "date": "2022-08-16",
+    "Raipur": 52700.0,
+    "Delhi/NCR": 57700.0,
+    "Durgapur": 53700.0
+  },
+  {
+    "date": "2022-08-17",
+    "Raipur": 52600.0,
+    "Delhi/NCR": 57400.0,
+    "Durgapur": 53000.0
+  },
+  {
+    "date": "2022-08-18",
+    "Raipur": 52000.0,
+    "Delhi/NCR": 57400.0,
+    "Durgapur": 52500.0
+  },
+  {
+    "date": "2022-08-19",
+    "Raipur": 51900.0,
+    "Delhi/NCR": 57200.0,
+    "Durgapur": 52500.0
+  },
+  {
+    "date": "2022-08-20",
+    "Raipur": 51700.0,
+    "Delhi/NCR": 57200.0,
+    "Durgapur": 52000.0
+  },
+  {
+    "date": "2022-08-22",
+    "Raipur": 51500.0,
+    "Delhi/NCR": 56900.0,
+    "Durgapur": 52000.0
+  },
+  {
+    "date": "2022-08-23",
+    "Raipur": 51200.0,
+    "Delhi/NCR": 56400.0,
+    "Durgapur": 51500.0
+  },
+  {
+    "date": "2022-08-24",
+    "Raipur": 51500.0,
+    "Delhi/NCR": 56400.0,
+    "Durgapur": 51800.0
+  },
+  {
+    "date": "2022-08-25",
+    "Raipur": 51300.0,
+    "Delhi/NCR": 56100.0,
+    "Durgapur": 51200.0
+  },
+  {
+    "date": "2022-08-26",
+    "Raipur": 50900.0,
+    "Delhi/NCR": 56100.0,
+    "Durgapur": 51200.0
+  },
+  {
+    "date": "2022-08-27",
+    "Raipur": 50900.0,
+    "Delhi/NCR": 56100.0,
+    "Durgapur": 51000.0
+  },
+  {
+    "date": "2022-08-29",
+    "Raipur": 50500.0,
+    "Delhi/NCR": 55500.0,
+    "Durgapur": 51000.0
+  },
+  {
+    "date": "2022-08-30",
+    "Raipur": 50400.0,
+    "Delhi/NCR": 54600.0,
+    "Durgapur": 50500.0
+  },
+  {
+    "date": "2022-08-31",
+    "Raipur": 50600.0,
+    "Delhi/NCR": 54600.0,
+    "Durgapur": 50500.0
+  },
+  {
+    "date": "2022-09-01",
+    "Raipur": 50800.0,
+    "Delhi/NCR": 55300.0,
+    "Durgapur": 50700.0
+  },
+  {
+    "date": "2022-09-02",
+    "Raipur": 50800.0,
+    "Delhi/NCR": 55300.0,
+    "Durgapur": 51000.0
+  },
+  {
+    "date": "2022-09-03",
+    "Raipur": 50900.0,
+    "Delhi/NCR": 55500.0,
+    "Durgapur": 51200.0
+  },
+  {
+    "date": "2022-09-05",
+    "Raipur": 50700.0,
+    "Delhi/NCR": 55200.0,
+    "Durgapur": 51000.0
+  },
+  {
+    "date": "2022-09-06",
+    "Raipur": 50800.0,
+    "Delhi/NCR": 55000.0,
+    "Durgapur": 51000.0
+  },
+  {
+    "date": "2022-09-07",
+    "Raipur": 50900.0,
+    "Delhi/NCR": 54700.0,
+    "Durgapur": 50800.0
+  },
+  {
+    "date": "2022-09-08",
+    "Raipur": 51200.0,
+    "Delhi/NCR": 55000.0,
+    "Durgapur": 50800.0
+  },
+  {
+    "date": "2022-09-09",
+    "Raipur": 51200.0,
+    "Delhi/NCR": 55000.0,
+    "Durgapur": 50200.0
+  },
+  {
+    "date": "2022-09-10",
+    "Raipur": 51500.0,
+    "Delhi/NCR": 55600.0,
+    "Durgapur": 50500.0
+  },
+  {
+    "date": "2022-09-12",
+    "Raipur": 51400.0,
+    "Delhi/NCR": 55700.0,
+    "Durgapur": 50500.0
+  },
+  {
+    "date": "2022-09-13",
+    "Raipur": 51800.0,
+    "Delhi/NCR": 55900.0,
+    "Durgapur": 50600.0
+  },
+  {
+    "date": "2022-09-14",
+    "Raipur": 52000.0,
+    "Delhi/NCR": 55900.0,
+    "Durgapur": 51100.0
+  },
+  {
+    "date": "2022-09-15",
+    "Raipur": 52000.0,
+    "Delhi/NCR": 55900.0,
+    "Durgapur": 51300.0
+  },
+  {
+    "date": "2022-09-16",
+    "Raipur": 51800.0,
+    "Delhi/NCR": 55750.0,
+    "Durgapur": 51000.0
+  },
+  {
+    "date": "2022-09-17",
+    "Raipur": 51800.0,
+    "Delhi/NCR": 55600.0,
+    "Durgapur": 51000.0
+  },
+  {
+    "date": "2022-09-19",
+    "Raipur": 51500.0,
+    "Delhi/NCR": 55600.0,
+    "Durgapur": 50800.0
+  },
+  {
+    "date": "2022-09-20",
+    "Raipur": 51300.0,
+    "Delhi/NCR": 54600.0,
+    "Durgapur": 50500.0
+  },
+  {
+    "date": "2022-09-21",
+    "Raipur": 51300.0,
+    "Delhi/NCR": 54200.0,
+    "Durgapur": 50500.0
+  },
+  {
+    "date": "2022-09-22",
+    "Raipur": 51300.0,
+    "Delhi/NCR": 54000.0,
+    "Durgapur": 50000.0
+  },
+  {
+    "date": "2022-09-23",
+    "Raipur": 51400.0,
+    "Delhi/NCR": 53700.0,
+    "Durgapur": 50000.0
+  },
+  {
+    "date": "2022-09-24",
+    "Raipur": 51800.0,
+    "Delhi/NCR": 54000.0,
+    "Durgapur": 50500.0
+  },
+  {
+    "date": "2022-09-26",
+    "Raipur": 51800.0,
+    "Delhi/NCR": 54000.0,
+    "Durgapur": 50500.0
+  },
+  {
+    "date": "2022-09-27",
+    "Raipur": 52000.0,
+    "Delhi/NCR": 54700.0,
+    "Durgapur": 51000.0
+  },
+  {
+    "date": "2022-09-28",
+    "Raipur": 52000.0,
+    "Delhi/NCR": 55000.0,
+    "Durgapur": 51100.0
+  },
+  {
+    "date": "2022-09-29",
+    "Raipur": 51900.0,
+    "Delhi/NCR": 55000.0,
+    "Durgapur": 50900.0
+  },
+  {
+    "date": "2022-09-30",
+    "Raipur": 52000.0,
+    "Delhi/NCR": 55200.0,
+    "Durgapur": 51400.0
+  },
+  {
+    "date": "2022-10-01",
+    "Raipur": 52100.0,
+    "Delhi/NCR": 55200.0,
+    "Durgapur": 51400.0
+  },
+  {
+    "date": "2022-10-03",
+    "Raipur": 51900.0,
+    "Delhi/NCR": 55200.0,
+    "Durgapur": null
+  },
+  {
+    "date": "2022-10-04",
+    "Raipur": 52000.0,
+    "Delhi/NCR": 54900.0,
+    "Durgapur": null
+  },
+  {
+    "date": "2022-10-06",
+    "Raipur": 52200.0,
+    "Delhi/NCR": 55200.0,
+    "Durgapur": 51800.0
+  },
+  {
+    "date": "2022-10-07",
+    "Raipur": 52200.0,
+    "Delhi/NCR": 55200.0,
+    "Durgapur": 51800.0
+  },
+  {
+    "date": "2022-10-08",
+    "Raipur": 52200.0,
+    "Delhi/NCR": 55500.0,
+    "Durgapur": 51800.0
+  },
+  {
+    "date": "2022-10-10",
+    "Raipur": 52000.0,
+    "Delhi/NCR": 55400.0,
+    "Durgapur": 51800.0
+  },
+  {
+    "date": "2022-10-11",
+    "Raipur": 51900.0,
+    "Delhi/NCR": 54800.0,
+    "Durgapur": 51500.0
+  },
+  {
+    "date": "2022-10-12",
+    "Raipur": 51600.0,
+    "Delhi/NCR": 54600.0,
+    "Durgapur": 51200.0
+  },
+  {
+    "date": "2022-10-13",
+    "Raipur": 51200.0,
+    "Delhi/NCR": 54100.0,
+    "Durgapur": 50800.0
+  },
+  {
+    "date": "2022-10-14",
+    "Raipur": 51000.0,
+    "Delhi/NCR": 54500.0,
+    "Durgapur": 50800.0
+  },
+  {
+    "date": "2022-10-15",
+    "Raipur": 50900.0,
+    "Delhi/NCR": 54300.0,
+    "Durgapur": 50500.0
+  },
+  {
+    "date": "2022-10-17",
+    "Raipur": 50500.0,
+    "Delhi/NCR": 53800.0,
+    "Durgapur": 50200.0
+  },
+  {
+    "date": "2022-10-18",
+    "Raipur": 50300.0,
+    "Delhi/NCR": 53300.0,
+    "Durgapur": 50000.0
+  },
+  {
+    "date": "2022-10-19",
+    "Raipur": 50000.0,
+    "Delhi/NCR": 53300.0,
+    "Durgapur": 50300.0
+  },
+  {
+    "date": "2022-10-20",
+    "Raipur": 50000.0,
+    "Delhi/NCR": 53500.0,
+    "Durgapur": 50200.0
+  },
+  {
+    "date": "2022-10-21",
+    "Raipur": 50400.0,
+    "Delhi/NCR": 53800.0,
+    "Durgapur": 50500.0
+  },
+  {
+    "date": "2022-10-22",
+    "Raipur": 50900.0,
+    "Delhi/NCR": 54200.0,
+    "Durgapur": 50800.0
+  },
+  {
+    "date": "2022-10-26",
+    "Raipur": 50900.0,
+    "Delhi/NCR": 53600.0,
+    "Durgapur": 50500.0
+  },
+  {
+    "date": "2022-10-27",
+    "Raipur": 50800.0,
+    "Delhi/NCR": 53800.0,
+    "Durgapur": 50500.0
+  },
+  {
+    "date": "2022-10-28",
+    "Raipur": 50500.0,
+    "Delhi/NCR": 53500.0,
+    "Durgapur": 50200.0
+  },
+  {
+    "date": "2022-10-29",
+    "Raipur": 50300.0,
+    "Delhi/NCR": 53500.0,
+    "Durgapur": 49900.0
+  },
+  {
+    "date": "2022-10-31",
+    "Raipur": 50000.0,
+    "Delhi/NCR": 53100.0,
+    "Durgapur": 49900.0
+  },
+  {
+    "date": "2022-11-01",
+    "Raipur": 49900.0,
+    "Delhi/NCR": 53200.0,
+    "Durgapur": 49900.0
+  },
+  {
+    "date": "2022-11-02",
+    "Raipur": 49600.0,
+    "Delhi/NCR": 53000.0,
+    "Durgapur": 49500.0
+  },
+  {
+    "date": "2022-11-03",
+    "Raipur": 49400.0,
+    "Delhi/NCR": 53000.0,
+    "Durgapur": 49300.0
+  },
+  {
+    "date": "2022-11-04",
+    "Raipur": 49000.0,
+    "Delhi/NCR": 52500.0,
+    "Durgapur": 48900.0
+  },
+  {
+    "date": "2022-11-05",
+    "Raipur": 48900.0,
+    "Delhi/NCR": 52300.0,
+    "Durgapur": 48700.0
+  },
+  {
+    "date": "2022-11-07",
+    "Raipur": 48700.0,
+    "Delhi/NCR": 52000.0,
+    "Durgapur": 48500.0
+  },
+  {
+    "date": "2022-11-08",
+    "Raipur": 48500.0,
+    "Delhi/NCR": 51800.0,
+    "Durgapur": 48300.0
+  },
+  {
+    "date": "2022-11-09",
+    "Raipur": 48500.0,
+    "Delhi/NCR": 51800.0,
+    "Durgapur": 48500.0
+  },
+  {
+    "date": "2022-11-10",
+    "Raipur": 48300.0,
+    "Delhi/NCR": 51500.0,
+    "Durgapur": 48300.0
+  },
+  {
+    "date": "2022-11-11",
+    "Raipur": 48100.0,
+    "Delhi/NCR": 51300.0,
+    "Durgapur": 48000.0
+  },
+  {
+    "date": "2022-11-12",
+    "Raipur": 48000.0,
+    "Delhi/NCR": 51300.0,
+    "Durgapur": 47800.0
+  },
+  {
+    "date": "2022-11-14",
+    "Raipur": 47000.0,
+    "Delhi/NCR": 51000.0,
+    "Durgapur": 47000.0
+  },
+  {
+    "date": "2022-11-15",
+    "Raipur": 46400.0,
+    "Delhi/NCR": 51000.0,
+    "Durgapur": 47000.0
+  },
+  {
+    "date": "2022-11-16",
+    "Raipur": 46000.0,
+    "Delhi/NCR": 50800.0,
+    "Durgapur": 46500.0
+  },
+  {
+    "date": "2022-11-17",
+    "Raipur": 45000.0,
+    "Delhi/NCR": 50000.0,
+    "Durgapur": 45500.0
+  },
+  {
+    "date": "2022-11-18",
+    "Raipur": 44600.0,
+    "Delhi/NCR": 49600.0,
+    "Durgapur": 45000.0
+  },
+  {
+    "date": "2022-11-19",
+    "Raipur": 49200.0,
+    "Delhi/NCR": 50400.0,
+    "Durgapur": 48000.0
+  },
+  {
+    "date": "2022-11-21",
+    "Raipur": 48600.0,
+    "Delhi/NCR": 51500.0,
+    "Durgapur": 48000.0
+  },
+  {
+    "date": "2022-11-22",
+    "Raipur": 47400.0,
+    "Delhi/NCR": 51200.0,
+    "Durgapur": 47500.0
+  },
+  {
+    "date": "2022-11-23",
+    "Raipur": 46500.0,
+    "Delhi/NCR": 50700.0,
+    "Durgapur": 46300.0
+  },
+  {
+    "date": "2022-11-24",
+    "Raipur": 44700.0,
+    "Delhi/NCR": 49900.0,
+    "Durgapur": 45300.0
+  },
+  {
+    "date": "2022-11-25",
+    "Raipur": 44800.0,
+    "Delhi/NCR": 49700.0,
+    "Durgapur": 45300.0
+  },
+  {
+    "date": "2022-11-26",
+    "Raipur": 45400.0,
+    "Delhi/NCR": 50200.0,
+    "Durgapur": 45800.0
+  },
+  {
+    "date": "2022-11-28",
+    "Raipur": 45400.0,
+    "Delhi/NCR": 50500.0,
+    "Durgapur": 46300.0
+  },
+  {
+    "date": "2022-11-29",
+    "Raipur": 45900.0,
+    "Delhi/NCR": 50900.0,
+    "Durgapur": 46800.0
+  },
+  {
+    "date": "2022-11-30",
+    "Raipur": 47300.0,
+    "Delhi/NCR": 51400.0,
+    "Durgapur": 47900.0
+  },
+  {
+    "date": "2022-12-01",
+    "Raipur": 47300.0,
+    "Delhi/NCR": 51400.0,
+    "Durgapur": 47700.0
+  },
+  {
+    "date": "2022-12-02",
+    "Raipur": 46900.0,
+    "Delhi/NCR": 51400.0,
+    "Durgapur": 47300.0
+  },
+  {
+    "date": "2022-12-03",
+    "Raipur": 46800.0,
+    "Delhi/NCR": 51150.0,
+    "Durgapur": 47000.0
+  },
+  {
+    "date": "2022-12-05",
+    "Raipur": 47300.0,
+    "Delhi/NCR": 51500.0,
+    "Durgapur": 47500.0
+  },
+  {
+    "date": "2022-12-06",
+    "Raipur": 47300.0,
+    "Delhi/NCR": 51500.0,
+    "Durgapur": 47700.0
+  },
+  {
+    "date": "2022-12-07",
+    "Raipur": 47800.0,
+    "Delhi/NCR": 51800.0,
+    "Durgapur": 48000.0
+  },
+  {
+    "date": "2022-12-08",
+    "Raipur": 48300.0,
+    "Delhi/NCR": 52100.0,
+    "Durgapur": 48700.0
+  },
+  {
+    "date": "2022-12-09",
+    "Raipur": 48300.0,
+    "Delhi/NCR": 52100.0,
+    "Durgapur": 48900.0
+  },
+  {
+    "date": "2022-12-10",
+    "Raipur": 48000.0,
+    "Delhi/NCR": 52100.0,
+    "Durgapur": 48700.0
+  },
+  {
+    "date": "2022-12-12",
+    "Raipur": 47800.0,
+    "Delhi/NCR": 52300.0,
+    "Durgapur": 48500.0
+  },
+  {
+    "date": "2022-12-13",
+    "Raipur": 47600.0,
+    "Delhi/NCR": 52300.0,
+    "Durgapur": 48200.0
+  },
+  {
+    "date": "2022-12-14",
+    "Raipur": 47400.0,
+    "Delhi/NCR": 51900.0,
+    "Durgapur": 47800.0
+  },
+  {
+    "date": "2022-12-15",
+    "Raipur": 47300.0,
+    "Delhi/NCR": 51900.0,
+    "Durgapur": 47700.0
+  },
+  {
+    "date": "2022-12-16",
+    "Raipur": 48100.0,
+    "Delhi/NCR": 51800.0,
+    "Durgapur": 48000.0
+  },
+  {
+    "date": "2022-12-17",
+    "Raipur": 48200.0,
+    "Delhi/NCR": 52300.0,
+    "Durgapur": 48800.0
+  },
+  {
+    "date": "2022-12-19",
+    "Raipur": 48100.0,
+    "Delhi/NCR": 52100.0,
+    "Durgapur": 48500.0
+  },
+  {
+    "date": "2022-12-20",
+    "Raipur": 48000.0,
+    "Delhi/NCR": 52100.0,
+    "Durgapur": 48300.0
+  },
+  {
+    "date": "2022-12-21",
+    "Raipur": 47700.0,
+    "Delhi/NCR": 51800.0,
+    "Durgapur": 47800.0
+  },
+  {
+    "date": "2022-12-22",
+    "Raipur": 47900.0,
+    "Delhi/NCR": 51800.0,
+    "Durgapur": 47800.0
+  },
+  {
+    "date": "2022-12-23",
+    "Raipur": 48400.0,
+    "Delhi/NCR": 51800.0,
+    "Durgapur": 48500.0
+  },
+  {
+    "date": "2022-12-24",
+    "Raipur": 49000.0,
+    "Delhi/NCR": 52100.0,
+    "Durgapur": 48700.0
+  },
+  {
+    "date": "2022-12-26",
+    "Raipur": 49500.0,
+    "Delhi/NCR": 52400.0,
+    "Durgapur": 50000.0
+  },
+  {
+    "date": "2022-12-27",
+    "Raipur": 50000.0,
+    "Delhi/NCR": 53700.0,
+    "Durgapur": 50200.0
+  },
+  {
+    "date": "2022-12-28",
+    "Raipur": 50300.0,
+    "Delhi/NCR": 54500.0,
+    "Durgapur": 50200.0
+  },
+  {
+    "date": "2022-12-29",
+    "Raipur": 50700.0,
+    "Delhi/NCR": 54500.0,
+    "Durgapur": 50300.0
+  },
+  {
+    "date": "2022-12-30",
+    "Raipur": 50600.0,
+    "Delhi/NCR": 54800.0,
+    "Durgapur": 50500.0
+  },
+  {
+    "date": "2022-12-31",
+    "Raipur": 51200.0,
+    "Delhi/NCR": 55100.0,
+    "Durgapur": 50800.0
+  },
+  {
+    "date": "2023-01-02",
+    "Raipur": 51700.0,
+    "Delhi/NCR": 55700.0,
+    "Durgapur": 51700.0
+  },
+  {
+    "date": "2023-01-03",
+    "Raipur": 51500.0,
+    "Delhi/NCR": 55700.0,
+    "Durgapur": 51800.0
+  },
+  {
+    "date": "2023-01-04",
+    "Raipur": 51200.0,
+    "Delhi/NCR": 55500.0,
+    "Durgapur": 51500.0
+  },
+  {
+    "date": "2023-01-05",
+    "Raipur": 51500.0,
+    "Delhi/NCR": 55500.0,
+    "Durgapur": 51500.0
+  },
+  {
+    "date": "2023-01-06",
+    "Raipur": 51200.0,
+    "Delhi/NCR": 55500.0,
+    "Durgapur": 51500.0
+  },
+  {
+    "date": "2023-01-07",
+    "Raipur": 51200.0,
+    "Delhi/NCR": 55600.0,
+    "Durgapur": 51500.0
+  },
+  {
+    "date": "2023-01-09",
+    "Raipur": 50900.0,
+    "Delhi/NCR": 55200.0,
+    "Durgapur": 51100.0
+  },
+  {
+    "date": "2023-01-10",
+    "Raipur": 50800.0,
+    "Delhi/NCR": 54800.0,
+    "Durgapur": 50700.0
+  },
+  {
+    "date": "2023-01-11",
+    "Raipur": 51600.0,
+    "Delhi/NCR": 54800.0,
+    "Durgapur": 51400.0
+  },
+  {
+    "date": "2023-01-12",
+    "Raipur": 51800.0,
+    "Delhi/NCR": 55200.0,
+    "Durgapur": 51700.0
+  },
+  {
+    "date": "2023-01-13",
+    "Raipur": 52300.0,
+    "Delhi/NCR": 55500.0,
+    "Durgapur": 52300.0
+  },
+  {
+    "date": "2023-01-14",
+    "Raipur": 52500.0,
+    "Delhi/NCR": 55700.0,
+    "Durgapur": 52500.0
+  },
+  {
+    "date": "2023-01-16",
+    "Raipur": 52700.0,
+    "Delhi/NCR": 56000.0,
+    "Durgapur": 53500.0
+  },
+  {
+    "date": "2023-01-17",
+    "Raipur": 52700.0,
+    "Delhi/NCR": 56000.0,
+    "Durgapur": 52500.0
+  },
+  {
+    "date": "2023-01-18",
+    "Raipur": 52400.0,
+    "Delhi/NCR": 55500.0,
+    "Durgapur": 52300.0
+  },
+  {
+    "date": "2023-01-19",
+    "Raipur": 52200.0,
+    "Delhi/NCR": 55200.0,
+    "Durgapur": 52200.0
+  },
+  {
+    "date": "2023-01-20",
+    "Raipur": 52200.0,
+    "Delhi/NCR": 55200.0,
+    "Durgapur": 52000.0
+  },
+  {
+    "date": "2023-01-21",
+    "Raipur": 51900.0,
+    "Delhi/NCR": 55000.0,
+    "Durgapur": 51800.0
+  },
+  {
+    "date": "2023-01-23",
+    "Raipur": 51900.0,
+    "Delhi/NCR": 55300.0,
+    "Durgapur": 51800.0
+  },
+  {
+    "date": "2023-01-24",
+    "Raipur": 51700.0,
+    "Delhi/NCR": 55300.0,
+    "Durgapur": 51400.0
+  },
+  {
+    "date": "2023-01-25",
+    "Raipur": 51600.0,
+    "Delhi/NCR": 55300.0,
+    "Durgapur": 51200.0
+  },
+  {
+    "date": "2023-01-27",
+    "Raipur": 51700.0,
+    "Delhi/NCR": 55000.0,
+    "Durgapur": 51500.0
+  },
+  {
+    "date": "2023-01-28",
+    "Raipur": 51700.0,
+    "Delhi/NCR": 55000.0,
+    "Durgapur": 51300.0
+  },
+  {
+    "date": "2023-01-30",
+    "Raipur": 51700.0,
+    "Delhi/NCR": 54900.0,
+    "Durgapur": 50900.0
+  },
+  {
+    "date": "2023-01-31",
+    "Raipur": 51500.0,
+    "Delhi/NCR": 54900.0,
+    "Durgapur": 50500.0
+  },
+  {
+    "date": "2023-02-01",
+    "Raipur": 51600.0,
+    "Delhi/NCR": 55000.0,
+    "Durgapur": 50800.0
+  },
+  {
+    "date": "2023-02-02",
+    "Raipur": 51400.0,
+    "Delhi/NCR": 54300.0,
+    "Durgapur": 50500.0
+  },
+  {
+    "date": "2023-02-03",
+    "Raipur": 51200.0,
+    "Delhi/NCR": 54000.0,
+    "Durgapur": 50300.0
+  },
+  {
+    "date": "2023-02-04",
+    "Raipur": 51000.0,
+    "Delhi/NCR": 53700.0,
+    "Durgapur": 50000.0
+  },
+  {
+    "date": "2023-02-06",
+    "Raipur": 51000.0,
+    "Delhi/NCR": 54000.0,
+    "Durgapur": 50200.0
+  },
+  {
+    "date": "2023-02-07",
+    "Raipur": 50700.0,
+    "Delhi/NCR": 54000.0,
+    "Durgapur": 49900.0
+  },
+  {
+    "date": "2023-02-08",
+    "Raipur": 50100.0,
+    "Delhi/NCR": 53800.0,
+    "Durgapur": 49700.0
+  },
+  {
+    "date": "2023-02-09",
+    "Raipur": 49700.0,
+    "Delhi/NCR": 53800.0,
+    "Durgapur": 49400.0
+  },
+  {
+    "date": "2023-02-10",
+    "Raipur": 49600.0,
+    "Delhi/NCR": 53500.0,
+    "Durgapur": 49200.0
+  },
+  {
+    "date": "2023-02-11",
+    "Raipur": 49500.0,
+    "Delhi/NCR": 53500.0,
+    "Durgapur": 49000.0
+  },
+  {
+    "date": "2023-02-13",
+    "Raipur": 49500.0,
+    "Delhi/NCR": 52200.0,
+    "Durgapur": 48800.0
+  },
+  {
+    "date": "2023-02-14",
+    "Raipur": 50500.0,
+    "Delhi/NCR": 52600.0,
+    "Durgapur": 49700.0
+  },
+  {
+    "date": "2023-02-15",
+    "Raipur": 50500.0,
+    "Delhi/NCR": 52600.0,
+    "Durgapur": 50100.0
+  },
+  {
+    "date": "2023-02-16",
+    "Raipur": 51100.0,
+    "Delhi/NCR": 53500.0,
+    "Durgapur": 50500.0
+  },
+  {
+    "date": "2023-02-17",
+    "Raipur": 51200.0,
+    "Delhi/NCR": 54100.0,
+    "Durgapur": 51200.0
+  },
+  {
+    "date": "2023-02-18",
+    "Raipur": 51400.0,
+    "Delhi/NCR": 54100.0,
+    "Durgapur": 51400.0
+  },
+  {
+    "date": "2023-02-20",
+    "Raipur": 51100.0,
+    "Delhi/NCR": 53400.0,
+    "Durgapur": 51000.0
+  },
+  {
+    "date": "2023-02-21",
+    "Raipur": 51000.0,
+    "Delhi/NCR": 53400.0,
+    "Durgapur": 51000.0
+  },
+  {
+    "date": "2023-02-22",
+    "Raipur": 50800.0,
+    "Delhi/NCR": 53100.0,
+    "Durgapur": 50800.0
+  },
+  {
+    "date": "2023-02-23",
+    "Raipur": 50800.0,
+    "Delhi/NCR": 53000.0,
+    "Durgapur": 50500.0
+  },
+  {
+    "date": "2023-02-24",
+    "Raipur": 50300.0,
+    "Delhi/NCR": 52500.0,
+    "Durgapur": 50000.0
+  },
+  {
+    "date": "2023-02-25",
+    "Raipur": 50300.0,
+    "Delhi/NCR": 52500.0,
+    "Durgapur": 49800.0
+  },
+  {
+    "date": "2023-02-27",
+    "Raipur": 50300.0,
+    "Delhi/NCR": 52500.0,
+    "Durgapur": 50000.0
+  },
+  {
+    "date": "2023-02-28",
+    "Raipur": 50300.0,
+    "Delhi/NCR": 52300.0,
+    "Durgapur": 50300.0
+  },
+  {
+    "date": "2023-03-01",
+    "Raipur": 50300.0,
+    "Delhi/NCR": 52600.0,
+    "Durgapur": 50500.0
+  },
+  {
+    "date": "2023-03-02",
+    "Raipur": 50200.0,
+    "Delhi/NCR": 52600.0,
+    "Durgapur": 50500.0
+  },
+  {
+    "date": "2023-03-03",
+    "Raipur": 50200.0,
+    "Delhi/NCR": 52700.0,
+    "Durgapur": 50200.0
+  },
+  {
+    "date": "2023-03-04",
+    "Raipur": 50200.0,
+    "Delhi/NCR": 53100.0,
+    "Durgapur": 50400.0
+  },
+  {
+    "date": "2023-03-06",
+    "Raipur": 50800.0,
+    "Delhi/NCR": 53500.0,
+    "Durgapur": 51000.0
+  },
+  {
+    "date": "2023-03-07",
+    "Raipur": 50800.0,
+    "Delhi/NCR": 53200.0,
+    "Durgapur": null
+  },
+  {
+    "date": "2023-03-10",
+    "Raipur": 50700.0,
+    "Delhi/NCR": 53800.0,
+    "Durgapur": 51300.0
+  },
+  {
+    "date": "2023-03-11",
+    "Raipur": 50700.0,
+    "Delhi/NCR": 53200.0,
+    "Durgapur": 51200.0
+  },
+  {
+    "date": "2023-03-13",
+    "Raipur": 50600.0,
+    "Delhi/NCR": 53200.0,
+    "Durgapur": 51400.0
+  },
+  {
+    "date": "2023-03-14",
+    "Raipur": 50500.0,
+    "Delhi/NCR": 53500.0,
+    "Durgapur": 51500.0
+  },
+  {
+    "date": "2023-03-15",
+    "Raipur": 50300.0,
+    "Delhi/NCR": 53100.0,
+    "Durgapur": 51000.0
+  },
+  {
+    "date": "2023-03-16",
+    "Raipur": 50000.0,
+    "Delhi/NCR": 52900.0,
+    "Durgapur": 50500.0
+  },
+  {
+    "date": "2023-03-17",
+    "Raipur": 50200.0,
+    "Delhi/NCR": 52900.0,
+    "Durgapur": 50500.0
+  },
+  {
+    "date": "2023-03-18",
+    "Raipur": 50000.0,
+    "Delhi/NCR": 52500.0,
+    "Durgapur": 50200.0
+  },
+  {
+    "date": "2023-03-20",
+    "Raipur": 50000.0,
+    "Delhi/NCR": 52100.0,
+    "Durgapur": 50200.0
+  },
+  {
+    "date": "2023-03-21",
+    "Raipur": 50000.0,
+    "Delhi/NCR": 51700.0,
+    "Durgapur": 50200.0
+  },
+  {
+    "date": "2023-03-22",
+    "Raipur": 50100.0,
+    "Delhi/NCR": 51900.0,
+    "Durgapur": 50400.0
+  },
+  {
+    "date": "2023-03-23",
+    "Raipur": 50000.0,
+    "Delhi/NCR": 51900.0,
+    "Durgapur": 50300.0
+  },
+  {
+    "date": "2023-03-24",
+    "Raipur": 50100.0,
+    "Delhi/NCR": 52000.0,
+    "Durgapur": 50700.0
+  },
+  {
+    "date": "2023-03-25",
+    "Raipur": 50200.0,
+    "Delhi/NCR": 52000.0,
+    "Durgapur": 50500.0
+  },
+  {
+    "date": "2023-03-27",
+    "Raipur": 50200.0,
+    "Delhi/NCR": 52500.0,
+    "Durgapur": 50800.0
+  },
+  {
+    "date": "2023-03-28",
+    "Raipur": 50200.0,
+    "Delhi/NCR": 52500.0,
+    "Durgapur": 50500.0
+  },
+  {
+    "date": "2023-03-29",
+    "Raipur": 50200.0,
+    "Delhi/NCR": 52700.0,
+    "Durgapur": 50700.0
+  },
+  {
+    "date": "2023-03-30",
+    "Raipur": 50200.0,
+    "Delhi/NCR": 52400.0,
+    "Durgapur": 50500.0
+  },
+  {
+    "date": "2023-03-31",
+    "Raipur": 50300.0,
+    "Delhi/NCR": 52200.0,
+    "Durgapur": 50800.0
+  },
+  {
+    "date": "2023-04-01",
+    "Raipur": 50400.0,
+    "Delhi/NCR": 52600.0,
+    "Durgapur": 51200.0
+  },
+  {
+    "date": "2023-04-03",
+    "Raipur": 50300.0,
+    "Delhi/NCR": 52500.0,
+    "Durgapur": 51000.0
+  },
+  {
+    "date": "2023-04-04",
+    "Raipur": 50300.0,
+    "Delhi/NCR": 52500.0,
+    "Durgapur": 51300.0
+  },
+  {
+    "date": "2023-04-05",
+    "Raipur": 50600.0,
+    "Delhi/NCR": 52800.0,
+    "Durgapur": 51500.0
+  },
+  {
+    "date": "2023-04-06",
+    "Raipur": 50500.0,
+    "Delhi/NCR": 52700.0,
+    "Durgapur": 51500.0
+  },
+  {
+    "date": "2023-04-07",
+    "Raipur": 50300.0,
+    "Delhi/NCR": 52700.0,
+    "Durgapur": 51300.0
+  },
+  {
+    "date": "2023-04-08",
+    "Raipur": 50300.0,
+    "Delhi/NCR": 52700.0,
+    "Durgapur": 51200.0
+  },
+  {
+    "date": "2023-04-10",
+    "Raipur": 50100.0,
+    "Delhi/NCR": 52500.0,
+    "Durgapur": 51200.0
+  },
+  {
+    "date": "2023-04-11",
+    "Raipur": 49900.0,
+    "Delhi/NCR": 52400.0,
+    "Durgapur": 51000.0
+  },
+  {
+    "date": "2023-04-12",
+    "Raipur": 50100.0,
+    "Delhi/NCR": 52200.0,
+    "Durgapur": 50800.0
+  },
+  {
+    "date": "2023-04-13",
+    "Raipur": 50200.0,
+    "Delhi/NCR": 52400.0,
+    "Durgapur": 51200.0
+  },
+  {
+    "date": "2023-04-14",
+    "Raipur": 50900.0,
+    "Delhi/NCR": 52400.0,
+    "Durgapur": 51500.0
+  },
+  {
+    "date": "2023-04-15",
+    "Raipur": 50900.0,
+    "Delhi/NCR": 52400.0,
+    "Durgapur": 51300.0
+  },
+  {
+    "date": "2023-04-17",
+    "Raipur": 50900.0,
+    "Delhi/NCR": 52900.0,
+    "Durgapur": 51700.0
+  },
+  {
+    "date": "2023-04-18",
+    "Raipur": 50700.0,
+    "Delhi/NCR": 52700.0,
+    "Durgapur": 51400.0
+  },
+  {
+    "date": "2023-04-19",
+    "Raipur": 50600.0,
+    "Delhi/NCR": 52600.0,
+    "Durgapur": 51000.0
+  },
+  {
+    "date": "2023-04-20",
+    "Raipur": 50500.0,
+    "Delhi/NCR": 52600.0,
+    "Durgapur": 51000.0
+  },
+  {
+    "date": "2023-04-21",
+    "Raipur": 50300.0,
+    "Delhi/NCR": 52500.0,
+    "Durgapur": 50600.0
+  },
+  {
+    "date": "2023-04-22",
+    "Raipur": 50500.0,
+    "Delhi/NCR": 52500.0,
+    "Durgapur": 50500.0
+  },
+  {
+    "date": "2023-04-24",
+    "Raipur": 49900.0,
+    "Delhi/NCR": 52300.0,
+    "Durgapur": 50300.0
+  },
+  {
+    "date": "2023-04-25",
+    "Raipur": 49800.0,
+    "Delhi/NCR": 52100.0,
+    "Durgapur": 50000.0
+  },
+  {
+    "date": "2023-04-26",
+    "Raipur": 49800.0,
+    "Delhi/NCR": 52100.0,
+    "Durgapur": 50000.0
+  },
+  {
+    "date": "2023-04-27",
+    "Raipur": 49700.0,
+    "Delhi/NCR": 52100.0,
+    "Durgapur": 49800.0
+  },
+  {
+    "date": "2023-04-28",
+    "Raipur": 49600.0,
+    "Delhi/NCR": 52100.0,
+    "Durgapur": 49800.0
+  },
+  {
+    "date": "2023-04-29",
+    "Raipur": 49500.0,
+    "Delhi/NCR": 52000.0,
+    "Durgapur": 49700.0
+  },
+  {
+    "date": "2023-05-01",
+    "Raipur": 49100.0,
+    "Delhi/NCR": 51700.0,
+    "Durgapur": 49400.0
+  },
+  {
+    "date": "2023-05-02",
+    "Raipur": 48800.0,
+    "Delhi/NCR": 51200.0,
+    "Durgapur": 48800.0
+  },
+  {
+    "date": "2023-05-03",
+    "Raipur": 48500.0,
+    "Delhi/NCR": 51200.0,
+    "Durgapur": 49000.0
+  },
+  {
+    "date": "2023-05-04",
+    "Raipur": 48000.0,
+    "Delhi/NCR": 51000.0,
+    "Durgapur": 48500.0
+  },
+  {
+    "date": "2023-05-05",
+    "Raipur": 47500.0,
+    "Delhi/NCR": 50800.0,
+    "Durgapur": 48200.0
+  },
+  {
+    "date": "2023-05-06",
+    "Raipur": 47300.0,
+    "Delhi/NCR": 50500.0,
+    "Durgapur": 47900.0
+  },
+  {
+    "date": "2023-05-08",
+    "Raipur": 47500.0,
+    "Delhi/NCR": 50700.0,
+    "Durgapur": 48200.0
+  },
+  {
+    "date": "2023-05-09",
+    "Raipur": 47800.0,
+    "Delhi/NCR": 51000.0,
+    "Durgapur": 48500.0
+  },
+  {
+    "date": "2023-05-10",
+    "Raipur": 48200.0,
+    "Delhi/NCR": 51400.0,
+    "Durgapur": 49000.0
+  },
+  {
+    "date": "2023-05-11",
+    "Raipur": 47800.0,
+    "Delhi/NCR": 51400.0,
+    "Durgapur": 48600.0
+  },
+  {
+    "date": "2023-05-12",
+    "Raipur": 47700.0,
+    "Delhi/NCR": 51100.0,
+    "Durgapur": 48600.0
+  },
+  {
+    "date": "2023-05-13",
+    "Raipur": 47500.0,
+    "Delhi/NCR": 51400.0,
+    "Durgapur": 48600.0
+  },
+  {
+    "date": "2023-05-15",
+    "Raipur": 48100.0,
+    "Delhi/NCR": 52000.0,
+    "Durgapur": 48600.0
+  },
+  {
+    "date": "2023-05-16",
+    "Raipur": 48300.0,
+    "Delhi/NCR": 52600.0,
+    "Durgapur": 48600.0
+  },
+  {
+    "date": "2023-05-17",
+    "Raipur": 48400.0,
+    "Delhi/NCR": 52700.0,
+    "Durgapur": 49000.0
+  },
+  {
+    "date": "2023-05-18",
+    "Raipur": 48300.0,
+    "Delhi/NCR": 52300.0,
+    "Durgapur": 48500.0
+  },
+  {
+    "date": "2023-05-19",
+    "Raipur": 48100.0,
+    "Delhi/NCR": 52300.0,
+    "Durgapur": 48300.0
+  },
+  {
+    "date": "2023-05-20",
+    "Raipur": 48000.0,
+    "Delhi/NCR": 52200.0,
+    "Durgapur": 47800.0
+  },
+  {
+    "date": "2023-05-22",
+    "Raipur": 47700.0,
+    "Delhi/NCR": 51800.0,
+    "Durgapur": 47600.0
+  },
+  {
+    "date": "2023-05-23",
+    "Raipur": 47500.0,
+    "Delhi/NCR": 51800.0,
+    "Durgapur": 47200.0
+  },
+  {
+    "date": "2023-05-24",
+    "Raipur": 47400.0,
+    "Delhi/NCR": 51800.0,
+    "Durgapur": 47100.0
+  },
+  {
+    "date": "2023-05-25",
+    "Raipur": 47500.0,
+    "Delhi/NCR": 51800.0,
+    "Durgapur": 47300.0
+  },
+  {
+    "date": "2023-05-26",
+    "Raipur": 47400.0,
+    "Delhi/NCR": 51500.0,
+    "Durgapur": 46900.0
+  },
+  {
+    "date": "2023-05-27",
+    "Raipur": 47200.0,
+    "Delhi/NCR": 51500.0,
+    "Durgapur": 47000.0
+  },
+  {
+    "date": "2023-05-29",
+    "Raipur": 47000.0,
+    "Delhi/NCR": 51300.0,
+    "Durgapur": 46600.0
+  },
+  {
+    "date": "2023-05-30",
+    "Raipur": 47000.0,
+    "Delhi/NCR": 51000.0,
+    "Durgapur": 46600.0
+  },
+  {
+    "date": "2023-05-31",
+    "Raipur": 46800.0,
+    "Delhi/NCR": 51000.0,
+    "Durgapur": 46500.0
+  },
+  {
+    "date": "2023-06-01",
+    "Raipur": 47000.0,
+    "Delhi/NCR": 50800.0,
+    "Durgapur": 46300.0
+  },
+  {
+    "date": "2023-06-02",
+    "Raipur": 46700.0,
+    "Delhi/NCR": 50700.0,
+    "Durgapur": 46300.0
+  },
+  {
+    "date": "2023-06-03",
+    "Raipur": 46800.0,
+    "Delhi/NCR": 50700.0,
+    "Durgapur": 46500.0
+  },
+  {
+    "date": "2023-06-05",
+    "Raipur": 47200.0,
+    "Delhi/NCR": 50700.0,
+    "Durgapur": 46800.0
+  },
+  {
+    "date": "2023-06-06",
+    "Raipur": 47500.0,
+    "Delhi/NCR": 51000.0,
+    "Durgapur": 47200.0
+  },
+  {
+    "date": "2023-06-07",
+    "Raipur": 47700.0,
+    "Delhi/NCR": 51200.0,
+    "Durgapur": 47700.0
+  },
+  {
+    "date": "2023-06-08",
+    "Raipur": 47600.0,
+    "Delhi/NCR": 51400.0,
+    "Durgapur": 47500.0
+  },
+  {
+    "date": "2023-06-09",
+    "Raipur": 47600.0,
+    "Delhi/NCR": 51200.0,
+    "Durgapur": 47500.0
+  },
+  {
+    "date": "2023-06-10",
+    "Raipur": 47500.0,
+    "Delhi/NCR": 51400.0,
+    "Durgapur": 47500.0
+  },
+  {
+    "date": "2023-06-12",
+    "Raipur": 47800.0,
+    "Delhi/NCR": 51500.0,
+    "Durgapur": 47800.0
+  },
+  {
+    "date": "2023-06-13",
+    "Raipur": 47800.0,
+    "Delhi/NCR": 51500.0,
+    "Durgapur": 48100.0
+  },
+  {
+    "date": "2023-06-14",
+    "Raipur": 47700.0,
+    "Delhi/NCR": 51600.0,
+    "Durgapur": 47800.0
+  },
+  {
+    "date": "2023-06-15",
+    "Raipur": 47500.0,
+    "Delhi/NCR": 51800.0,
+    "Durgapur": 47500.0
+  },
+  {
+    "date": "2023-06-16",
+    "Raipur": 47700.0,
+    "Delhi/NCR": 51800.0,
+    "Durgapur": 47600.0
+  },
+  {
+    "date": "2023-06-17",
+    "Raipur": 47700.0,
+    "Delhi/NCR": 51800.0,
+    "Durgapur": 47600.0
+  },
+  {
+    "date": "2023-06-19",
+    "Raipur": 47600.0,
+    "Delhi/NCR": 51500.0,
+    "Durgapur": 47400.0
+  },
+  {
+    "date": "2023-06-20",
+    "Raipur": 47200.0,
+    "Delhi/NCR": 51100.0,
+    "Durgapur": 47100.0
+  },
+  {
+    "date": "2023-06-21",
+    "Raipur": 47100.0,
+    "Delhi/NCR": 51100.0,
+    "Durgapur": 46900.0
+  },
+  {
+    "date": "2023-06-22",
+    "Raipur": 47000.0,
+    "Delhi/NCR": 51000.0,
+    "Durgapur": 46600.0
+  },
+  {
+    "date": "2023-06-23",
+    "Raipur": 46900.0,
+    "Delhi/NCR": 50800.0,
+    "Durgapur": 46400.0
+  },
+  {
+    "date": "2023-06-24",
+    "Raipur": 47100.0,
+    "Delhi/NCR": 50900.0,
+    "Durgapur": 46500.0
+  },
+  {
+    "date": "2023-06-26",
+    "Raipur": 46800.0,
+    "Delhi/NCR": 50500.0,
+    "Durgapur": 46500.0
+  },
+  {
+    "date": "2023-06-27",
+    "Raipur": 46600.0,
+    "Delhi/NCR": 50200.0,
+    "Durgapur": 46300.0
+  },
+  {
+    "date": "2023-06-28",
+    "Raipur": 46500.0,
+    "Delhi/NCR": 50200.0,
+    "Durgapur": 46100.0
+  },
+  {
+    "date": "2023-06-29",
+    "Raipur": 46500.0,
+    "Delhi/NCR": 49900.0,
+    "Durgapur": 46000.0
+  },
+  {
+    "date": "2023-06-30",
+    "Raipur": 46500.0,
+    "Delhi/NCR": 50100.0,
+    "Durgapur": 46200.0
+  },
+  {
+    "date": "2023-07-01",
+    "Raipur": 46000.0,
+    "Delhi/NCR": 50100.0,
+    "Durgapur": 46100.0
+  },
+  {
+    "date": "2023-07-03",
+    "Raipur": 45900.0,
+    "Delhi/NCR": 50000.0,
+    "Durgapur": 45700.0
+  },
+  {
+    "date": "2023-07-04",
+    "Raipur": 45700.0,
+    "Delhi/NCR": 49600.0,
+    "Durgapur": 45400.0
+  },
+  {
+    "date": "2023-07-05",
+    "Raipur": 45300.0,
+    "Delhi/NCR": 49600.0,
+    "Durgapur": 45400.0
+  },
+  {
+    "date": "2023-07-06",
+    "Raipur": 45500.0,
+    "Delhi/NCR": 49800.0,
+    "Durgapur": 45500.0
+  },
+  {
+    "date": "2023-07-07",
+    "Raipur": 45200.0,
+    "Delhi/NCR": 49500.0,
+    "Durgapur": 45300.0
+  },
+  {
+    "date": "2023-07-08",
+    "Raipur": 45000.0,
+    "Delhi/NCR": 49400.0,
+    "Durgapur": 45100.0
+  },
+  {
+    "date": "2023-07-10",
+    "Raipur": 44800.0,
+    "Delhi/NCR": 48900.0,
+    "Durgapur": 44900.0
+  },
+  {
+    "date": "2023-07-11",
+    "Raipur": 44100.0,
+    "Delhi/NCR": 48900.0,
+    "Durgapur": 44500.0
+  },
+  {
+    "date": "2023-07-12",
+    "Raipur": 44300.0,
+    "Delhi/NCR": 48900.0,
+    "Durgapur": 44400.0
+  },
+  {
+    "date": "2023-07-13",
+    "Raipur": 44000.0,
+    "Delhi/NCR": 48900.0,
+    "Durgapur": 44200.0
+  },
+  {
+    "date": "2023-07-14",
+    "Raipur": 43600.0,
+    "Delhi/NCR": 48200.0,
+    "Durgapur": 43900.0
+  },
+  {
+    "date": "2023-07-15",
+    "Raipur": 43500.0,
+    "Delhi/NCR": 47900.0,
+    "Durgapur": 43800.0
+  },
+  {
+    "date": "2023-07-17",
+    "Raipur": 43200.0,
+    "Delhi/NCR": 47900.0,
+    "Durgapur": 43700.0
+  },
+  {
+    "date": "2023-07-18",
+    "Raipur": 43500.0,
+    "Delhi/NCR": 48200.0,
+    "Durgapur": 43700.0
+  },
+  {
+    "date": "2023-07-19",
+    "Raipur": 43100.0,
+    "Delhi/NCR": 48200.0,
+    "Durgapur": 43600.0
+  },
+  {
+    "date": "2023-07-20",
+    "Raipur": 42800.0,
+    "Delhi/NCR": 47800.0,
+    "Durgapur": 43400.0
+  },
+  {
+    "date": "2023-07-21",
+    "Raipur": 43000.0,
+    "Delhi/NCR": 47800.0,
+    "Durgapur": 43400.0
+  },
+  {
+    "date": "2023-07-22",
+    "Raipur": 42800.0,
+    "Delhi/NCR": 47700.0,
+    "Durgapur": 43200.0
+  },
+  {
+    "date": "2023-07-24",
+    "Raipur": 42700.0,
+    "Delhi/NCR": 47300.0,
+    "Durgapur": 43000.0
+  },
+  {
+    "date": "2023-07-25",
+    "Raipur": 42500.0,
+    "Delhi/NCR": 47300.0,
+    "Durgapur": 42700.0
+  },
+  {
+    "date": "2023-07-26",
+    "Raipur": 42800.0,
+    "Delhi/NCR": 47300.0,
+    "Durgapur": 42900.0
+  },
+  {
+    "date": "2023-07-27",
+    "Raipur": 42700.0,
+    "Delhi/NCR": 47200.0,
+    "Durgapur": 42700.0
+  },
+  {
+    "date": "2023-07-28",
+    "Raipur": 43400.0,
+    "Delhi/NCR": 47200.0,
+    "Durgapur": 43200.0
+  },
+  {
+    "date": "2023-07-29",
+    "Raipur": 43800.0,
+    "Delhi/NCR": 47400.0,
+    "Durgapur": 43800.0
+  },
+  {
+    "date": "2023-07-31",
+    "Raipur": 44000.0,
+    "Delhi/NCR": 47300.0,
+    "Durgapur": 43800.0
+  },
+  {
+    "date": "2023-08-01",
+    "Raipur": 44700.0,
+    "Delhi/NCR": 47800.0,
+    "Durgapur": 44400.0
+  },
+  {
+    "date": "2023-08-02",
+    "Raipur": 44700.0,
+    "Delhi/NCR": 48000.0,
+    "Durgapur": 44700.0
+  },
+  {
+    "date": "2023-08-03",
+    "Raipur": 44900.0,
+    "Delhi/NCR": 48000.0,
+    "Durgapur": 44800.0
+  },
+  {
+    "date": "2023-08-04",
+    "Raipur": 44700.0,
+    "Delhi/NCR": 48000.0,
+    "Durgapur": 44500.0
+  },
+  {
+    "date": "2023-08-05",
+    "Raipur": 44600.0,
+    "Delhi/NCR": 47800.0,
+    "Durgapur": 44700.0
+  },
+  {
+    "date": "2023-08-07",
+    "Raipur": 44600.0,
+    "Delhi/NCR": 48200.0,
+    "Durgapur": 45100.0
+  },
+  {
+    "date": "2023-08-08",
+    "Raipur": 44400.0,
+    "Delhi/NCR": 48000.0,
+    "Durgapur": 44800.0
+  },
+  {
+    "date": "2023-08-09",
+    "Raipur": 44200.0,
+    "Delhi/NCR": 48000.0,
+    "Durgapur": 44600.0
+  },
+  {
+    "date": "2023-08-10",
+    "Raipur": 44100.0,
+    "Delhi/NCR": 48000.0,
+    "Durgapur": 44300.0
+  },
+  {
+    "date": "2023-08-11",
+    "Raipur": 44100.0,
+    "Delhi/NCR": 48000.0,
+    "Durgapur": 44300.0
+  },
+  {
+    "date": "2023-08-12",
+    "Raipur": 44000.0,
+    "Delhi/NCR": 47800.0,
+    "Durgapur": 44300.0
+  },
+  {
+    "date": "2023-08-14",
+    "Raipur": 44200.0,
+    "Delhi/NCR": 47900.0,
+    "Durgapur": 44200.0
+  },
+  {
+    "date": "2023-08-16",
+    "Raipur": 44800.0,
+    "Delhi/NCR": 48000.0,
+    "Durgapur": 44700.0
+  },
+  {
+    "date": "2023-08-17",
+    "Raipur": 45600.0,
+    "Delhi/NCR": 49000.0,
+    "Durgapur": 45300.0
+  },
+  {
+    "date": "2023-08-18",
+    "Raipur": 46000.0,
+    "Delhi/NCR": 49200.0,
+    "Durgapur": 45500.0
+  },
+  {
+    "date": "2023-08-19",
+    "Raipur": 46000.0,
+    "Delhi/NCR": 49200.0,
+    "Durgapur": 45500.0
+  },
+  {
+    "date": "2023-08-21",
+    "Raipur": 45900.0,
+    "Delhi/NCR": 48800.0,
+    "Durgapur": 45300.0
+  },
+  {
+    "date": "2023-08-22",
+    "Raipur": 45800.0,
+    "Delhi/NCR": 48400.0,
+    "Durgapur": 45500.0
+  },
+  {
+    "date": "2023-08-23",
+    "Raipur": 45800.0,
+    "Delhi/NCR": 48400.0,
+    "Durgapur": 45400.0
+  },
+  {
+    "date": "2023-08-24",
+    "Raipur": 46900.0,
+    "Delhi/NCR": 49000.0,
+    "Durgapur": 46100.0
+  },
+  {
+    "date": "2023-08-25",
+    "Raipur": 47600.0,
+    "Delhi/NCR": 49200.0,
+    "Durgapur": 46800.0
+  },
+  {
+    "date": "2023-08-26",
+    "Raipur": 47600.0,
+    "Delhi/NCR": 49200.0,
+    "Durgapur": 46800.0
+  },
+  {
+    "date": "2023-08-28",
+    "Raipur": 48200.0,
+    "Delhi/NCR": 50100.0,
+    "Durgapur": 47500.0
+  },
+  {
+    "date": "2023-08-29",
+    "Raipur": 48500.0,
+    "Delhi/NCR": 50200.0,
+    "Durgapur": 48000.0
+  },
+  {
+    "date": "2023-08-31",
+    "Raipur": 48500.0,
+    "Delhi/NCR": 50200.0,
+    "Durgapur": 48000.0
+  },
+  {
+    "date": "2023-09-01",
+    "Raipur": 48300.0,
+    "Delhi/NCR": 51000.0,
+    "Durgapur": 47900.0
+  },
+  {
+    "date": "2023-09-02",
+    "Raipur": 48400.0,
+    "Delhi/NCR": 51300.0,
+    "Durgapur": 47800.0
+  },
+  {
+    "date": "2023-09-04",
+    "Raipur": 48600.0,
+    "Delhi/NCR": 51300.0,
+    "Durgapur": 48000.0
+  },
+  {
+    "date": "2023-09-05",
+    "Raipur": 48700.0,
+    "Delhi/NCR": 51300.0,
+    "Durgapur": 48200.0
+  },
+  {
+    "date": "2023-09-06",
+    "Raipur": 48400.0,
+    "Delhi/NCR": 51300.0,
+    "Durgapur": 48000.0
+  },
+  {
+    "date": "2023-09-07",
+    "Raipur": 48300.0,
+    "Delhi/NCR": 51100.0,
+    "Durgapur": 47800.0
+  },
+  {
+    "date": "2023-09-08",
+    "Raipur": 48200.0,
+    "Delhi/NCR": 51100.0,
+    "Durgapur": 47400.0
+  },
+  {
+    "date": "2023-09-09",
+    "Raipur": 47500.0,
+    "Delhi/NCR": 50800.0,
+    "Durgapur": 47200.0
+  },
+  {
+    "date": "2023-09-11",
+    "Raipur": 47500.0,
+    "Delhi/NCR": 50500.0,
+    "Durgapur": 47000.0
+  },
+  {
+    "date": "2023-09-12",
+    "Raipur": 47000.0,
+    "Delhi/NCR": 50300.0,
+    "Durgapur": 46800.0
+  },
+  {
+    "date": "2023-09-13",
+    "Raipur": 47400.0,
+    "Delhi/NCR": 50500.0,
+    "Durgapur": 46800.0
+  },
+  {
+    "date": "2023-09-14",
+    "Raipur": 47400.0,
+    "Delhi/NCR": 50700.0,
+    "Durgapur": 47400.0
+  },
+  {
+    "date": "2023-09-15",
+    "Raipur": 47700.0,
+    "Delhi/NCR": 50900.0,
+    "Durgapur": 47800.0
+  },
+  {
+    "date": "2023-09-16",
+    "Raipur": 47700.0,
+    "Delhi/NCR": 50700.0,
+    "Durgapur": 47800.0
+  },
+  {
+    "date": "2023-09-18",
+    "Raipur": 47700.0,
+    "Delhi/NCR": 51200.0,
+    "Durgapur": 48100.0
+  },
+  {
+    "date": "2023-09-19",
+    "Raipur": 47900.0,
+    "Delhi/NCR": 51200.0,
+    "Durgapur": 48200.0
+  },
+  {
+    "date": "2023-09-20",
+    "Raipur": 47600.0,
+    "Delhi/NCR": 51000.0,
+    "Durgapur": 47800.0
+  },
+  {
+    "date": "2023-09-21",
+    "Raipur": 47000.0,
+    "Delhi/NCR": 50600.0,
+    "Durgapur": 47100.0
+  },
+  {
+    "date": "2023-09-22",
+    "Raipur": 46900.0,
+    "Delhi/NCR": 50400.0,
+    "Durgapur": 46700.0
+  },
+  {
+    "date": "2023-09-23",
+    "Raipur": 46700.0,
+    "Delhi/NCR": 49700.0,
+    "Durgapur": 46400.0
+  },
+  {
+    "date": "2023-09-25",
+    "Raipur": 46600.0,
+    "Delhi/NCR": 49700.0,
+    "Durgapur": 46900.0
+  },
+  {
+    "date": "2023-09-26",
+    "Raipur": 46200.0,
+    "Delhi/NCR": 49500.0,
+    "Durgapur": 46600.0
+  },
+  {
+    "date": "2023-09-27",
+    "Raipur": 46000.0,
+    "Delhi/NCR": 49000.0,
+    "Durgapur": 46300.0
+  },
+  {
+    "date": "2023-09-28",
+    "Raipur": 46000.0,
+    "Delhi/NCR": 49000.0,
+    "Durgapur": 46500.0
+  },
+  {
+    "date": "2023-09-29",
+    "Raipur": 45900.0,
+    "Delhi/NCR": 49000.0,
+    "Durgapur": 46000.0
+  },
+  {
+    "date": "2023-09-30",
+    "Raipur": 45900.0,
+    "Delhi/NCR": 49300.0,
+    "Durgapur": 46000.0
+  },
+  {
+    "date": "2023-10-03",
+    "Raipur": 45700.0,
+    "Delhi/NCR": 49100.0,
+    "Durgapur": 45800.0
+  },
+  {
+    "date": "2023-10-04",
+    "Raipur": 46300.0,
+    "Delhi/NCR": 49200.0,
+    "Durgapur": 46200.0
+  },
+  {
+    "date": "2023-10-05",
+    "Raipur": 47200.0,
+    "Delhi/NCR": 49200.0,
+    "Durgapur": 46300.0
+  },
+  {
+    "date": "2023-10-06",
+    "Raipur": 47300.0,
+    "Delhi/NCR": 49500.0,
+    "Durgapur": 47000.0
+  },
+  {
+    "date": "2023-10-07",
+    "Raipur": 47200.0,
+    "Delhi/NCR": 49400.0,
+    "Durgapur": 46500.0
+  },
+  {
+    "date": "2023-10-09",
+    "Raipur": 46800.0,
+    "Delhi/NCR": 48400.0,
+    "Durgapur": 46100.0
+  },
+  {
+    "date": "2023-10-10",
+    "Raipur": 46500.0,
+    "Delhi/NCR": 48700.0,
+    "Durgapur": 45800.0
+  },
+  {
+    "date": "2023-10-11",
+    "Raipur": 46300.0,
+    "Delhi/NCR": 48900.0,
+    "Durgapur": 45700.0
+  },
+  {
+    "date": "2023-10-12",
+    "Raipur": 45800.0,
+    "Delhi/NCR": 48900.0,
+    "Durgapur": 45700.0
+  },
+  {
+    "date": "2023-10-13",
+    "Raipur": 45700.0,
+    "Delhi/NCR": 48200.0,
+    "Durgapur": 45100.0
+  },
+  {
+    "date": "2023-10-14",
+    "Raipur": 46500.0,
+    "Delhi/NCR": 48400.0,
+    "Durgapur": 45200.0
+  },
+  {
+    "date": "2023-10-16",
+    "Raipur": 46200.0,
+    "Delhi/NCR": 48500.0,
+    "Durgapur": 45200.0
+  },
+  {
+    "date": "2023-10-17",
+    "Raipur": 46000.0,
+    "Delhi/NCR": 47900.0,
+    "Durgapur": 45000.0
+  },
+  {
+    "date": "2023-10-18",
+    "Raipur": 45700.0,
+    "Delhi/NCR": 47800.0,
+    "Durgapur": 44800.0
+  },
+  {
+    "date": "2023-10-19",
+    "Raipur": 45500.0,
+    "Delhi/NCR": 47500.0,
+    "Durgapur": 44600.0
+  },
+  {
+    "date": "2023-10-20",
+    "Raipur": 45300.0,
+    "Delhi/NCR": 47200.0,
+    "Durgapur": 44500.0
+  },
+  {
+    "date": "2023-10-21",
+    "Raipur": 45500.0,
+    "Delhi/NCR": 47200.0,
+    "Durgapur": null
+  },
+  {
+    "date": "2023-10-23",
+    "Raipur": 44800.0,
+    "Delhi/NCR": 46800.0,
+    "Durgapur": null
+  },
+  {
+    "date": "2023-10-25",
+    "Raipur": 44800.0,
+    "Delhi/NCR": 46800.0,
+    "Durgapur": 44400.0
+  },
+  {
+    "date": "2023-10-26",
+    "Raipur": 45000.0,
+    "Delhi/NCR": 47250.0,
+    "Durgapur": 44500.0
+  },
+  {
+    "date": "2023-10-27",
+    "Raipur": 45500.0,
+    "Delhi/NCR": 47700.0,
+    "Durgapur": 45000.0
+  },
+  {
+    "date": "2023-10-28",
+    "Raipur": 45500.0,
+    "Delhi/NCR": 47700.0,
+    "Durgapur": 45000.0
+  },
+  {
+    "date": "2023-10-30",
+    "Raipur": 45400.0,
+    "Delhi/NCR": 48300.0,
+    "Durgapur": 45200.0
+  },
+  {
+    "date": "2023-10-31",
+    "Raipur": 45200.0,
+    "Delhi/NCR": 48000.0,
+    "Durgapur": 45000.0
+  },
+  {
+    "date": "2023-11-01",
+    "Raipur": 44900.0,
+    "Delhi/NCR": 47700.0,
+    "Durgapur": 44800.0
+  },
+  {
+    "date": "2023-11-02",
+    "Raipur": 44800.0,
+    "Delhi/NCR": 47500.0,
+    "Durgapur": 44700.0
+  },
+  {
+    "date": "2023-11-03",
+    "Raipur": 44700.0,
+    "Delhi/NCR": 47600.0,
+    "Durgapur": 44700.0
+  },
+  {
+    "date": "2023-11-04",
+    "Raipur": 44400.0,
+    "Delhi/NCR": 47700.0,
+    "Durgapur": 44400.0
+  },
+  {
+    "date": "2023-11-06",
+    "Raipur": 44100.0,
+    "Delhi/NCR": 46900.0,
+    "Durgapur": 44000.0
+  },
+  {
+    "date": "2023-11-07",
+    "Raipur": 43900.0,
+    "Delhi/NCR": 46600.0,
+    "Durgapur": 43900.0
+  },
+  {
+    "date": "2023-11-08",
+    "Raipur": 44300.0,
+    "Delhi/NCR": 46600.0,
+    "Durgapur": 44000.0
+  },
+  {
+    "date": "2023-11-09",
+    "Raipur": 44400.0,
+    "Delhi/NCR": 47000.0,
+    "Durgapur": 44300.0
+  },
+  {
+    "date": "2023-11-10",
+    "Raipur": 44600.0,
+    "Delhi/NCR": 47100.0,
+    "Durgapur": 44700.0
+  },
+  {
+    "date": "2023-11-11",
+    "Raipur": 44500.0,
+    "Delhi/NCR": 47300.0,
+    "Durgapur": 44700.0
+  },
+  {
+    "date": "2023-11-14",
+    "Raipur": 44500.0,
+    "Delhi/NCR": 47200.0,
+    "Durgapur": 44500.0
+  },
+  {
+    "date": "2023-11-15",
+    "Raipur": 44600.0,
+    "Delhi/NCR": 47300.0,
+    "Durgapur": 44300.0
+  },
+  {
+    "date": "2023-11-16",
+    "Raipur": 44700.0,
+    "Delhi/NCR": 47400.0,
+    "Durgapur": 44300.0
+  },
+  {
+    "date": "2023-11-17",
+    "Raipur": 44800.0,
+    "Delhi/NCR": 47300.0,
+    "Durgapur": 44200.0
+  },
+  {
+    "date": "2023-11-18",
+    "Raipur": 44600.0,
+    "Delhi/NCR": 47300.0,
+    "Durgapur": 44200.0
+  },
+  {
+    "date": "2023-11-20",
+    "Raipur": 44600.0,
+    "Delhi/NCR": 47300.0,
+    "Durgapur": 44200.0
+  },
+  {
+    "date": "2023-11-21",
+    "Raipur": 44500.0,
+    "Delhi/NCR": 46800.0,
+    "Durgapur": 43800.0
+  },
+  {
+    "date": "2023-11-22",
+    "Raipur": 44200.0,
+    "Delhi/NCR": 46700.0,
+    "Durgapur": 43700.0
+  },
+  {
+    "date": "2023-11-23",
+    "Raipur": 44200.0,
+    "Delhi/NCR": 47000.0,
+    "Durgapur": 44000.0
+  },
+  {
+    "date": "2023-11-24",
+    "Raipur": 44200.0,
+    "Delhi/NCR": 47000.0,
+    "Durgapur": 43800.0
+  },
+  {
+    "date": "2023-11-25",
+    "Raipur": 44000.0,
+    "Delhi/NCR": 46800.0,
+    "Durgapur": 43600.0
+  },
+  {
+    "date": "2023-11-27",
+    "Raipur": 43400.0,
+    "Delhi/NCR": 46500.0,
+    "Durgapur": 43200.0
+  },
+  {
+    "date": "2023-11-28",
+    "Raipur": 43200.0,
+    "Delhi/NCR": 46000.0,
+    "Durgapur": 43000.0
+  },
+  {
+    "date": "2023-11-29",
+    "Raipur": 43500.0,
+    "Delhi/NCR": 46200.0,
+    "Durgapur": 43100.0
+  },
+  {
+    "date": "2023-11-30",
+    "Raipur": 43300.0,
+    "Delhi/NCR": 46000.0,
+    "Durgapur": 42800.0
+  },
+  {
+    "date": "2023-12-01",
+    "Raipur": 43100.0,
+    "Delhi/NCR": 45800.0,
+    "Durgapur": 42700.0
+  },
+  {
+    "date": "2023-12-02",
+    "Raipur": 43000.0,
+    "Delhi/NCR": 46100.0,
+    "Durgapur": 42900.0
+  },
+  {
+    "date": "2023-12-04",
+    "Raipur": 43200.0,
+    "Delhi/NCR": 46000.0,
+    "Durgapur": 43000.0
+  },
+  {
+    "date": "2023-12-05",
+    "Raipur": 43200.0,
+    "Delhi/NCR": 46200.0,
+    "Durgapur": 43200.0
+  },
+  {
+    "date": "2023-12-06",
+    "Raipur": 43400.0,
+    "Delhi/NCR": 46400.0,
+    "Durgapur": 43700.0
+  },
+  {
+    "date": "2023-12-07",
+    "Raipur": 43200.0,
+    "Delhi/NCR": 46400.0,
+    "Durgapur": 43400.0
+  },
+  {
+    "date": "2023-12-08",
+    "Raipur": 43900.0,
+    "Delhi/NCR": 46600.0,
+    "Durgapur": 43800.0
+  },
+  {
+    "date": "2023-12-09",
+    "Raipur": 44500.0,
+    "Delhi/NCR": 47100.0,
+    "Durgapur": 44000.0
+  },
+  {
+    "date": "2023-12-11",
+    "Raipur": 44200.0,
+    "Delhi/NCR": 46600.0,
+    "Durgapur": 44200.0
+  },
+  {
+    "date": "2023-12-12",
+    "Raipur": 44500.0,
+    "Delhi/NCR": 47200.0,
+    "Durgapur": 44000.0
+  },
+  {
+    "date": "2023-12-13",
+    "Raipur": 44300.0,
+    "Delhi/NCR": 46800.0,
+    "Durgapur": 43700.0
+  },
+  {
+    "date": "2023-12-14",
+    "Raipur": 44400.0,
+    "Delhi/NCR": 47000.0,
+    "Durgapur": 44000.0
+  },
+  {
+    "date": "2023-12-15",
+    "Raipur": 44200.0,
+    "Delhi/NCR": 47100.0,
+    "Durgapur": 43900.0
+  },
+  {
+    "date": "2023-12-16",
+    "Raipur": 43900.0,
+    "Delhi/NCR": 47100.0,
+    "Durgapur": 43700.0
+  },
+  {
+    "date": "2023-12-18",
+    "Raipur": 43800.0,
+    "Delhi/NCR": 47100.0,
+    "Durgapur": 43800.0
+  },
+  {
+    "date": "2023-12-19",
+    "Raipur": 43500.0,
+    "Delhi/NCR": 47200.0,
+    "Durgapur": 43700.0
+  },
+  {
+    "date": "2023-12-20",
+    "Raipur": 43100.0,
+    "Delhi/NCR": 46700.0,
+    "Durgapur": 43700.0
+  },
+  {
+    "date": "2023-12-21",
+    "Raipur": 43100.0,
+    "Delhi/NCR": 46700.0,
+    "Durgapur": 43300.0
+  },
+  {
+    "date": "2023-12-22",
+    "Raipur": 43200.0,
+    "Delhi/NCR": 46600.0,
+    "Durgapur": 43000.0
+  },
+  {
+    "date": "2023-12-23",
+    "Raipur": 43400.0,
+    "Delhi/NCR": 46700.0,
+    "Durgapur": 43300.0
+  },
+  {
+    "date": "2023-12-26",
+    "Raipur": 43100.0,
+    "Delhi/NCR": 46200.0,
+    "Durgapur": 42600.0
+  },
+  {
+    "date": "2023-12-27",
+    "Raipur": 43100.0,
+    "Delhi/NCR": 46500.0,
+    "Durgapur": 42700.0
+  },
+  {
+    "date": "2023-12-28",
+    "Raipur": 42900.0,
+    "Delhi/NCR": 46200.0,
+    "Durgapur": 42500.0
+  },
+  {
+    "date": "2023-12-29",
+    "Raipur": 42800.0,
+    "Delhi/NCR": 46300.0,
+    "Durgapur": 42900.0
+  },
+  {
+    "date": "2023-12-30",
+    "Raipur": 43000.0,
+    "Delhi/NCR": 46500.0,
+    "Durgapur": 43000.0
+  },
+  {
+    "date": "2024-01-01",
+    "Raipur": 43500.0,
+    "Delhi/NCR": 46600.0,
+    "Durgapur": 43300.0
+  },
+  {
+    "date": "2024-01-02",
+    "Raipur": 43500.0,
+    "Delhi/NCR": 46700.0,
+    "Durgapur": 43400.0
+  },
+  {
+    "date": "2024-01-03",
+    "Raipur": 43700.0,
+    "Delhi/NCR": 47000.0,
+    "Durgapur": 43600.0
+  },
+  {
+    "date": "2024-01-04",
+    "Raipur": 43800.0,
+    "Delhi/NCR": 47300.0,
+    "Durgapur": 44000.0
+  },
+  {
+    "date": "2024-01-05",
+    "Raipur": 43600.0,
+    "Delhi/NCR": 47300.0,
+    "Durgapur": 43700.0
+  },
+  {
+    "date": "2024-01-06",
+    "Raipur": 43500.0,
+    "Delhi/NCR": 47300.0,
+    "Durgapur": 43600.0
+  },
+  {
+    "date": "2024-01-08",
+    "Raipur": 43500.0,
+    "Delhi/NCR": 47300.0,
+    "Durgapur": 43700.0
+  },
+  {
+    "date": "2024-01-09",
+    "Raipur": 43100.0,
+    "Delhi/NCR": 47000.0,
+    "Durgapur": 43400.0
+  },
+  {
+    "date": "2024-01-10",
+    "Raipur": 43200.0,
+    "Delhi/NCR": 47300.0,
+    "Durgapur": 43500.0
+  },
+  {
+    "date": "2024-01-11",
+    "Raipur": 43100.0,
+    "Delhi/NCR": 47000.0,
+    "Durgapur": 43300.0
+  },
+  {
+    "date": "2024-01-12",
+    "Raipur": 43100.0,
+    "Delhi/NCR": 47000.0,
+    "Durgapur": 43400.0
+  },
+  {
+    "date": "2024-01-13",
+    "Raipur": 43100.0,
+    "Delhi/NCR": 46900.0,
+    "Durgapur": 43300.0
+  },
+  {
+    "date": "2024-01-15",
+    "Raipur": 43100.0,
+    "Delhi/NCR": 46700.0,
+    "Durgapur": 43300.0
+  },
+  {
+    "date": "2024-01-16",
+    "Raipur": 43000.0,
+    "Delhi/NCR": 46800.0,
+    "Durgapur": 43100.0
+  },
+  {
+    "date": "2024-01-17",
+    "Raipur": 43000.0,
+    "Delhi/NCR": 46600.0,
+    "Durgapur": 42900.0
+  },
+  {
+    "date": "2024-01-18",
+    "Raipur": 42900.0,
+    "Delhi/NCR": 46700.0,
+    "Durgapur": 43100.0
+  },
+  {
+    "date": "2024-01-19",
+    "Raipur": 43200.0,
+    "Delhi/NCR": 46800.0,
+    "Durgapur": 43200.0
+  },
+  {
+    "date": "2024-01-20",
+    "Raipur": 43200.0,
+    "Delhi/NCR": 46800.0,
+    "Durgapur": 43200.0
+  },
+  {
+    "date": "2024-01-22",
+    "Raipur": 43100.0,
+    "Delhi/NCR": 46800.0,
+    "Durgapur": 43000.0
+  },
+  {
+    "date": "2024-01-23",
+    "Raipur": 42900.0,
+    "Delhi/NCR": 46800.0,
+    "Durgapur": 42800.0
+  },
+  {
+    "date": "2024-01-24",
+    "Raipur": 42700.0,
+    "Delhi/NCR": 46700.0,
+    "Durgapur": 42800.0
+  },
+  {
+    "date": "2024-01-25",
+    "Raipur": 42700.0,
+    "Delhi/NCR": 46400.0,
+    "Durgapur": 42800.0
+  },
+  {
+    "date": "2024-01-27",
+    "Raipur": 42900.0,
+    "Delhi/NCR": 46800.0,
+    "Durgapur": 43000.0
+  },
+  {
+    "date": "2024-01-29",
+    "Raipur": 42800.0,
+    "Delhi/NCR": 46800.0,
+    "Durgapur": 42900.0
+  },
+  {
+    "date": "2024-01-30",
+    "Raipur": 43000.0,
+    "Delhi/NCR": 46700.0,
+    "Durgapur": 43100.0
+  },
+  {
+    "date": "2024-01-31",
+    "Raipur": 43000.0,
+    "Delhi/NCR": 46800.0,
+    "Durgapur": 43000.0
+  },
+  {
+    "date": "2024-02-01",
+    "Raipur": 42800.0,
+    "Delhi/NCR": 46700.0,
+    "Durgapur": 42900.0
+  },
+  {
+    "date": "2024-02-02",
+    "Raipur": 42700.0,
+    "Delhi/NCR": 46700.0,
+    "Durgapur": 42800.0
+  },
+  {
+    "date": "2024-02-03",
+    "Raipur": 42700.0,
+    "Delhi/NCR": 46900.0,
+    "Durgapur": 42900.0
+  },
+  {
+    "date": "2024-02-05",
+    "Raipur": 42700.0,
+    "Delhi/NCR": 46700.0,
+    "Durgapur": 42700.0
+  },
+  {
+    "date": "2024-02-06",
+    "Raipur": 42600.0,
+    "Delhi/NCR": 46400.0,
+    "Durgapur": 42500.0
+  },
+  {
+    "date": "2024-02-07",
+    "Raipur": 42600.0,
+    "Delhi/NCR": 46500.0,
+    "Durgapur": 42600.0
+  },
+  {
+    "date": "2024-02-08",
+    "Raipur": 42700.0,
+    "Delhi/NCR": 46500.0,
+    "Durgapur": 42800.0
+  },
+  {
+    "date": "2024-02-09",
+    "Raipur": 42700.0,
+    "Delhi/NCR": 46500.0,
+    "Durgapur": 42800.0
+  },
+  {
+    "date": "2024-02-10",
+    "Raipur": 42500.0,
+    "Delhi/NCR": 46300.0,
+    "Durgapur": 42600.0
+  },
+  {
+    "date": "2024-02-12",
+    "Raipur": 42500.0,
+    "Delhi/NCR": 46100.0,
+    "Durgapur": 42500.0
+  },
+  {
+    "date": "2024-02-13",
+    "Raipur": 42100.0,
+    "Delhi/NCR": null,
+    "Durgapur": 42300.0
+  },
+  {
+    "date": "2024-02-14",
+    "Raipur": 42100.0,
+    "Delhi/NCR": 46000.0,
+    "Durgapur": 42400.0
+  },
+  {
+    "date": "2024-02-15",
+    "Raipur": 42400.0,
+    "Delhi/NCR": 46100.0,
+    "Durgapur": 42800.0
+  },
+  {
+    "date": "2024-02-16",
+    "Raipur": 42400.0,
+    "Delhi/NCR": 46000.0,
+    "Durgapur": 42500.0
+  },
+  {
+    "date": "2024-02-17",
+    "Raipur": 42700.0,
+    "Delhi/NCR": 46200.0,
+    "Durgapur": 42800.0
+  },
+  {
+    "date": "2024-02-19",
+    "Raipur": 42800.0,
+    "Delhi/NCR": 46000.0,
+    "Durgapur": 42800.0
+  },
+  {
+    "date": "2024-02-20",
+    "Raipur": 43000.0,
+    "Delhi/NCR": 46300.0,
+    "Durgapur": 43100.0
+  },
+  {
+    "date": "2024-02-21",
+    "Raipur": 42800.0,
+    "Delhi/NCR": 46100.0,
+    "Durgapur": 42900.0
+  },
+  {
+    "date": "2024-02-22",
+    "Raipur": 42700.0,
+    "Delhi/NCR": 46100.0,
+    "Durgapur": 42800.0
+  },
+  {
+    "date": "2024-02-23",
+    "Raipur": 43100.0,
+    "Delhi/NCR": 46200.0,
+    "Durgapur": 43100.0
+  },
+  {
+    "date": "2024-02-24",
+    "Raipur": 42900.0,
+    "Delhi/NCR": 46100.0,
+    "Durgapur": 42900.0
+  },
+  {
+    "date": "2024-02-26",
+    "Raipur": 42900.0,
+    "Delhi/NCR": 46100.0,
+    "Durgapur": 42900.0
+  },
+  {
+    "date": "2024-02-27",
+    "Raipur": 42800.0,
+    "Delhi/NCR": 46000.0,
+    "Durgapur": 42700.0
+  },
+  {
+    "date": "2024-02-28",
+    "Raipur": 43000.0,
+    "Delhi/NCR": 46000.0,
+    "Durgapur": 42800.0
+  },
+  {
+    "date": "2024-02-29",
+    "Raipur": 43300.0,
+    "Delhi/NCR": 46100.0,
+    "Durgapur": 43100.0
+  },
+  {
+    "date": "2024-03-01",
+    "Raipur": 43300.0,
+    "Delhi/NCR": 46100.0,
+    "Durgapur": 42900.0
+  },
+  {
+    "date": "2024-03-02",
+    "Raipur": 43100.0,
+    "Delhi/NCR": 46000.0,
+    "Durgapur": 42800.0
+  },
+  {
+    "date": "2024-03-04",
+    "Raipur": 43600.0,
+    "Delhi/NCR": 46000.0,
+    "Durgapur": 42800.0
+  },
+  {
+    "date": "2024-03-05",
+    "Raipur": 44000.0,
+    "Delhi/NCR": 46200.0,
+    "Durgapur": 43100.0
+  },
+  {
+    "date": "2024-03-06",
+    "Raipur": 44000.0,
+    "Delhi/NCR": 46000.0,
+    "Durgapur": 43000.0
+  },
+  {
+    "date": "2024-03-07",
+    "Raipur": 44000.0,
+    "Delhi/NCR": 46000.0,
+    "Durgapur": 43200.0
+  },
+  {
+    "date": "2024-03-08",
+    "Raipur": 43900.0,
+    "Delhi/NCR": 46000.0,
+    "Durgapur": 43200.0
+  },
+  {
+    "date": "2024-03-09",
+    "Raipur": 43900.0,
+    "Delhi/NCR": 46200.0,
+    "Durgapur": 43500.0
+  },
+  {
+    "date": "2024-03-11",
+    "Raipur": 43800.0,
+    "Delhi/NCR": 46200.0,
+    "Durgapur": 43400.0
+  },
+  {
+    "date": "2024-03-12",
+    "Raipur": 43500.0,
+    "Delhi/NCR": 46000.0,
+    "Durgapur": 43100.0
+  },
+  {
+    "date": "2024-03-13",
+    "Raipur": 43500.0,
+    "Delhi/NCR": 46000.0,
+    "Durgapur": 43100.0
+  },
+  {
+    "date": "2024-03-14",
+    "Raipur": 43200.0,
+    "Delhi/NCR": 45700.0,
+    "Durgapur": 42800.0
+  },
+  {
+    "date": "2024-03-15",
+    "Raipur": 43000.0,
+    "Delhi/NCR": 45500.0,
+    "Durgapur": 42800.0
+  },
+  {
+    "date": "2024-03-16",
+    "Raipur": 43000.0,
+    "Delhi/NCR": 45700.0,
+    "Durgapur": 42700.0
+  },
+  {
+    "date": "2024-03-18",
+    "Raipur": 43000.0,
+    "Delhi/NCR": 45500.0,
+    "Durgapur": 42900.0
+  },
+  {
+    "date": "2024-03-19",
+    "Raipur": 42900.0,
+    "Delhi/NCR": 45500.0,
+    "Durgapur": 43100.0
+  },
+  {
+    "date": "2024-03-20",
+    "Raipur": 42700.0,
+    "Delhi/NCR": 45600.0,
+    "Durgapur": 43100.0
+  },
+  {
+    "date": "2024-03-21",
+    "Raipur": 42700.0,
+    "Delhi/NCR": 45800.0,
+    "Durgapur": 43300.0
+  },
+  {
+    "date": "2024-03-22",
+    "Raipur": 42700.0,
+    "Delhi/NCR": 45800.0,
+    "Durgapur": 43400.0
+  },
+  {
+    "date": "2024-03-23",
+    "Raipur": 42900.0,
+    "Delhi/NCR": 45900.0,
+    "Durgapur": 43500.0
+  },
+  {
+    "date": "2024-03-27",
+    "Raipur": 43300.0,
+    "Delhi/NCR": 46100.0,
+    "Durgapur": 43800.0
+  },
+  {
+    "date": "2024-03-28",
+    "Raipur": 43500.0,
+    "Delhi/NCR": 46300.0,
+    "Durgapur": 44000.0
+  },
+  {
+    "date": "2024-03-29",
+    "Raipur": 43400.0,
+    "Delhi/NCR": 46200.0,
+    "Durgapur": 43900.0
+  },
+  {
+    "date": "2024-03-30",
+    "Raipur": 43400.0,
+    "Delhi/NCR": 46300.0,
+    "Durgapur": 44000.0
+  },
+  {
+    "date": "2024-04-01",
+    "Raipur": 43600.0,
+    "Delhi/NCR": 46800.0,
+    "Durgapur": 44400.0
+  },
+  {
+    "date": "2024-04-02",
+    "Raipur": 44200.0,
+    "Delhi/NCR": 47500.0,
+    "Durgapur": 45000.0
+  },
+  {
+    "date": "2024-04-03",
+    "Raipur": 44900.0,
+    "Delhi/NCR": 47800.0,
+    "Durgapur": 45300.0
+  },
+  {
+    "date": "2024-04-04",
+    "Raipur": 45200.0,
+    "Delhi/NCR": 48300.0,
+    "Durgapur": 46200.0
+  },
+  {
+    "date": "2024-04-05",
+    "Raipur": 46800.0,
+    "Delhi/NCR": 49500.0,
+    "Durgapur": 47000.0
+  },
+  {
+    "date": "2024-04-06",
+    "Raipur": 46600.0,
+    "Delhi/NCR": 49700.0,
+    "Durgapur": 46800.0
+  },
+  {
+    "date": "2024-04-08",
+    "Raipur": 46300.0,
+    "Delhi/NCR": 49700.0,
+    "Durgapur": 47000.0
+  },
+  {
+    "date": "2024-04-09",
+    "Raipur": 46000.0,
+    "Delhi/NCR": 49300.0,
+    "Durgapur": 46800.0
+  },
+  {
+    "date": "2024-04-10",
+    "Raipur": 45700.0,
+    "Delhi/NCR": 49100.0,
+    "Durgapur": 46500.0
+  },
+  {
+    "date": "2024-04-11",
+    "Raipur": 46000.0,
+    "Delhi/NCR": 49200.0,
+    "Durgapur": 46800.0
+  },
+  {
+    "date": "2024-04-12",
+    "Raipur": 45900.0,
+    "Delhi/NCR": 49000.0,
+    "Durgapur": 46500.0
+  },
+  {
+    "date": "2024-04-13",
+    "Raipur": 45900.0,
+    "Delhi/NCR": 49100.0,
+    "Durgapur": 47000.0
+  },
+  {
+    "date": "2024-04-15",
+    "Raipur": 48200.0,
+    "Delhi/NCR": 51300.0,
+    "Durgapur": 48500.0
+  },
+  {
+    "date": "2024-04-16",
+    "Raipur": 47700.0,
+    "Delhi/NCR": 51300.0,
+    "Durgapur": 48100.0
+  },
+  {
+    "date": "2024-04-17",
+    "Raipur": 47700.0,
+    "Delhi/NCR": 51600.0,
+    "Durgapur": 48400.0
+  },
+  {
+    "date": "2024-04-18",
+    "Raipur": 47700.0,
+    "Delhi/NCR": 52000.0,
+    "Durgapur": 48500.0
+  },
+  {
+    "date": "2024-04-19",
+    "Raipur": 47500.0,
+    "Delhi/NCR": 52000.0,
+    "Durgapur": 48300.0
+  },
+  {
+    "date": "2024-04-20",
+    "Raipur": 47600.0,
+    "Delhi/NCR": 52000.0,
+    "Durgapur": 48200.0
+  },
+  {
+    "date": "2024-04-22",
+    "Raipur": 47000.0,
+    "Delhi/NCR": 51700.0,
+    "Durgapur": 47700.0
+  },
+  {
+    "date": "2024-04-23",
+    "Raipur": 46500.0,
+    "Delhi/NCR": 51500.0,
+    "Durgapur": 47400.0
+  },
+  {
+    "date": "2024-04-24",
+    "Raipur": 46200.0,
+    "Delhi/NCR": 51000.0,
+    "Durgapur": 47200.0
+  },
+  {
+    "date": "2024-04-25",
+    "Raipur": 46200.0,
+    "Delhi/NCR": 50700.0,
+    "Durgapur": 47200.0
+  },
+  {
+    "date": "2024-04-26",
+    "Raipur": 46100.0,
+    "Delhi/NCR": 50500.0,
+    "Durgapur": 46800.0
+  },
+  {
+    "date": "2024-04-27",
+    "Raipur": 46000.0,
+    "Delhi/NCR": 50500.0,
+    "Durgapur": 47000.0
+  },
+  {
+    "date": "2024-04-29",
+    "Raipur": 46000.0,
+    "Delhi/NCR": 50200.0,
+    "Durgapur": 46800.0
+  },
+  {
+    "date": "2024-04-30",
+    "Raipur": 46700.0,
+    "Delhi/NCR": 50400.0,
+    "Durgapur": 47200.0
+  },
+  {
+    "date": "2024-05-01",
+    "Raipur": 47500.0,
+    "Delhi/NCR": 51000.0,
+    "Durgapur": 47900.0
+  },
+  {
+    "date": "2024-05-02",
+    "Raipur": 47100.0,
+    "Delhi/NCR": 51000.0,
+    "Durgapur": 47800.0
+  },
+  {
+    "date": "2024-05-03",
+    "Raipur": 47600.0,
+    "Delhi/NCR": 51700.0,
+    "Durgapur": 48400.0
+  },
+  {
+    "date": "2024-05-04",
+    "Raipur": 47600.0,
+    "Delhi/NCR": 51700.0,
+    "Durgapur": 48200.0
+  },
+  {
+    "date": "2024-05-06",
+    "Raipur": 48700.0,
+    "Delhi/NCR": 52500.0,
+    "Durgapur": 48800.0
+  },
+  {
+    "date": "2024-05-07",
+    "Raipur": 48500.0,
+    "Delhi/NCR": 52500.0,
+    "Durgapur": 48600.0
+  },
+  {
+    "date": "2024-05-08",
+    "Raipur": 48300.0,
+    "Delhi/NCR": 52600.0,
+    "Durgapur": 49000.0
+  },
+  {
+    "date": "2024-05-09",
+    "Raipur": 48000.0,
+    "Delhi/NCR": 52000.0,
+    "Durgapur": 48600.0
+  },
+  {
+    "date": "2024-05-10",
+    "Raipur": 47600.0,
+    "Delhi/NCR": 51700.0,
+    "Durgapur": 48200.0
+  },
+  {
+    "date": "2024-05-11",
+    "Raipur": 47200.0,
+    "Delhi/NCR": 51100.0,
+    "Durgapur": 48000.0
+  },
+  {
+    "date": "2024-05-13",
+    "Raipur": 47000.0,
+    "Delhi/NCR": 50900.0,
+    "Durgapur": 47400.0
+  },
+  {
+    "date": "2024-05-14",
+    "Raipur": 47200.0,
+    "Delhi/NCR": 50600.0,
+    "Durgapur": 47200.0
+  },
+  {
+    "date": "2024-05-15",
+    "Raipur": 47200.0,
+    "Delhi/NCR": 50600.0,
+    "Durgapur": 47100.0
+  },
+  {
+    "date": "2024-05-16",
+    "Raipur": 47500.0,
+    "Delhi/NCR": 50900.0,
+    "Durgapur": 47400.0
+  },
+  {
+    "date": "2024-05-17",
+    "Raipur": 47800.0,
+    "Delhi/NCR": 50900.0,
+    "Durgapur": 47900.0
+  },
+  {
+    "date": "2024-05-18",
+    "Raipur": 47800.0,
+    "Delhi/NCR": 50700.0,
+    "Durgapur": 47600.0
+  },
+  {
+    "date": "2024-05-20",
+    "Raipur": 47800.0,
+    "Delhi/NCR": 50700.0,
+    "Durgapur": 47600.0
+  },
+  {
+    "date": "2024-05-21",
+    "Raipur": 47700.0,
+    "Delhi/NCR": 50700.0,
+    "Durgapur": 47500.0
+  },
+  {
+    "date": "2024-05-22",
+    "Raipur": 47900.0,
+    "Delhi/NCR": 50800.0,
+    "Durgapur": 47600.0
+  },
+  {
+    "date": "2024-05-23",
+    "Raipur": 47900.0,
+    "Delhi/NCR": 50700.0,
+    "Durgapur": 47400.0
+  },
+  {
+    "date": "2024-05-24",
+    "Raipur": 47900.0,
+    "Delhi/NCR": 50700.0,
+    "Durgapur": 47400.0
+  },
+  {
+    "date": "2024-05-25",
+    "Raipur": 47600.0,
+    "Delhi/NCR": 50500.0,
+    "Durgapur": 47200.0
+  },
+  {
+    "date": "2024-05-27",
+    "Raipur": 47600.0,
+    "Delhi/NCR": 50400.0,
+    "Durgapur": 47200.0
+  },
+  {
+    "date": "2024-05-28",
+    "Raipur": 47600.0,
+    "Delhi/NCR": 50400.0,
+    "Durgapur": 46900.0
+  },
+  {
+    "date": "2024-05-29",
+    "Raipur": 47900.0,
+    "Delhi/NCR": 50500.0,
+    "Durgapur": 46900.0
+  },
+  {
+    "date": "2024-05-30",
+    "Raipur": 48000.0,
+    "Delhi/NCR": 50700.0,
+    "Durgapur": 47300.0
+  },
+  {
+    "date": "2024-05-31",
+    "Raipur": 48100.0,
+    "Delhi/NCR": 50800.0,
+    "Durgapur": 47500.0
+  },
+  {
+    "date": "2024-06-01",
+    "Raipur": 48100.0,
+    "Delhi/NCR": 50900.0,
+    "Durgapur": 47500.0
+  },
+  {
+    "date": "2024-06-03",
+    "Raipur": 49100.0,
+    "Delhi/NCR": 51700.0,
+    "Durgapur": 48200.0
+  },
+  {
+    "date": "2024-06-04",
+    "Raipur": 48900.0,
+    "Delhi/NCR": 51700.0,
+    "Durgapur": 47800.0
+  },
+  {
+    "date": "2024-06-05",
+    "Raipur": 48400.0,
+    "Delhi/NCR": 51400.0,
+    "Durgapur": 47200.0
+  },
+  {
+    "date": "2024-06-06",
+    "Raipur": 48100.0,
+    "Delhi/NCR": 51200.0,
+    "Durgapur": 46900.0
+  },
+  {
+    "date": "2024-06-07",
+    "Raipur": 47800.0,
+    "Delhi/NCR": 51000.0,
+    "Durgapur": 46700.0
+  },
+  {
+    "date": "2024-06-08",
+    "Raipur": 48000.0,
+    "Delhi/NCR": 51000.0,
+    "Durgapur": 47000.0
+  },
+  {
+    "date": "2024-06-10",
+    "Raipur": 48000.0,
+    "Delhi/NCR": 50700.0,
+    "Durgapur": 46900.0
+  },
+  {
+    "date": "2024-06-11",
+    "Raipur": 47400.0,
+    "Delhi/NCR": 50500.0,
+    "Durgapur": 46500.0
+  },
+  {
+    "date": "2024-06-12",
+    "Raipur": 47300.0,
+    "Delhi/NCR": 50300.0,
+    "Durgapur": 46200.0
+  },
+  {
+    "date": "2024-06-13",
+    "Raipur": 47300.0,
+    "Delhi/NCR": 50100.0,
+    "Durgapur": 45900.0
+  },
+  {
+    "date": "2024-06-14",
+    "Raipur": 47000.0,
+    "Delhi/NCR": 50100.0,
+    "Durgapur": 45800.0
+  },
+  {
+    "date": "2024-06-15",
+    "Raipur": 46800.0,
+    "Delhi/NCR": 49900.0,
+    "Durgapur": 45500.0
+  },
+  {
+    "date": "2024-06-17",
+    "Raipur": 46300.0,
+    "Delhi/NCR": 49600.0,
+    "Durgapur": 45500.0
+  },
+  {
+    "date": "2024-06-18",
+    "Raipur": 46000.0,
+    "Delhi/NCR": 49600.0,
+    "Durgapur": 45100.0
+  },
+  {
+    "date": "2024-06-19",
+    "Raipur": 45600.0,
+    "Delhi/NCR": 49200.0,
+    "Durgapur": 44800.0
+  },
+  {
+    "date": "2024-06-20",
+    "Raipur": 45300.0,
+    "Delhi/NCR": 48800.0,
+    "Durgapur": 44500.0
+  },
+  {
+    "date": "2024-06-21",
+    "Raipur": 45100.0,
+    "Delhi/NCR": 48800.0,
+    "Durgapur": 44300.0
+  },
+  {
+    "date": "2024-06-22",
+    "Raipur": 44800.0,
+    "Delhi/NCR": 48600.0,
+    "Durgapur": 44200.0
+  },
+  {
+    "date": "2024-06-24",
+    "Raipur": 44300.0,
+    "Delhi/NCR": 48000.0,
+    "Durgapur": 43800.0
+  },
+  {
+    "date": "2024-06-25",
+    "Raipur": 43500.0,
+    "Delhi/NCR": 47600.0,
+    "Durgapur": 42800.0
+  },
+  {
+    "date": "2024-06-26",
+    "Raipur": 43300.0,
+    "Delhi/NCR": 47200.0,
+    "Durgapur": 42700.0
+  },
+  {
+    "date": "2024-06-27",
+    "Raipur": 43600.0,
+    "Delhi/NCR": 47400.0,
+    "Durgapur": 43200.0
+  },
+  {
+    "date": "2024-06-28",
+    "Raipur": 44000.0,
+    "Delhi/NCR": 47800.0,
+    "Durgapur": 43500.0
+  },
+  {
+    "date": "2024-06-29",
+    "Raipur": 44200.0,
+    "Delhi/NCR": 48200.0,
+    "Durgapur": 44000.0
+  },
+  {
+    "date": "2024-07-01",
+    "Raipur": 43800.0,
+    "Delhi/NCR": 47800.0,
+    "Durgapur": 43500.0
+  },
+  {
+    "date": "2024-07-02",
+    "Raipur": 43800.0,
+    "Delhi/NCR": 48000.0,
+    "Durgapur": 43600.0
+  },
+  {
+    "date": "2024-07-03",
+    "Raipur": 43500.0,
+    "Delhi/NCR": 48000.0,
+    "Durgapur": 43400.0
+  },
+  {
+    "date": "2024-07-04",
+    "Raipur": 43100.0,
+    "Delhi/NCR": 47700.0,
+    "Durgapur": 43100.0
+  },
+  {
+    "date": "2024-07-05",
+    "Raipur": 42700.0,
+    "Delhi/NCR": 47500.0,
+    "Durgapur": 42700.0
+  },
+  {
+    "date": "2024-07-06",
+    "Raipur": 42900.0,
+    "Delhi/NCR": 47300.0,
+    "Durgapur": 42600.0
+  },
+  {
+    "date": "2024-07-08",
+    "Raipur": 42800.0,
+    "Delhi/NCR": 46900.0,
+    "Durgapur": 42100.0
+  },
+  {
+    "date": "2024-07-09",
+    "Raipur": 42600.0,
+    "Delhi/NCR": 46500.0,
+    "Durgapur": 41500.0
+  },
+  {
+    "date": "2024-07-10",
+    "Raipur": 42500.0,
+    "Delhi/NCR": 46500.0,
+    "Durgapur": 41700.0
+  },
+  {
+    "date": "2024-07-11",
+    "Raipur": 42300.0,
+    "Delhi/NCR": 46300.0,
+    "Durgapur": 41500.0
+  },
+  {
+    "date": "2024-07-12",
+    "Raipur": 42400.0,
+    "Delhi/NCR": 46500.0,
+    "Durgapur": 41900.0
+  },
+  {
+    "date": "2024-07-13",
+    "Raipur": 42300.0,
+    "Delhi/NCR": 46500.0,
+    "Durgapur": 42000.0
+  },
+  {
+    "date": "2024-07-15",
+    "Raipur": 42700.0,
+    "Delhi/NCR": 47000.0,
+    "Durgapur": 42500.0
+  },
+  {
+    "date": "2024-07-16",
+    "Raipur": 42700.0,
+    "Delhi/NCR": 47100.0,
+    "Durgapur": 42200.0
+  },
+  {
+    "date": "2024-07-17",
+    "Raipur": 42300.0,
+    "Delhi/NCR": 47100.0,
+    "Durgapur": 42200.0
+  },
+  {
+    "date": "2024-07-18",
+    "Raipur": 42000.0,
+    "Delhi/NCR": 46900.0,
+    "Durgapur": 41700.0
+  },
+  {
+    "date": "2024-07-19",
+    "Raipur": 41900.0,
+    "Delhi/NCR": 46500.0,
+    "Durgapur": 41500.0
+  },
+  {
+    "date": "2024-07-20",
+    "Raipur": 41900.0,
+    "Delhi/NCR": 46600.0,
+    "Durgapur": 41800.0
+  },
+  {
+    "date": "2024-07-22",
+    "Raipur": 41700.0,
+    "Delhi/NCR": 46300.0,
+    "Durgapur": 41500.0
+  },
+  {
+    "date": "2024-07-23",
+    "Raipur": 41800.0,
+    "Delhi/NCR": 46300.0,
+    "Durgapur": 41500.0
+  },
+  {
+    "date": "2024-07-24",
+    "Raipur": 41700.0,
+    "Delhi/NCR": 46200.0,
+    "Durgapur": 41000.0
+  },
+  {
+    "date": "2024-07-25",
+    "Raipur": 41600.0,
+    "Delhi/NCR": 46200.0,
+    "Durgapur": 41300.0
+  },
+  {
+    "date": "2024-07-26",
+    "Raipur": 41500.0,
+    "Delhi/NCR": 46100.0,
+    "Durgapur": 41300.0
+  },
+  {
+    "date": "2024-07-27",
+    "Raipur": 41500.0,
+    "Delhi/NCR": 46400.0,
+    "Durgapur": 41700.0
+  },
+  {
+    "date": "2024-07-29",
+    "Raipur": 41700.0,
+    "Delhi/NCR": 46700.0,
+    "Durgapur": 42000.0
+  },
+  {
+    "date": "2024-07-30",
+    "Raipur": 42400.0,
+    "Delhi/NCR": 47200.0,
+    "Durgapur": 42600.0
+  },
+  {
+    "date": "2024-07-31",
+    "Raipur": 42300.0,
+    "Delhi/NCR": 47200.0,
+    "Durgapur": 42300.0
+  },
+  {
+    "date": "2024-08-01",
+    "Raipur": 42200.0,
+    "Delhi/NCR": 47000.0,
+    "Durgapur": 42300.0
+  },
+  {
+    "date": "2024-08-02",
+    "Raipur": 41900.0,
+    "Delhi/NCR": 46800.0,
+    "Durgapur": 41800.0
+  },
+  {
+    "date": "2024-08-03",
+    "Raipur": 41700.0,
+    "Delhi/NCR": 46500.0,
+    "Durgapur": 41600.0
+  },
+  {
+    "date": "2024-08-05",
+    "Raipur": 41700.0,
+    "Delhi/NCR": 46500.0,
+    "Durgapur": 41500.0
+  },
+  {
+    "date": "2024-08-06",
+    "Raipur": 41300.0,
+    "Delhi/NCR": 46200.0,
+    "Durgapur": 41200.0
+  },
+  {
+    "date": "2024-08-07",
+    "Raipur": 41300.0,
+    "Delhi/NCR": 46000.0,
+    "Durgapur": 41200.0
+  },
+  {
+    "date": "2024-08-08",
+    "Raipur": 41300.0,
+    "Delhi/NCR": 46000.0,
+    "Durgapur": 41200.0
+  },
+  {
+    "date": "2024-08-09",
+    "Raipur": 41100.0,
+    "Delhi/NCR": 45600.0,
+    "Durgapur": 41000.0
+  },
+  {
+    "date": "2024-08-10",
+    "Raipur": 41100.0,
+    "Delhi/NCR": 45500.0,
+    "Durgapur": 40900.0
+  },
+  {
+    "date": "2024-08-12",
+    "Raipur": 41200.0,
+    "Delhi/NCR": 45500.0,
+    "Durgapur": 41100.0
+  },
+  {
+    "date": "2024-08-13",
+    "Raipur": 41100.0,
+    "Delhi/NCR": 45700.0,
+    "Durgapur": 41200.0
+  },
+  {
+    "date": "2024-08-14",
+    "Raipur": 41200.0,
+    "Delhi/NCR": 45600.0,
+    "Durgapur": 41000.0
+  },
+  {
+    "date": "2024-08-16",
+    "Raipur": 41200.0,
+    "Delhi/NCR": 45500.0,
+    "Durgapur": 40900.0
+  },
+  {
+    "date": "2024-08-17",
+    "Raipur": 41300.0,
+    "Delhi/NCR": 45700.0,
+    "Durgapur": 41200.0
+  },
+  {
+    "date": "2024-08-20",
+    "Raipur": 41700.0,
+    "Delhi/NCR": 45800.0,
+    "Durgapur": 41300.0
+  },
+  {
+    "date": "2024-08-21",
+    "Raipur": 42000.0,
+    "Delhi/NCR": 46000.0,
+    "Durgapur": 41400.0
+  },
+  {
+    "date": "2024-08-22",
+    "Raipur": 41800.0,
+    "Delhi/NCR": 45800.0,
+    "Durgapur": 41200.0
+  },
+  {
+    "date": "2024-08-23",
+    "Raipur": 41600.0,
+    "Delhi/NCR": 45500.0,
+    "Durgapur": 40800.0
+  },
+  {
+    "date": "2024-08-24",
+    "Raipur": 41400.0,
+    "Delhi/NCR": 45200.0,
+    "Durgapur": 40600.0
+  },
+  {
+    "date": "2024-08-26",
+    "Raipur": 41600.0,
+    "Delhi/NCR": 45400.0,
+    "Durgapur": 40900.0
+  },
+  {
+    "date": "2024-08-27",
+    "Raipur": 41600.0,
+    "Delhi/NCR": 45700.0,
+    "Durgapur": 41100.0
+  },
+  {
+    "date": "2024-08-28",
+    "Raipur": 41600.0,
+    "Delhi/NCR": 45500.0,
+    "Durgapur": 40800.0
+  },
+  {
+    "date": "2024-08-29",
+    "Raipur": 41400.0,
+    "Delhi/NCR": 45000.0,
+    "Durgapur": 40800.0
+  },
+  {
+    "date": "2024-08-30",
+    "Raipur": 41500.0,
+    "Delhi/NCR": 45000.0,
+    "Durgapur": 40900.0
+  },
+  {
+    "date": "2024-08-31",
+    "Raipur": 41500.0,
+    "Delhi/NCR": 44800.0,
+    "Durgapur": 40800.0
+  },
+  {
+    "date": "2024-09-02",
+    "Raipur": 41300.0,
+    "Delhi/NCR": 44700.0,
+    "Durgapur": 40600.0
+  },
+  {
+    "date": "2024-09-03",
+    "Raipur": 41300.0,
+    "Delhi/NCR": 44900.0,
+    "Durgapur": 40600.0
+  },
+  {
+    "date": "2024-09-04",
+    "Raipur": 41300.0,
+    "Delhi/NCR": 44900.0,
+    "Durgapur": 40300.0
+  },
+  {
+    "date": "2024-09-05",
+    "Raipur": 41500.0,
+    "Delhi/NCR": 45000.0,
+    "Durgapur": 40400.0
+  },
+  {
+    "date": "2024-09-06",
+    "Raipur": 41300.0,
+    "Delhi/NCR": 44800.0,
+    "Durgapur": 40300.0
+  },
+  {
+    "date": "2024-09-07",
+    "Raipur": 41300.0,
+    "Delhi/NCR": 44600.0,
+    "Durgapur": 40300.0
+  },
+  {
+    "date": "2024-09-09",
+    "Raipur": 41000.0,
+    "Delhi/NCR": 44600.0,
+    "Durgapur": 40300.0
+  },
+  {
+    "date": "2024-09-10",
+    "Raipur": 41000.0,
+    "Delhi/NCR": 44300.0,
+    "Durgapur": 40200.0
+  },
+  {
+    "date": "2024-09-11",
+    "Raipur": 40900.0,
+    "Delhi/NCR": 44200.0,
+    "Durgapur": 40100.0
+  },
+  {
+    "date": "2024-09-12",
+    "Raipur": 40700.0,
+    "Delhi/NCR": 43800.0,
+    "Durgapur": 40100.0
+  },
+  {
+    "date": "2024-09-13",
+    "Raipur": 40800.0,
+    "Delhi/NCR": 43800.0,
+    "Durgapur": 40200.0
+  },
+  {
+    "date": "2024-09-14",
+    "Raipur": 40700.0,
+    "Delhi/NCR": 43800.0,
+    "Durgapur": 40000.0
+  },
+  {
+    "date": "2024-09-16",
+    "Raipur": 40700.0,
+    "Delhi/NCR": 43600.0,
+    "Durgapur": 39800.0
+  },
+  {
+    "date": "2024-09-17",
+    "Raipur": 40700.0,
+    "Delhi/NCR": 43700.0,
+    "Durgapur": 40100.0
+  },
+  {
+    "date": "2024-09-18",
+    "Raipur": 41000.0,
+    "Delhi/NCR": 43600.0,
+    "Durgapur": 40100.0
+  },
+  {
+    "date": "2024-09-19",
+    "Raipur": 41500.0,
+    "Delhi/NCR": 44100.0,
+    "Durgapur": 40500.0
+  },
+  {
+    "date": "2024-09-20",
+    "Raipur": 41700.0,
+    "Delhi/NCR": 44200.0,
+    "Durgapur": 40600.0
+  },
+  {
+    "date": "2024-09-21",
+    "Raipur": 42200.0,
+    "Delhi/NCR": 44800.0,
+    "Durgapur": 41000.0
+  },
+  {
+    "date": "2024-09-23",
+    "Raipur": 42900.0,
+    "Delhi/NCR": 45100.0,
+    "Durgapur": 41500.0
+  },
+  {
+    "date": "2024-09-24",
+    "Raipur": 43400.0,
+    "Delhi/NCR": 45500.0,
+    "Durgapur": 42000.0
+  },
+  {
+    "date": "2024-09-25",
+    "Raipur": 44000.0,
+    "Delhi/NCR": 46400.0,
+    "Durgapur": 42500.0
+  },
+  {
+    "date": "2024-09-26",
+    "Raipur": 44200.0,
+    "Delhi/NCR": 47000.0,
+    "Durgapur": 42800.0
+  },
+  {
+    "date": "2024-09-27",
+    "Raipur": 44000.0,
+    "Delhi/NCR": 46800.0,
+    "Durgapur": 42500.0
+  },
+  {
+    "date": "2024-09-28",
+    "Raipur": 44200.0,
+    "Delhi/NCR": 47300.0,
+    "Durgapur": 42800.0
+  },
+  {
+    "date": "2024-09-30",
+    "Raipur": 45000.0,
+    "Delhi/NCR": 47700.0,
+    "Durgapur": 43500.0
+  },
+  {
+    "date": "2024-10-01",
+    "Raipur": 45400.0,
+    "Delhi/NCR": 47800.0,
+    "Durgapur": 43800.0
+  },
+  {
+    "date": "2024-10-03",
+    "Raipur": 45700.0,
+    "Delhi/NCR": 48500.0,
+    "Durgapur": 44000.0
+  },
+  {
+    "date": "2024-10-04",
+    "Raipur": 46100.0,
+    "Delhi/NCR": 48700.0,
+    "Durgapur": 44500.0
+  },
+  {
+    "date": "2024-10-05",
+    "Raipur": 45800.0,
+    "Delhi/NCR": 48700.0,
+    "Durgapur": 44800.0
+  },
+  {
+    "date": "2024-10-07",
+    "Raipur": 46000.0,
+    "Delhi/NCR": 48800.0,
+    "Durgapur": 44700.0
+  },
+  {
+    "date": "2024-10-08",
+    "Raipur": 46300.0,
+    "Delhi/NCR": 49000.0,
+    "Durgapur": 45000.0
+  },
+  {
+    "date": "2024-10-09",
+    "Raipur": 45800.0,
+    "Delhi/NCR": 48700.0,
+    "Durgapur": 44700.0
+  },
+  {
+    "date": "2024-10-10",
+    "Raipur": 45300.0,
+    "Delhi/NCR": 48600.0,
+    "Durgapur": null
+  },
+  {
+    "date": "2024-10-11",
+    "Raipur": 44500.0,
+    "Delhi/NCR": 48500.0,
+    "Durgapur": null
+  },
+  {
+    "date": "2024-10-14",
+    "Raipur": 44900.0,
+    "Delhi/NCR": 49000.0,
+    "Durgapur": 44800.0
+  },
+  {
+    "date": "2024-10-15",
+    "Raipur": 44800.0,
+    "Delhi/NCR": 49000.0,
+    "Durgapur": 44500.0
+  },
+  {
+    "date": "2024-10-16",
+    "Raipur": 44700.0,
+    "Delhi/NCR": 48700.0,
+    "Durgapur": 44900.0
+  },
+  {
+    "date": "2024-10-17",
+    "Raipur": 44500.0,
+    "Delhi/NCR": 48400.0,
+    "Durgapur": 44500.0
+  },
+  {
+    "date": "2024-10-18",
+    "Raipur": 44500.0,
+    "Delhi/NCR": 48500.0,
+    "Durgapur": 44500.0
+  },
+  {
+    "date": "2024-10-19",
+    "Raipur": 44000.0,
+    "Delhi/NCR": 48400.0,
+    "Durgapur": 44200.0
+  },
+  {
+    "date": "2024-10-21",
+    "Raipur": 43400.0,
+    "Delhi/NCR": 47900.0,
+    "Durgapur": 43900.0
+  },
+  {
+    "date": "2024-10-22",
+    "Raipur": 42900.0,
+    "Delhi/NCR": 47600.0,
+    "Durgapur": 43100.0
+  },
+  {
+    "date": "2024-10-23",
+    "Raipur": 42700.0,
+    "Delhi/NCR": 47200.0,
+    "Durgapur": 42800.0
+  },
+  {
+    "date": "2024-10-24",
+    "Raipur": 42500.0,
+    "Delhi/NCR": 46700.0,
+    "Durgapur": 42700.0
+  },
+  {
+    "date": "2024-10-25",
+    "Raipur": 43000.0,
+    "Delhi/NCR": 46800.0,
+    "Durgapur": 42800.0
+  },
+  {
+    "date": "2024-10-26",
+    "Raipur": 42800.0,
+    "Delhi/NCR": 46400.0,
+    "Durgapur": 42600.0
+  },
+  {
+    "date": "2024-10-28",
+    "Raipur": 42700.0,
+    "Delhi/NCR": 46000.0,
+    "Durgapur": 42200.0
+  },
+  {
+    "date": "2024-10-29",
+    "Raipur": 42500.0,
+    "Delhi/NCR": 46000.0,
+    "Durgapur": 42000.0
+  },
+  {
+    "date": "2024-10-30",
+    "Raipur": 42500.0,
+    "Delhi/NCR": 45800.0,
+    "Durgapur": 41800.0
+  },
+  {
+    "date": "2024-11-02",
+    "Raipur": null,
+    "Delhi/NCR": 45700.0,
+    "Durgapur": null
+  },
+  {
+    "date": "2024-11-04",
+    "Raipur": 42300.0,
+    "Delhi/NCR": 45500.0,
+    "Durgapur": 41400.0
+  },
+  {
+    "date": "2024-11-05",
+    "Raipur": 42600.0,
+    "Delhi/NCR": 45700.0,
+    "Durgapur": 42000.0
+  },
+  {
+    "date": "2024-11-06",
+    "Raipur": 43100.0,
+    "Delhi/NCR": 46000.0,
+    "Durgapur": 42100.0
+  },
+  {
+    "date": "2024-11-07",
+    "Raipur": 43100.0,
+    "Delhi/NCR": 46200.0,
+    "Durgapur": 42400.0
+  },
+  {
+    "date": "2024-11-08",
+    "Raipur": 44000.0,
+    "Delhi/NCR": 46900.0,
+    "Durgapur": 42800.0
+  },
+  {
+    "date": "2024-11-09",
+    "Raipur": 43800.0,
+    "Delhi/NCR": 46900.0,
+    "Durgapur": 43000.0
+  },
+  {
+    "date": "2024-11-11",
+    "Raipur": 43800.0,
+    "Delhi/NCR": 47400.0,
+    "Durgapur": 43200.0
+  },
+  {
+    "date": "2024-11-12",
+    "Raipur": 43600.0,
+    "Delhi/NCR": 47200.0,
+    "Durgapur": 43000.0
+  },
+  {
+    "date": "2024-11-13",
+    "Raipur": 43300.0,
+    "Delhi/NCR": 47000.0,
+    "Durgapur": 42500.0
+  },
+  {
+    "date": "2024-11-14",
+    "Raipur": 42800.0,
+    "Delhi/NCR": 46700.0,
+    "Durgapur": 42200.0
+  },
+  {
+    "date": "2024-11-15",
+    "Raipur": 42500.0,
+    "Delhi/NCR": 46300.0,
+    "Durgapur": 41700.0
+  },
+  {
+    "date": "2024-11-16",
+    "Raipur": 42300.0,
+    "Delhi/NCR": 46000.0,
+    "Durgapur": 41500.0
+  },
+  {
+    "date": "2024-11-18",
+    "Raipur": 42300.0,
+    "Delhi/NCR": 45800.0,
+    "Durgapur": 41300.0
+  },
+  {
+    "date": "2024-11-19",
+    "Raipur": 42200.0,
+    "Delhi/NCR": 45500.0,
+    "Durgapur": 41100.0
+  },
+  {
+    "date": "2024-11-20",
+    "Raipur": 42200.0,
+    "Delhi/NCR": 45300.0,
+    "Durgapur": 41100.0
+  },
+  {
+    "date": "2024-11-21",
+    "Raipur": 42500.0,
+    "Delhi/NCR": 45400.0,
+    "Durgapur": 41400.0
+  },
+  {
+    "date": "2024-11-22",
+    "Raipur": 42500.0,
+    "Delhi/NCR": 45500.0,
+    "Durgapur": 41400.0
+  },
+  {
+    "date": "2024-11-23",
+    "Raipur": 42400.0,
+    "Delhi/NCR": 45500.0,
+    "Durgapur": 41200.0
+  },
+  {
+    "date": "2024-11-25",
+    "Raipur": 42200.0,
+    "Delhi/NCR": 45000.0,
+    "Durgapur": 41000.0
+  },
+  {
+    "date": "2024-11-26",
+    "Raipur": 42000.0,
+    "Delhi/NCR": 44800.0,
+    "Durgapur": 41000.0
+  },
+  {
+    "date": "2024-11-27",
+    "Raipur": 41700.0,
+    "Delhi/NCR": 44800.0,
+    "Durgapur": 40800.0
+  },
+  {
+    "date": "2024-11-28",
+    "Raipur": 41800.0,
+    "Delhi/NCR": 45000.0,
+    "Durgapur": 40900.0
+  },
+  {
+    "date": "2024-11-29",
+    "Raipur": 41800.0,
+    "Delhi/NCR": 45000.0,
+    "Durgapur": 40700.0
+  },
+  {
+    "date": "2024-11-30",
+    "Raipur": 41600.0,
+    "Delhi/NCR": 44800.0,
+    "Durgapur": 40600.0
+  },
+  {
+    "date": "2024-12-02",
+    "Raipur": 41400.0,
+    "Delhi/NCR": 44400.0,
+    "Durgapur": 40200.0
+  },
+  {
+    "date": "2024-12-03",
+    "Raipur": 41600.0,
+    "Delhi/NCR": 44600.0,
+    "Durgapur": 40500.0
+  },
+  {
+    "date": "2024-12-04",
+    "Raipur": 42000.0,
+    "Delhi/NCR": 44600.0,
+    "Durgapur": 41000.0
+  },
+  {
+    "date": "2024-12-05",
+    "Raipur": 42600.0,
+    "Delhi/NCR": 45700.0,
+    "Durgapur": 41400.0
+  },
+  {
+    "date": "2024-12-06",
+    "Raipur": 42500.0,
+    "Delhi/NCR": 45700.0,
+    "Durgapur": 41900.0
+  },
+  {
+    "date": "2024-12-07",
+    "Raipur": 42200.0,
+    "Delhi/NCR": 45500.0,
+    "Durgapur": 41700.0
+  },
+  {
+    "date": "2024-12-09",
+    "Raipur": 42000.0,
+    "Delhi/NCR": 45600.0,
+    "Durgapur": 41400.0
+  },
+  {
+    "date": "2024-12-10",
+    "Raipur": 41600.0,
+    "Delhi/NCR": 45300.0,
+    "Durgapur": 41000.0
+  },
+  {
+    "date": "2024-12-11",
+    "Raipur": 41400.0,
+    "Delhi/NCR": 45000.0,
+    "Durgapur": 40800.0
+  },
+  {
+    "date": "2024-12-12",
+    "Raipur": 41600.0,
+    "Delhi/NCR": 45200.0,
+    "Durgapur": 41000.0
+  },
+  {
+    "date": "2024-12-13",
+    "Raipur": 41600.0,
+    "Delhi/NCR": 45000.0,
+    "Durgapur": 41000.0
+  },
+  {
+    "date": "2024-12-14",
+    "Raipur": 41600.0,
+    "Delhi/NCR": 45200.0,
+    "Durgapur": 41200.0
+  },
+  {
+    "date": "2024-12-16",
+    "Raipur": 42300.0,
+    "Delhi/NCR": 45200.0,
+    "Durgapur": 41400.0
+  },
+  {
+    "date": "2024-12-17",
+    "Raipur": 42300.0,
+    "Delhi/NCR": 45200.0,
+    "Durgapur": 41200.0
+  },
+  {
+    "date": "2024-12-18",
+    "Raipur": 42500.0,
+    "Delhi/NCR": 45800.0,
+    "Durgapur": 42000.0
+  },
+  {
+    "date": "2024-12-19",
+    "Raipur": 42500.0,
+    "Delhi/NCR": 45800.0,
+    "Durgapur": 41800.0
+  },
+  {
+    "date": "2024-12-20",
+    "Raipur": 42400.0,
+    "Delhi/NCR": 46000.0,
+    "Durgapur": 41800.0
+  },
+  {
+    "date": "2024-12-21",
+    "Raipur": 42300.0,
+    "Delhi/NCR": 45800.0,
+    "Durgapur": 41800.0
+  },
+  {
+    "date": "2024-12-23",
+    "Raipur": 42300.0,
+    "Delhi/NCR": 45600.0,
+    "Durgapur": 41900.0
+  },
+  {
+    "date": "2024-12-24",
+    "Raipur": 42000.0,
+    "Delhi/NCR": 45500.0,
+    "Durgapur": 41800.0
+  },
+  {
+    "date": "2024-12-26",
+    "Raipur": 41900.0,
+    "Delhi/NCR": 45700.0,
+    "Durgapur": 41800.0
+  },
+  {
+    "date": "2024-12-27",
+    "Raipur": 41600.0,
+    "Delhi/NCR": 45500.0,
+    "Durgapur": 41800.0
+  },
+  {
+    "date": "2024-12-28",
+    "Raipur": 41700.0,
+    "Delhi/NCR": 45600.0,
+    "Durgapur": 41800.0
+  },
+  {
+    "date": "2024-12-30",
+    "Raipur": 42200.0,
+    "Delhi/NCR": 46000.0,
+    "Durgapur": 42100.0
+  },
+  {
+    "date": "2024-12-31",
+    "Raipur": 42400.0,
+    "Delhi/NCR": 46300.0,
+    "Durgapur": 42200.0
+  },
+  {
+    "date": "2025-01-01",
+    "Raipur": 42400.0,
+    "Delhi/NCR": 46000.0,
+    "Durgapur": 42200.0
+  },
+  {
+    "date": "2025-01-02",
+    "Raipur": 42400.0,
+    "Delhi/NCR": 45900.0,
+    "Durgapur": 42300.0
+  },
+  {
+    "date": "2025-01-03",
+    "Raipur": 42300.0,
+    "Delhi/NCR": 45700.0,
+    "Durgapur": 42100.0
+  },
+  {
+    "date": "2025-01-04",
+    "Raipur": 42200.0,
+    "Delhi/NCR": 45500.0,
+    "Durgapur": 42100.0
+  },
+  {
+    "date": "2025-01-06",
+    "Raipur": 41800.0,
+    "Delhi/NCR": 45000.0,
+    "Durgapur": 41500.0
+  },
+  {
+    "date": "2025-01-07",
+    "Raipur": 41800.0,
+    "Delhi/NCR": 45000.0,
+    "Durgapur": 41400.0
+  },
+  {
+    "date": "2025-01-08",
+    "Raipur": 41600.0,
+    "Delhi/NCR": 44800.0,
+    "Durgapur": 41500.0
+  },
+  {
+    "date": "2025-01-09",
+    "Raipur": 41400.0,
+    "Delhi/NCR": 44700.0,
+    "Durgapur": 41300.0
+  },
+  {
+    "date": "2025-01-10",
+    "Raipur": 41600.0,
+    "Delhi/NCR": 44700.0,
+    "Durgapur": 41500.0
+  },
+  {
+    "date": "2025-01-11",
+    "Raipur": 41500.0,
+    "Delhi/NCR": 44500.0,
+    "Durgapur": 41500.0
+  },
+  {
+    "date": "2025-01-13",
+    "Raipur": 41600.0,
+    "Delhi/NCR": 44700.0,
+    "Durgapur": 41600.0
+  },
+  {
+    "date": "2025-01-14",
+    "Raipur": 41700.0,
+    "Delhi/NCR": 45000.0,
+    "Durgapur": 41700.0
+  },
+  {
+    "date": "2025-01-15",
+    "Raipur": 41700.0,
+    "Delhi/NCR": 45000.0,
+    "Durgapur": 41600.0
+  },
+  {
+    "date": "2025-01-16",
+    "Raipur": 41500.0,
+    "Delhi/NCR": 44800.0,
+    "Durgapur": 41800.0
+  },
+  {
+    "date": "2025-01-17",
+    "Raipur": 41400.0,
+    "Delhi/NCR": 44800.0,
+    "Durgapur": 41700.0
+  },
+  {
+    "date": "2025-01-18",
+    "Raipur": 41300.0,
+    "Delhi/NCR": 44700.0,
+    "Durgapur": 41700.0
+  },
+  {
+    "date": "2025-01-20",
+    "Raipur": 41300.0,
+    "Delhi/NCR": 44700.0,
+    "Durgapur": 41700.0
+  },
+  {
+    "date": "2025-01-21",
+    "Raipur": 41200.0,
+    "Delhi/NCR": 44900.0,
+    "Durgapur": 41700.0
+  },
+  {
+    "date": "2025-01-22",
+    "Raipur": 41200.0,
+    "Delhi/NCR": 44800.0,
+    "Durgapur": 41500.0
+  },
+  {
+    "date": "2025-01-23",
+    "Raipur": 41500.0,
+    "Delhi/NCR": 45000.0,
+    "Durgapur": 42000.0
+  },
+  {
+    "date": "2025-01-24",
+    "Raipur": 41500.0,
+    "Delhi/NCR": 45200.0,
+    "Durgapur": 42200.0
+  },
+  {
+    "date": "2025-01-25",
+    "Raipur": 41500.0,
+    "Delhi/NCR": 45200.0,
+    "Durgapur": 42300.0
+  },
+  {
+    "date": "2025-01-27",
+    "Raipur": 42100.0,
+    "Delhi/NCR": 45700.0,
+    "Durgapur": 42700.0
+  },
+  {
+    "date": "2025-01-28",
+    "Raipur": 42300.0,
+    "Delhi/NCR": 46000.0,
+    "Durgapur": 42900.0
+  },
+  {
+    "date": "2025-01-29",
+    "Raipur": 42200.0,
+    "Delhi/NCR": 46000.0,
+    "Durgapur": 43100.0
+  },
+  {
+    "date": "2025-01-30",
+    "Raipur": 42200.0,
+    "Delhi/NCR": 46000.0,
+    "Durgapur": 43000.0
+  },
+  {
+    "date": "2025-01-31",
+    "Raipur": 42200.0,
+    "Delhi/NCR": 46100.0,
+    "Durgapur": 43100.0
+  },
+  {
+    "date": "2025-02-01",
+    "Raipur": 42100.0,
+    "Delhi/NCR": 46000.0,
+    "Durgapur": 43000.0
+  },
+  {
+    "date": "2025-02-03",
+    "Raipur": 42000.0,
+    "Delhi/NCR": 45800.0,
+    "Durgapur": 42900.0
+  },
+  {
+    "date": "2025-02-04",
+    "Raipur": 42000.0,
+    "Delhi/NCR": 45500.0,
+    "Durgapur": 42800.0
+  },
+  {
+    "date": "2025-02-05",
+    "Raipur": 41800.0,
+    "Delhi/NCR": 45300.0,
+    "Durgapur": 42700.0
+  },
+  {
+    "date": "2025-02-06",
+    "Raipur": 42000.0,
+    "Delhi/NCR": 45600.0,
+    "Durgapur": 43000.0
+  },
+  {
+    "date": "2025-02-07",
+    "Raipur": 41900.0,
+    "Delhi/NCR": 45900.0,
+    "Durgapur": 42700.0
+  },
+  {
+    "date": "2025-02-08",
+    "Raipur": 42100.0,
+    "Delhi/NCR": 46000.0,
+    "Durgapur": 42800.0
+  },
+  {
+    "date": "2025-02-10",
+    "Raipur": 42700.0,
+    "Delhi/NCR": 46200.0,
+    "Durgapur": 43200.0
+  },
+  {
+    "date": "2025-02-11",
+    "Raipur": 42600.0,
+    "Delhi/NCR": 46700.0,
+    "Durgapur": 43100.0
+  },
+  {
+    "date": "2025-02-12",
+    "Raipur": 42600.0,
+    "Delhi/NCR": 46700.0,
+    "Durgapur": 42900.0
+  },
+  {
+    "date": "2025-02-13",
+    "Raipur": 42800.0,
+    "Delhi/NCR": 46500.0,
+    "Durgapur": 43300.0
+  },
+  {
+    "date": "2025-02-14",
+    "Raipur": 42600.0,
+    "Delhi/NCR": 46400.0,
+    "Durgapur": 43000.0
+  },
+  {
+    "date": "2025-02-15",
+    "Raipur": 42600.0,
+    "Delhi/NCR": 46300.0,
+    "Durgapur": 43000.0
+  },
+  {
+    "date": "2025-02-17",
+    "Raipur": 42400.0,
+    "Delhi/NCR": 46000.0,
+    "Durgapur": 42800.0
+  },
+  {
+    "date": "2025-02-18",
+    "Raipur": 42600.0,
+    "Delhi/NCR": 46200.0,
+    "Durgapur": 42800.0
+  },
+  {
+    "date": "2025-02-19",
+    "Raipur": 42400.0,
+    "Delhi/NCR": 46200.0,
+    "Durgapur": 42600.0
+  },
+  {
+    "date": "2025-02-20",
+    "Raipur": 42700.0,
+    "Delhi/NCR": 46200.0,
+    "Durgapur": 42900.0
+  },
+  {
+    "date": "2025-02-21",
+    "Raipur": 42700.0,
+    "Delhi/NCR": 46400.0,
+    "Durgapur": 42800.0
+  },
+  {
+    "date": "2025-02-22",
+    "Raipur": 42700.0,
+    "Delhi/NCR": 46300.0,
+    "Durgapur": 43000.0
+  },
+  {
+    "date": "2025-02-24",
+    "Raipur": 43000.0,
+    "Delhi/NCR": 46600.0,
+    "Durgapur": 43200.0
+  },
+  {
+    "date": "2025-02-25",
+    "Raipur": 43000.0,
+    "Delhi/NCR": 46500.0,
+    "Durgapur": 43100.0
+  },
+  {
+    "date": "2025-02-26",
+    "Raipur": 43300.0,
+    "Delhi/NCR": 46600.0,
+    "Durgapur": 43500.0
+  },
+  {
+    "date": "2025-02-27",
+    "Raipur": 43800.0,
+    "Delhi/NCR": 46700.0,
+    "Durgapur": 43900.0
+  },
+  {
+    "date": "2025-02-28",
+    "Raipur": 43700.0,
+    "Delhi/NCR": 46700.0,
+    "Durgapur": 43500.0
+  },
+  {
+    "date": "2025-03-01",
+    "Raipur": 43700.0,
+    "Delhi/NCR": 46700.0,
+    "Durgapur": 43700.0
+  },
+  {
+    "date": "2025-03-03",
+    "Raipur": 43500.0,
+    "Delhi/NCR": 46600.0,
+    "Durgapur": 43200.0
+  },
+  {
+    "date": "2025-03-04",
+    "Raipur": 43500.0,
+    "Delhi/NCR": 46600.0,
+    "Durgapur": 43500.0
+  },
+  {
+    "date": "2025-03-05",
+    "Raipur": 43800.0,
+    "Delhi/NCR": 46800.0,
+    "Durgapur": 43800.0
+  },
+  {
+    "date": "2025-03-06",
+    "Raipur": 43800.0,
+    "Delhi/NCR": 46800.0,
+    "Durgapur": 43800.0
+  },
+  {
+    "date": "2025-03-07",
+    "Raipur": 43800.0,
+    "Delhi/NCR": 47000.0,
+    "Durgapur": 43800.0
+  },
+  {
+    "date": "2025-03-08",
+    "Raipur": 43700.0,
+    "Delhi/NCR": 47000.0,
+    "Durgapur": 43800.0
+  },
+  {
+    "date": "2025-03-10",
+    "Raipur": 43600.0,
+    "Delhi/NCR": 47000.0,
+    "Durgapur": 43500.0
+  },
+  {
+    "date": "2025-03-11",
+    "Raipur": 43500.0,
+    "Delhi/NCR": 47000.0,
+    "Durgapur": 43500.0
+  },
+  {
+    "date": "2025-03-12",
+    "Raipur": 43500.0,
+    "Delhi/NCR": 47000.0,
+    "Durgapur": 43400.0
+  },
+  {
+    "date": "2025-03-13",
+    "Raipur": 43500.0,
+    "Delhi/NCR": 47000.0,
+    "Durgapur": 43400.0
+  },
+  {
+    "date": "2025-03-17",
+    "Raipur": 43600.0,
+    "Delhi/NCR": 47000.0,
+    "Durgapur": 43600.0
+  },
+  {
+    "date": "2025-03-18",
+    "Raipur": 44000.0,
+    "Delhi/NCR": 47200.0,
+    "Durgapur": 43700.0
+  },
+  {
+    "date": "2025-03-19",
+    "Raipur": 44700.0,
+    "Delhi/NCR": 47600.0,
+    "Durgapur": 44200.0
+  },
+  {
+    "date": "2025-03-20",
+    "Raipur": 45100.0,
+    "Delhi/NCR": 48100.0,
+    "Durgapur": 44600.0
+  },
+  {
+    "date": "2025-03-21",
+    "Raipur": 45200.0,
+    "Delhi/NCR": 48500.0,
+    "Durgapur": 45300.0
+  },
+  {
+    "date": "2025-03-22",
+    "Raipur": 45000.0,
+    "Delhi/NCR": 48500.0,
+    "Durgapur": 45200.0
+  },
+  {
+    "date": "2025-03-24",
+    "Raipur": 45300.0,
+    "Delhi/NCR": 49500.0,
+    "Durgapur": 45500.0
+  },
+  {
+    "date": "2025-03-25",
+    "Raipur": 45300.0,
+    "Delhi/NCR": 49300.0,
+    "Durgapur": 45500.0
+  },
+  {
+    "date": "2025-03-26",
+    "Raipur": 45200.0,
+    "Delhi/NCR": 49000.0,
+    "Durgapur": 45500.0
+  },
+  {
+    "date": "2025-03-27",
+    "Raipur": 45200.0,
+    "Delhi/NCR": 49000.0,
+    "Durgapur": 45300.0
+  },
+  {
+    "date": "2025-03-28",
+    "Raipur": 44800.0,
+    "Delhi/NCR": 48800.0,
+    "Durgapur": 45100.0
+  },
+  {
+    "date": "2025-03-29",
+    "Raipur": 44800.0,
+    "Delhi/NCR": 48900.0,
+    "Durgapur": 45200.0
+  },
+  {
+    "date": "2025-03-31",
+    "Raipur": 45200.0,
+    "Delhi/NCR": 49100.0,
+    "Durgapur": 45700.0
+  },
+  {
+    "date": "2025-04-01",
+    "Raipur": 45700.0,
+    "Delhi/NCR": 49500.0,
+    "Durgapur": 46000.0
+  },
+  {
+    "date": "2025-04-02",
+    "Raipur": 45800.0,
+    "Delhi/NCR": 49300.0,
+    "Durgapur": 46300.0
+  },
+  {
+    "date": "2025-04-03",
+    "Raipur": 46400.0,
+    "Delhi/NCR": 49800.0,
+    "Durgapur": 46600.0
+  },
+  {
+    "date": "2025-04-04",
+    "Raipur": 46500.0,
+    "Delhi/NCR": 50200.0,
+    "Durgapur": 46700.0
+  },
+  {
+    "date": "2025-04-05",
+    "Raipur": 46200.0,
+    "Delhi/NCR": 49800.0,
+    "Durgapur": 46300.0
+  },
+  {
+    "date": "2025-04-07",
+    "Raipur": 45700.0,
+    "Delhi/NCR": 49000.0,
+    "Durgapur": 45800.0
+  },
+  {
+    "date": "2025-04-08",
+    "Raipur": 45600.0,
+    "Delhi/NCR": 49000.0,
+    "Durgapur": 45800.0
+  },
+  {
+    "date": "2025-04-09",
+    "Raipur": 45800.0,
+    "Delhi/NCR": 49200.0,
+    "Durgapur": 46000.0
+  },
+  {
+    "date": "2025-04-10",
+    "Raipur": 45900.0,
+    "Delhi/NCR": 49400.0,
+    "Durgapur": 46200.0
+  },
+  {
+    "date": "2025-04-11",
+    "Raipur": 46100.0,
+    "Delhi/NCR": 49500.0,
+    "Durgapur": 46600.0
+  },
+  {
+    "date": "2025-04-12",
+    "Raipur": 46000.0,
+    "Delhi/NCR": 49500.0,
+    "Durgapur": 46400.0
+  },
+  {
+    "date": "2025-04-14",
+    "Raipur": 45600.0,
+    "Delhi/NCR": 48900.0,
+    "Durgapur": 45900.0
+  },
+  {
+    "date": "2025-04-15",
+    "Raipur": 45400.0,
+    "Delhi/NCR": 48700.0,
+    "Durgapur": 45600.0
+  },
+  {
+    "date": "2025-04-16",
+    "Raipur": 45800.0,
+    "Delhi/NCR": 48700.0,
+    "Durgapur": 45800.0
+  },
+  {
+    "date": "2025-04-17",
+    "Raipur": 45400.0,
+    "Delhi/NCR": 48600.0,
+    "Durgapur": 45500.0
+  },
+  {
+    "date": "2025-04-18",
+    "Raipur": 45200.0,
+    "Delhi/NCR": 48600.0,
+    "Durgapur": 45500.0
+  },
+  {
+    "date": "2025-04-19",
+    "Raipur": 44800.0,
+    "Delhi/NCR": 48400.0,
+    "Durgapur": 45300.0
+  },
+  {
+    "date": "2025-04-21",
+    "Raipur": 44700.0,
+    "Delhi/NCR": 47900.0,
+    "Durgapur": 44700.0
+  },
+  {
+    "date": "2025-04-22",
+    "Raipur": 45600.0,
+    "Delhi/NCR": 48600.0,
+    "Durgapur": 45500.0
+  },
+  {
+    "date": "2025-04-23",
+    "Raipur": 45200.0,
+    "Delhi/NCR": 48600.0,
+    "Durgapur": 45300.0
+  },
+  {
+    "date": "2025-04-24",
+    "Raipur": 45200.0,
+    "Delhi/NCR": 48400.0,
+    "Durgapur": 45400.0
+  },
+  {
+    "date": "2025-04-25",
+    "Raipur": 45000.0,
+    "Delhi/NCR": 48300.0,
+    "Durgapur": 45000.0
+  },
+  {
+    "date": "2025-04-26",
+    "Raipur": 45000.0,
+    "Delhi/NCR": 48100.0,
+    "Durgapur": 45000.0
+  },
+  {
+    "date": "2025-04-28",
+    "Raipur": 45000.0,
+    "Delhi/NCR": 47800.0,
+    "Durgapur": 44600.0
+  },
+  {
+    "date": "2025-04-29",
+    "Raipur": 44800.0,
+    "Delhi/NCR": 47800.0,
+    "Durgapur": 44600.0
+  },
+  {
+    "date": "2025-04-30",
+    "Raipur": 44500.0,
+    "Delhi/NCR": 47300.0,
+    "Durgapur": 44200.0
+  },
+  {
+    "date": "2025-05-01",
+    "Raipur": 44500.0,
+    "Delhi/NCR": 47500.0,
+    "Durgapur": 44100.0
+  },
+  {
+    "date": "2025-05-02",
+    "Raipur": 44500.0,
+    "Delhi/NCR": 47500.0,
+    "Durgapur": 44200.0
+  },
+  {
+    "date": "2025-05-03",
+    "Raipur": 44300.0,
+    "Delhi/NCR": 47300.0,
+    "Durgapur": 44300.0
+  },
+  {
+    "date": "2025-05-05",
+    "Raipur": 44400.0,
+    "Delhi/NCR": 47300.0,
+    "Durgapur": 44000.0
+  },
+  {
+    "date": "2025-05-06",
+    "Raipur": 44300.0,
+    "Delhi/NCR": 47200.0,
+    "Durgapur": 43700.0
+  },
+  {
+    "date": "2025-05-07",
+    "Raipur": 44200.0,
+    "Delhi/NCR": 47000.0,
+    "Durgapur": 43400.0
+  },
+  {
+    "date": "2025-05-08",
+    "Raipur": 44100.0,
+    "Delhi/NCR": 47000.0,
+    "Durgapur": 43300.0
+  },
+  {
+    "date": "2025-05-09",
+    "Raipur": 43900.0,
+    "Delhi/NCR": 47000.0,
+    "Durgapur": 43200.0
+  },
+  {
+    "date": "2025-05-10",
+    "Raipur": 43800.0,
+    "Delhi/NCR": 47000.0,
+    "Durgapur": 43000.0
+  },
+  {
+    "date": "2025-05-12",
+    "Raipur": 44100.0,
+    "Delhi/NCR": 47300.0,
+    "Durgapur": 43400.0
+  },
+  {
+    "date": "2025-05-13",
+    "Raipur": 43900.0,
+    "Delhi/NCR": 47400.0,
+    "Durgapur": 43000.0
+  },
+  {
+    "date": "2025-05-14",
+    "Raipur": 43700.0,
+    "Delhi/NCR": 47400.0,
+    "Durgapur": 42800.0
+  },
+  {
+    "date": "2025-05-15",
+    "Raipur": 43500.0,
+    "Delhi/NCR": 47200.0,
+    "Durgapur": 42600.0
+  },
+  {
+    "date": "2025-05-16",
+    "Raipur": 43500.0,
+    "Delhi/NCR": 47000.0,
+    "Durgapur": 42700.0
+  },
+  {
+    "date": "2025-05-17",
+    "Raipur": 43600.0,
+    "Delhi/NCR": 46900.0,
+    "Durgapur": 42700.0
+  },
+  {
+    "date": "2025-05-19",
+    "Raipur": 43500.0,
+    "Delhi/NCR": 46800.0,
+    "Durgapur": 42600.0
+  },
+  {
+    "date": "2025-05-20",
+    "Raipur": 43500.0,
+    "Delhi/NCR": 46700.0,
+    "Durgapur": 42500.0
+  },
+  {
+    "date": "2025-05-21",
+    "Raipur": 43500.0,
+    "Delhi/NCR": 46700.0,
+    "Durgapur": 42600.0
+  },
+  {
+    "date": "2025-05-22",
+    "Raipur": 43400.0,
+    "Delhi/NCR": 46700.0,
+    "Durgapur": 42500.0
+  },
+  {
+    "date": "2025-05-23",
+    "Raipur": 43300.0,
+    "Delhi/NCR": 46400.0,
+    "Durgapur": 42300.0
+  },
+  {
+    "date": "2025-05-24",
+    "Raipur": 43200.0,
+    "Delhi/NCR": 46600.0,
+    "Durgapur": 42200.0
+  },
+  {
+    "date": "2025-05-26",
+    "Raipur": 43100.0,
+    "Delhi/NCR": 46200.0,
+    "Durgapur": 41800.0
+  },
+  {
+    "date": "2025-05-27",
+    "Raipur": 42900.0,
+    "Delhi/NCR": 46000.0,
+    "Durgapur": 41600.0
+  },
+  {
+    "date": "2025-05-28",
+    "Raipur": 42800.0,
+    "Delhi/NCR": 45800.0,
+    "Durgapur": 41500.0
+  },
+  {
+    "date": "2025-05-29",
+    "Raipur": 42500.0,
+    "Delhi/NCR": 45800.0,
+    "Durgapur": 41300.0
+  },
+  {
+    "date": "2025-05-30",
+    "Raipur": 42400.0,
+    "Delhi/NCR": 45800.0,
+    "Durgapur": 41300.0
+  },
+  {
+    "date": "2025-05-31",
+    "Raipur": 42400.0,
+    "Delhi/NCR": 45800.0,
+    "Durgapur": 41400.0
+  },
+  {
+    "date": "2025-06-02",
+    "Raipur": 42500.0,
+    "Delhi/NCR": 46000.0,
+    "Durgapur": 41400.0
+  },
+  {
+    "date": "2025-06-03",
+    "Raipur": 42200.0,
+    "Delhi/NCR": 46000.0,
+    "Durgapur": 41200.0
+  },
+  {
+    "date": "2025-06-04",
+    "Raipur": 42000.0,
+    "Delhi/NCR": 46100.0,
+    "Durgapur": 41200.0
+  },
+  {
+    "date": "2025-06-05",
+    "Raipur": 42000.0,
+    "Delhi/NCR": 45800.0,
+    "Durgapur": 41200.0
+  },
+  {
+    "date": "2025-06-06",
+    "Raipur": 41900.0,
+    "Delhi/NCR": 45800.0,
+    "Durgapur": 41000.0
+  },
+  {
+    "date": "2025-06-07",
+    "Raipur": 41700.0,
+    "Delhi/NCR": 45700.0,
+    "Durgapur": 41000.0
+  },
+  {
+    "date": "2025-06-09",
+    "Raipur": 41500.0,
+    "Delhi/NCR": 45500.0,
+    "Durgapur": 41000.0
+  },
+  {
+    "date": "2025-06-10",
+    "Raipur": 41400.0,
+    "Delhi/NCR": 45600.0,
+    "Durgapur": 41000.0
+  },
+  {
+    "date": "2025-06-11",
+    "Raipur": 41400.0,
+    "Delhi/NCR": 45600.0,
+    "Durgapur": 40900.0
+  },
+  {
+    "date": "2025-06-12",
+    "Raipur": 41400.0,
+    "Delhi/NCR": 45500.0,
+    "Durgapur": 40800.0
+  },
+  {
+    "date": "2025-06-13",
+    "Raipur": 41300.0,
+    "Delhi/NCR": 45400.0,
+    "Durgapur": 40800.0
+  },
+  {
+    "date": "2025-06-14",
+    "Raipur": 41200.0,
+    "Delhi/NCR": 45300.0,
+    "Durgapur": 40600.0
+  },
+  {
+    "date": "2025-06-16",
+    "Raipur": 41200.0,
+    "Delhi/NCR": 45300.0,
+    "Durgapur": 40800.0
+  },
+  {
+    "date": "2025-06-17",
+    "Raipur": 41200.0,
+    "Delhi/NCR": 45400.0,
+    "Durgapur": 41000.0
+  },
+  {
+    "date": "2025-06-18",
+    "Raipur": 41000.0,
+    "Delhi/NCR": 45400.0,
+    "Durgapur": 40800.0
+  },
+  {
+    "date": "2025-06-19",
+    "Raipur": 41000.0,
+    "Delhi/NCR": 45300.0,
+    "Durgapur": 40500.0
+  },
+  {
+    "date": "2025-06-20",
+    "Raipur": 41000.0,
+    "Delhi/NCR": 45000.0,
+    "Durgapur": 40400.0
+  },
+  {
+    "date": "2025-06-21",
+    "Raipur": 41000.0,
+    "Delhi/NCR": 44800.0,
+    "Durgapur": 40300.0
+  },
+  {
+    "date": "2025-06-23",
+    "Raipur": 40800.0,
+    "Delhi/NCR": 44500.0,
+    "Durgapur": 40300.0
+  },
+  {
+    "date": "2025-06-24",
+    "Raipur": 40400.0,
+    "Delhi/NCR": 44400.0,
+    "Durgapur": 40200.0
+  },
+  {
+    "date": "2025-06-25",
+    "Raipur": 40500.0,
+    "Delhi/NCR": 44400.0,
+    "Durgapur": 40400.0
+  },
+  {
+    "date": "2025-06-26",
+    "Raipur": 40500.0,
+    "Delhi/NCR": 44500.0,
+    "Durgapur": 40500.0
+  },
+  {
+    "date": "2025-06-27",
+    "Raipur": 40400.0,
+    "Delhi/NCR": 44700.0,
+    "Durgapur": 40300.0
+  },
+  {
+    "date": "2025-06-28",
+    "Raipur": 40200.0,
+    "Delhi/NCR": 44600.0,
+    "Durgapur": 40300.0
+  },
+  {
+    "date": "2025-06-30",
+    "Raipur": 39900.0,
+    "Delhi/NCR": 44500.0,
+    "Durgapur": 40300.0
+  },
+  {
+    "date": "2025-07-01",
+    "Raipur": 39800.0,
+    "Delhi/NCR": 44500.0,
+    "Durgapur": 40600.0
+  },
+  {
+    "date": "2025-07-02",
+    "Raipur": 39900.0,
+    "Delhi/NCR": 44400.0,
+    "Durgapur": 40500.0
+  },
+  {
+    "date": "2025-07-03",
+    "Raipur": 39700.0,
+    "Delhi/NCR": 44200.0,
+    "Durgapur": 40500.0
+  },
+  {
+    "date": "2025-07-04",
+    "Raipur": 39400.0,
+    "Delhi/NCR": 44200.0,
+    "Durgapur": 40500.0
+  },
+  {
+    "date": "2025-07-05",
+    "Raipur": 39400.0,
+    "Delhi/NCR": 44200.0,
+    "Durgapur": 40500.0
+  },
+  {
+    "date": "2025-07-07",
+    "Raipur": 39400.0,
+    "Delhi/NCR": 44000.0,
+    "Durgapur": 40500.0
+  },
+  {
+    "date": "2025-07-08",
+    "Raipur": 39500.0,
+    "Delhi/NCR": 43900.0,
+    "Durgapur": 40200.0
+  },
+  {
+    "date": "2025-07-09",
+    "Raipur": 39700.0,
+    "Delhi/NCR": 44400.0,
+    "Durgapur": 40200.0
+  },
+  {
+    "date": "2025-07-10",
+    "Raipur": 39700.0,
+    "Delhi/NCR": 44400.0,
+    "Durgapur": 40300.0
+  },
+  {
+    "date": "2025-07-11",
+    "Raipur": 39500.0,
+    "Delhi/NCR": 44300.0,
+    "Durgapur": 40200.0
+  },
+  {
+    "date": "2025-07-12",
+    "Raipur": 39300.0,
+    "Delhi/NCR": 44000.0,
+    "Durgapur": 40200.0
+  },
+  {
+    "date": "2025-07-14",
+    "Raipur": 39200.0,
+    "Delhi/NCR": 43900.0,
+    "Durgapur": 39800.0
+  },
+  {
+    "date": "2025-07-15",
+    "Raipur": 39000.0,
+    "Delhi/NCR": 43800.0,
+    "Durgapur": 39700.0
+  },
+  {
+    "date": "2025-07-16",
+    "Raipur": 39000.0,
+    "Delhi/NCR": 43900.0,
+    "Durgapur": 39900.0
+  },
+  {
+    "date": "2025-07-17",
+    "Raipur": 39000.0,
+    "Delhi/NCR": 43900.0,
+    "Durgapur": 40000.0
+  },
+  {
+    "date": "2025-07-18",
+    "Raipur": 39100.0,
+    "Delhi/NCR": 44000.0,
+    "Durgapur": 40000.0
+  },
+  {
+    "date": "2025-07-19",
+    "Raipur": 39000.0,
+    "Delhi/NCR": 44000.0,
+    "Durgapur": 39800.0
+  },
+  {
+    "date": "2025-07-21",
+    "Raipur": 39000.0,
+    "Delhi/NCR": 43800.0,
+    "Durgapur": 39800.0
+  },
+  {
+    "date": "2025-07-22",
+    "Raipur": 39100.0,
+    "Delhi/NCR": 43600.0,
+    "Durgapur": 39700.0
+  },
+  {
+    "date": "2025-07-23",
+    "Raipur": 39500.0,
+    "Delhi/NCR": 43800.0,
+    "Durgapur": 40200.0
+  },
+  {
+    "date": "2025-07-24",
+    "Raipur": 40200.0,
+    "Delhi/NCR": 44000.0,
+    "Durgapur": 40300.0
+  },
+  {
+    "date": "2025-07-25",
+    "Raipur": 41200.0,
+    "Delhi/NCR": 44800.0,
+    "Durgapur": 40800.0
+  },
+  {
+    "date": "2025-07-26",
+    "Raipur": 41000.0,
+    "Delhi/NCR": 45000.0,
+    "Durgapur": 40700.0
+  },
+  {
+    "date": "2025-07-28",
+    "Raipur": 40700.0,
+    "Delhi/NCR": 45100.0,
+    "Durgapur": 40600.0
+  },
+  {
+    "date": "2025-07-29",
+    "Raipur": 40400.0,
+    "Delhi/NCR": 44900.0,
+    "Durgapur": 40400.0
+  },
+  {
+    "date": "2025-07-30",
+    "Raipur": 40200.0,
+    "Delhi/NCR": 44700.0,
+    "Durgapur": 40400.0
+  },
+  {
+    "date": "2025-07-31",
+    "Raipur": 40000.0,
+    "Delhi/NCR": 44600.0,
+    "Durgapur": 40200.0
+  },
+  {
+    "date": "2025-08-01",
+    "Raipur": 39600.0,
+    "Delhi/NCR": 44600.0,
+    "Durgapur": 40300.0
+  },
+  {
+    "date": "2025-08-02",
+    "Raipur": 39700.0,
+    "Delhi/NCR": 44800.0,
+    "Durgapur": 40500.0
+  },
+  {
+    "date": "2025-08-04",
+    "Raipur": 40300.0,
+    "Delhi/NCR": 45000.0,
+    "Durgapur": 40800.0
+  },
+  {
+    "date": "2025-08-05",
+    "Raipur": 40100.0,
+    "Delhi/NCR": 45200.0,
+    "Durgapur": 40500.0
+  },
+  {
+    "date": "2025-08-06",
+    "Raipur": 39800.0,
+    "Delhi/NCR": 44900.0,
+    "Durgapur": 40300.0
+  },
+  {
+    "date": "2025-08-07",
+    "Raipur": 39700.0,
+    "Delhi/NCR": 44700.0,
+    "Durgapur": 39900.0
+  },
+  {
+    "date": "2025-08-08",
+    "Raipur": 39800.0,
+    "Delhi/NCR": 44100.0,
+    "Durgapur": 39800.0
+  },
+  {
+    "date": "2025-08-11",
+    "Raipur": 40000.0,
+    "Delhi/NCR": 44000.0,
+    "Durgapur": 40000.0
+  },
+  {
+    "date": "2025-08-12",
+    "Raipur": 39900.0,
+    "Delhi/NCR": 43700.0,
+    "Durgapur": 40000.0
+  },
+  {
+    "date": "2025-08-13",
+    "Raipur": 39700.0,
+    "Delhi/NCR": 43600.0,
+    "Durgapur": 39800.0
+  },
+  {
+    "date": "2025-08-14",
+    "Raipur": 39700.0,
+    "Delhi/NCR": 43600.0,
+    "Durgapur": 39800.0
+  },
+  {
+    "date": "2025-08-18",
+    "Raipur": 40000.0,
+    "Delhi/NCR": 43400.0,
+    "Durgapur": 39800.0
+  },
+  {
+    "date": "2025-08-19",
+    "Raipur": 40300.0,
+    "Delhi/NCR": 43600.0,
+    "Durgapur": 39800.0
+  },
+  {
+    "date": "2025-08-20",
+    "Raipur": 40300.0,
+    "Delhi/NCR": 43500.0,
+    "Durgapur": 39700.0
+  },
+  {
+    "date": "2025-08-21",
+    "Raipur": 40200.0,
+    "Delhi/NCR": 43300.0,
+    "Durgapur": 39800.0
+  },
+  {
+    "date": "2025-08-22",
+    "Raipur": 39900.0,
+    "Delhi/NCR": 43000.0,
+    "Durgapur": 39700.0
+  },
+  {
+    "date": "2025-08-23",
+    "Raipur": 39900.0,
+    "Delhi/NCR": 42900.0,
+    "Durgapur": 39700.0
+  },
+  {
+    "date": "2025-08-25",
+    "Raipur": 39600.0,
+    "Delhi/NCR": 42700.0,
+    "Durgapur": 39400.0
+  },
+  {
+    "date": "2025-08-26",
+    "Raipur": 39400.0,
+    "Delhi/NCR": 42500.0,
+    "Durgapur": 39300.0
+  },
+  {
+    "date": "2025-08-27",
+    "Raipur": 39500.0,
+    "Delhi/NCR": 42500.0,
+    "Durgapur": 39200.0
+  },
+  {
+    "date": "2025-08-28",
+    "Raipur": 39500.0,
+    "Delhi/NCR": 42500.0,
+    "Durgapur": 39100.0
+  },
+  {
+    "date": "2025-08-29",
+    "Raipur": 39500.0,
+    "Delhi/NCR": 42400.0,
+    "Durgapur": 39000.0
+  },
+  {
+    "date": "2025-08-30",
+    "Raipur": 39500.0,
+    "Delhi/NCR": 42100.0,
+    "Durgapur": 39000.0
+  },
+  {
+    "date": "2025-09-01",
+    "Raipur": 39600.0,
+    "Delhi/NCR": 42100.0,
+    "Durgapur": 38900.0
+  },
+  {
+    "date": "2025-09-02",
+    "Raipur": 39400.0,
+    "Delhi/NCR": 41900.0,
+    "Durgapur": 38800.0
+  },
+  {
+    "date": "2025-09-03",
+    "Raipur": 39300.0,
+    "Delhi/NCR": 41500.0,
+    "Durgapur": 38700.0
+  },
+  {
+    "date": "2025-09-04",
+    "Raipur": 39400.0,
+    "Delhi/NCR": 41500.0,
+    "Durgapur": 39100.0
+  },
+  {
+    "date": "2025-09-05",
+    "Raipur": 39500.0,
+    "Delhi/NCR": 42000.0,
+    "Durgapur": 39100.0
+  },
+  {
+    "date": "2025-09-06",
+    "Raipur": 39700.0,
+    "Delhi/NCR": 42000.0,
+    "Durgapur": 39300.0
+  },
+  {
+    "date": "2025-09-08",
+    "Raipur": 40000.0,
+    "Delhi/NCR": 42800.0,
+    "Durgapur": 39550.0
+  },
+  {
+    "date": "2025-09-09",
+    "Raipur": 40200.0,
+    "Delhi/NCR": 43500.0,
+    "Durgapur": 39450.0
+  },
+  {
+    "date": "2025-09-10",
+    "Raipur": 39900.0,
+    "Delhi/NCR": 43200.0,
+    "Durgapur": 39300.0
+  },
+  {
+    "date": "2025-09-11",
+    "Raipur": 39700.0,
+    "Delhi/NCR": 42800.0,
+    "Durgapur": 39200.0
+  },
+  {
+    "date": "2025-09-12",
+    "Raipur": 39700.0,
+    "Delhi/NCR": 42500.0,
+    "Durgapur": 39200.0
+  },
+  {
+    "date": "2025-09-13",
+    "Raipur": 39700.0,
+    "Delhi/NCR": 42400.0,
+    "Durgapur": 39200.0
+  },
+  {
+    "date": "2025-09-15",
+    "Raipur": 39600.0,
+    "Delhi/NCR": 42400.0,
+    "Durgapur": 38900.0
+  },
+  {
+    "date": "2025-09-16",
+    "Raipur": 39400.0,
+    "Delhi/NCR": 42200.0,
+    "Durgapur": 38800.0
+  },
+  {
+    "date": "2025-09-17",
+    "Raipur": null,
+    "Delhi/NCR": 41900.0,
+    "Durgapur": 38700.0
+  },
+  {
+    "date": "2025-09-18",
+    "Raipur": 39800.0,
+    "Delhi/NCR": 41900.0,
+    "Durgapur": 38900.0
+  },
+  {
+    "date": "2025-09-19",
+    "Raipur": 39600.0,
+    "Delhi/NCR": 42200.0,
+    "Durgapur": 38900.0
+  },
+  {
+    "date": "2025-09-20",
+    "Raipur": 39600.0,
+    "Delhi/NCR": 42200.0,
+    "Durgapur": 38900.0
+  },
+  {
+    "date": "2025-09-22",
+    "Raipur": 39600.0,
+    "Delhi/NCR": 42500.0,
+    "Durgapur": 39000.0
+  },
+  {
+    "date": "2025-09-23",
+    "Raipur": 39900.0,
+    "Delhi/NCR": 42700.0,
+    "Durgapur": 38900.0
+  },
+  {
+    "date": "2025-09-24",
+    "Raipur": 39800.0,
+    "Delhi/NCR": 42600.0,
+    "Durgapur": 38700.0
+  },
+  {
+    "date": "2025-09-25",
+    "Raipur": 39800.0,
+    "Delhi/NCR": 42600.0,
+    "Durgapur": 38800.0
+  },
+  {
+    "date": "2025-09-26",
+    "Raipur": 39700.0,
+    "Delhi/NCR": 42600.0,
+    "Durgapur": 38800.0
+  },
+  {
+    "date": "2025-09-27",
+    "Raipur": 39600.0,
+    "Delhi/NCR": 42800.0,
+    "Durgapur": 38800.0
+  },
+  {
+    "date": "2025-09-29",
+    "Raipur": 39400.0,
+    "Delhi/NCR": 42800.0,
+    "Durgapur": null
+  },
+  {
+    "date": "2025-09-30",
+    "Raipur": 39300.0,
+    "Delhi/NCR": 42300.0,
+    "Durgapur": null
+  },
+  {
+    "date": "2025-10-01",
+    "Raipur": 39300.0,
+    "Delhi/NCR": 42300.0,
+    "Durgapur": null
+  },
+  {
+    "date": "2025-10-03",
+    "Raipur": 39200.0,
+    "Delhi/NCR": 42700.0,
+    "Durgapur": 38800.0
+  },
+  {
+    "date": "2025-10-04",
+    "Raipur": 39100.0,
+    "Delhi/NCR": 42300.0,
+    "Durgapur": 38700.0
+  },
+  {
+    "date": "2025-10-06",
+    "Raipur": 38800.0,
+    "Delhi/NCR": 42000.0,
+    "Durgapur": 38500.0
+  },
+  {
+    "date": "2025-10-07",
+    "Raipur": 38500.0,
+    "Delhi/NCR": 41600.0,
+    "Durgapur": 38400.0
+  },
+  {
+    "date": "2025-10-08",
+    "Raipur": 38500.0,
+    "Delhi/NCR": 41600.0,
+    "Durgapur": 38300.0
+  },
+  {
+    "date": "2025-10-08",
+    "Raipur": 38500.0,
+    "Delhi/NCR": 41600.0,
+    "Durgapur": 38300.0
+  },
+  {
+    "date": "2025-10-09",
+    "Raipur": 38400.0,
+    "Delhi/NCR": 41400.0,
+    "Durgapur": 38400.0
+  },
+  {
+    "date": "2025-10-10",
+    "Raipur": 38600.0,
+    "Delhi/NCR": 41700.0,
+    "Durgapur": 38500.0
+  },
+  {
+    "date": "2025-10-11",
+    "Raipur": 38500.0,
+    "Delhi/NCR": 41700.0,
+    "Durgapur": 38400.0
+  },
+  {
+    "date": "2025-10-13",
+    "Raipur": 38200.0,
+    "Delhi/NCR": 41200.0,
+    "Durgapur": 38200.0
+  },
+  {
+    "date": "2025-10-14",
+    "Raipur": 38000.0,
+    "Delhi/NCR": 41200.0,
+    "Durgapur": 38000.0
+  },
+  {
+    "date": "2025-10-15",
+    "Raipur": 37900.0,
+    "Delhi/NCR": 41200.0,
+    "Durgapur": 37900.0
+  },
+  {
+    "date": "2025-10-16",
+    "Raipur": 37800.0,
+    "Delhi/NCR": 41000.0,
+    "Durgapur": 37700.0
+  },
+  {
+    "date": "2025-10-17",
+    "Raipur": 37800.0,
+    "Delhi/NCR": 40900.0,
+    "Durgapur": 37700.0
+  },
+  {
+    "date": "2025-10-18",
+    "Raipur": 37800.0,
+    "Delhi/NCR": 40700.0,
+    "Durgapur": 37700.0
+  },
+  {
+    "date": "2025-10-23",
+    "Raipur": 37500.0,
+    "Delhi/NCR": 40300.0,
+    "Durgapur": 37500.0
+  },
+  {
+    "date": "2025-10-24",
+    "Raipur": 37400.0,
+    "Delhi/NCR": 40100.0,
+    "Durgapur": 37400.0
+  },
+  {
+    "date": "2025-10-25",
+    "Raipur": 37400.0,
+    "Delhi/NCR": 40200.0,
+    "Durgapur": 37500.0
+  },
+  {
+    "date": "2025-10-27",
+    "Raipur": 37300.0,
+    "Delhi/NCR": 40300.0,
+    "Durgapur": 37400.0
+  },
+  {
+    "date": "2025-10-28",
+    "Raipur": 37200.0,
+    "Delhi/NCR": 40200.0,
+    "Durgapur": 37300.0
+  },
+  {
+    "date": "2025-10-29",
+    "Raipur": 37400.0,
+    "Delhi/NCR": 40100.0,
+    "Durgapur": 37600.0
+  },
+  {
+    "date": "2025-10-30",
+    "Raipur": 37500.0,
+    "Delhi/NCR": 40600.0,
+    "Durgapur": 37700.0
+  },
+  {
+    "date": "2025-10-31",
+    "Raipur": 38200.0,
+    "Delhi/NCR": 41500.0,
+    "Durgapur": 38000.0
+  },
+  {
+    "date": "2025-11-01",
+    "Raipur": 38500.0,
+    "Delhi/NCR": 41500.0,
+    "Durgapur": 38000.0
+  },
+  {
+    "date": "2025-11-03",
+    "Raipur": 38200.0,
+    "Delhi/NCR": 41200.0,
+    "Durgapur": 37800.0
+  },
+  {
+    "date": "2025-11-04",
+    "Raipur": 38200.0,
+    "Delhi/NCR": 41400.0,
+    "Durgapur": 38000.0
+  },
+  {
+    "date": "2025-11-05",
+    "Raipur": 38000.0,
+    "Delhi/NCR": 41400.0,
+    "Durgapur": 37800.0
+  },
+  {
+    "date": "2025-11-06",
+    "Raipur": 37800.0,
+    "Delhi/NCR": 41400.0,
+    "Durgapur": 37800.0
+  },
+  {
+    "date": "2025-11-07",
+    "Raipur": 37600.0,
+    "Delhi/NCR": 41300.0,
+    "Durgapur": 37800.0
+  },
+  {
+    "date": "2025-11-08",
+    "Raipur": 37600.0,
+    "Delhi/NCR": 41200.0,
+    "Durgapur": 37700.0
+  },
+  {
+    "date": "2025-11-10",
+    "Raipur": 37600.0,
+    "Delhi/NCR": 41000.0,
+    "Durgapur": 37800.0
+  },
+  {
+    "date": "2025-11-11",
+    "Raipur": 37800.0,
+    "Delhi/NCR": 41500.0,
+    "Durgapur": 38100.0
+  },
+  {
+    "date": "2025-11-12",
+    "Raipur": 37700.0,
+    "Delhi/NCR": 41400.0,
+    "Durgapur": 38000.0
+  },
+  {
+    "date": "2025-11-13",
+    "Raipur": 38000.0,
+    "Delhi/NCR": 41600.0,
+    "Durgapur": 38100.0
+  },
+  {
+    "date": "2025-11-14",
+    "Raipur": 38100.0,
+    "Delhi/NCR": 41800.0,
+    "Durgapur": 38000.0
+  },
+  {
+    "date": "2025-11-15",
+    "Raipur": 38400.0,
+    "Delhi/NCR": 41800.0,
+    "Durgapur": 38500.0
+  },
+  {
+    "date": "2025-11-17",
+    "Raipur": 38500.0,
+    "Delhi/NCR": 42300.0,
+    "Durgapur": 38600.0
+  },
+  {
+    "date": "2025-11-18",
+    "Raipur": 38500.0,
+    "Delhi/NCR": 42100.0,
+    "Durgapur": 38600.0
+  },
+  {
+    "date": "2025-11-19",
+    "Raipur": 38400.0,
+    "Delhi/NCR": 42000.0,
+    "Durgapur": 38500.0
+  },
+  {
+    "date": "2025-11-20",
+    "Raipur": 38400.0,
+    "Delhi/NCR": 42100.0,
+    "Durgapur": 38900.0
+  },
+  {
+    "date": "2025-11-21",
+    "Raipur": 38400.0,
+    "Delhi/NCR": 42100.0,
+    "Durgapur": 38800.0
+  },
+  {
+    "date": "2025-11-22",
+    "Raipur": 38300.0,
+    "Delhi/NCR": 42200.0,
+    "Durgapur": 38800.0
+  },
+  {
+    "date": "2025-11-24",
+    "Raipur": 38500.0,
+    "Delhi/NCR": 42000.0,
+    "Durgapur": 38800.0
+  },
+  {
+    "date": "2025-11-25",
+    "Raipur": 38400.0,
+    "Delhi/NCR": 41900.0,
+    "Durgapur": 38800.0
+  },
+  {
+    "date": "2025-11-26",
+    "Raipur": 38700.0,
+    "Delhi/NCR": 42250.0,
+    "Durgapur": 39100.0
+  },
+  {
+    "date": "2025-11-27",
+    "Raipur": 39000.0,
+    "Delhi/NCR": 42600.0,
+    "Durgapur": 39200.0
+  },
+  {
+    "date": "2025-11-28",
+    "Raipur": 38900.0,
+    "Delhi/NCR": 42400.0,
+    "Durgapur": 39100.0
+  },
+  {
+    "date": "2025-11-29",
+    "Raipur": 38700.0,
+    "Delhi/NCR": 42400.0,
+    "Durgapur": 39100.0
+  },
+  {
+    "date": "2025-12-01",
+    "Raipur": 39000.0,
+    "Delhi/NCR": 43200.0,
+    "Durgapur": 39500.0
+  },
+  {
+    "date": "2025-12-02",
+    "Raipur": 39300.0,
+    "Delhi/NCR": 43200.0,
+    "Durgapur": 39500.0
+  },
+  {
+    "date": "2025-12-03",
+    "Raipur": 39300.0,
+    "Delhi/NCR": 43200.0,
+    "Durgapur": 39600.0
+  },
+  {
+    "date": "2025-12-04",
+    "Raipur": 39500.0,
+    "Delhi/NCR": 43300.0,
+    "Durgapur": 39800.0
+  },
+  {
+    "date": "2025-12-05",
+    "Raipur": 39500.0,
+    "Delhi/NCR": 43300.0,
+    "Durgapur": 39600.0
+  },
+  {
+    "date": "2025-12-06",
+    "Raipur": 39500.0,
+    "Delhi/NCR": 43200.0,
+    "Durgapur": 39500.0
+  },
+  {
+    "date": "2025-12-08",
+    "Raipur": 39300.0,
+    "Delhi/NCR": 42900.0,
+    "Durgapur": 39400.0
+  },
+  {
+    "date": "2025-12-09",
+    "Raipur": 39100.0,
+    "Delhi/NCR": 42900.0,
+    "Durgapur": 39200.0
+  },
+  {
+    "date": "2025-12-10",
+    "Raipur": 39200.0,
+    "Delhi/NCR": 43000.0,
+    "Durgapur": 39200.0
+  },
+  {
+    "date": "2025-12-11",
+    "Raipur": 39100.0,
+    "Delhi/NCR": 43000.0,
+    "Durgapur": 39100.0
+  },
+  {
+    "date": "2025-12-12",
+    "Raipur": 39000.0,
+    "Delhi/NCR": 42800.0,
+    "Durgapur": 38900.0
+  },
+  {
+    "date": "2025-12-13",
+    "Raipur": 38900.0,
+    "Delhi/NCR": 42200.0,
+    "Durgapur": 38900.0
+  },
+  {
+    "date": "2025-12-15",
+    "Raipur": 39000.0,
+    "Delhi/NCR": 42100.0,
+    "Durgapur": 38950.0
+  },
+  {
+    "date": "2025-12-16",
+    "Raipur": 39500.0,
+    "Delhi/NCR": 42300.0,
+    "Durgapur": 39100.0
+  },
+  {
+    "date": "2025-12-17",
+    "Raipur": 39700.0,
+    "Delhi/NCR": 42500.0,
+    "Durgapur": 39200.0
+  },
+  {
+    "date": "2025-12-18",
+    "Raipur": 39600.0,
+    "Delhi/NCR": 42500.0,
+    "Durgapur": 39200.0
+  },
+  {
+    "date": "2025-12-19",
+    "Raipur": 40000.0,
+    "Delhi/NCR": 43200.0,
+    "Durgapur": 39500.0
+  },
+  {
+    "date": "2025-12-20",
+    "Raipur": 40000.0,
+    "Delhi/NCR": 43200.0,
+    "Durgapur": 39400.0
+  },
+  {
+    "date": "2025-12-22",
+    "Raipur": 40700.0,
+    "Delhi/NCR": 43350.0,
+    "Durgapur": 39800.0
+  },
+  {
+    "date": "2025-12-23",
+    "Raipur": 41000.0,
+    "Delhi/NCR": 43400.0,
+    "Durgapur": 39800.0
+  },
+  {
+    "date": "2025-12-24",
+    "Raipur": 41000.0,
+    "Delhi/NCR": 43500.0,
+    "Durgapur": 39800.0
+  },
+  {
+    "date": "2025-12-26",
+    "Raipur": 40700.0,
+    "Delhi/NCR": 43650.0,
+    "Durgapur": 40000.0
+  },
+  {
+    "date": "2025-12-27",
+    "Raipur": 40600.0,
+    "Delhi/NCR": 43700.0,
+    "Durgapur": 40000.0
+  },
+  {
+    "date": "2025-12-29",
+    "Raipur": 42600.0,
+    "Delhi/NCR": 44700.0,
+    "Durgapur": 41800.0
+  },
+  {
+    "date": "2025-12-30",
+    "Raipur": 42500.0,
+    "Delhi/NCR": 45000.0,
+    "Durgapur": 41200.0
+  },
+  {
+    "date": "2025-12-31",
+    "Raipur": 42800.0,
+    "Delhi/NCR": 45300.0,
+    "Durgapur": 41100.0
+  },
+  {
+    "date": "2026-01-01",
+    "Raipur": 43800.0,
+    "Delhi/NCR": 46000.0,
+    "Durgapur": 41900.0
+  },
+  {
+    "date": "2026-01-02",
+    "Raipur": 44600.0,
+    "Delhi/NCR": 47500.0,
+    "Durgapur": 42500.0
+  },
+  {
+    "date": "2026-01-03",
+    "Raipur": 44500.0,
+    "Delhi/NCR": 47500.0,
+    "Durgapur": 42500.0
+  },
+  {
+    "date": "2026-01-05",
+    "Raipur": 44100.0,
+    "Delhi/NCR": 47100.0,
+    "Durgapur": 42000.0
+  },
+  {
+    "date": "2026-01-06",
+    "Raipur": 43800.0,
+    "Delhi/NCR": 46800.0,
+    "Durgapur": 41900.0
+  },
+  {
+    "date": "2026-01-07",
+    "Raipur": 43600.0,
+    "Delhi/NCR": 46800.0,
+    "Durgapur": 41800.0
+  },
+  {
+    "date": "2026-01-08",
+    "Raipur": 43000.0,
+    "Delhi/NCR": 46400.0,
+    "Durgapur": 41600.0
+  },
+  {
+    "date": "2026-01-09",
+    "Raipur": 42900.0,
+    "Delhi/NCR": 46400.0,
+    "Durgapur": 41600.0
+  },
+  {
+    "date": "2026-01-10",
+    "Raipur": 43000.0,
+    "Delhi/NCR": 46300.0,
+    "Durgapur": 41600.0
+  },
+  {
+    "date": "2026-01-12",
+    "Raipur": 43000.0,
+    "Delhi/NCR": 46000.0,
+    "Durgapur": 41800.0
+  },
+  {
+    "date": "2026-01-13",
+    "Raipur": 42600.0,
+    "Delhi/NCR": 45800.0,
+    "Durgapur": 41900.0
+  },
+  {
+    "date": "2026-01-14",
+    "Raipur": 43500.0,
+    "Delhi/NCR": 46900.0,
+    "Durgapur": 42500.0
+  },
+  {
+    "date": "2026-01-15",
+    "Raipur": 43800.0,
+    "Delhi/NCR": 48100.0,
+    "Durgapur": 43100.0
+  },
+  {
+    "date": "2026-01-16",
+    "Raipur": 43900.0,
+    "Delhi/NCR": 48000.0,
+    "Durgapur": 43300.0
+  },
+  {
+    "date": "2026-01-17",
+    "Raipur": 44400.0,
+    "Delhi/NCR": 48550.0,
+    "Durgapur": 43700.0
+  },
+  {
+    "date": "2026-01-19",
+    "Raipur": 44700.0,
+    "Delhi/NCR": 48800.0,
+    "Durgapur": 44150.0
+  },
+  {
+    "date": "2026-01-20",
+    "Raipur": 44300.0,
+    "Delhi/NCR": 48000.0,
+    "Durgapur": 44000.0
+  },
+  {
+    "date": "2026-01-21",
+    "Raipur": 44000.0,
+    "Delhi/NCR": 48000.0,
+    "Durgapur": 44000.0
+  },
+  {
+    "date": "2026-01-22",
+    "Raipur": 43900.0,
+    "Delhi/NCR": 48000.0,
+    "Durgapur": 43900.0
+  },
+  {
+    "date": "2026-01-23",
+    "Raipur": 43900.0,
+    "Delhi/NCR": 48150.0,
+    "Durgapur": 44300.0
+  },
+  {
+    "date": "2026-01-24",
+    "Raipur": 43900.0,
+    "Delhi/NCR": 48650.0,
+    "Durgapur": 44300.0
+  },
+  {
+    "date": "2026-01-27",
+    "Raipur": 43800.0,
+    "Delhi/NCR": 48250.0,
+    "Durgapur": 44100.0
+  },
+  {
+    "date": "2026-01-28",
+    "Raipur": 43700.0,
+    "Delhi/NCR": 48000.0,
+    "Durgapur": 44000.0
+  },
+  {
+    "date": "2026-01-29",
+    "Raipur": 44000.0,
+    "Delhi/NCR": 48500.0,
+    "Durgapur": 44200.0
+  },
+  {
+    "date": "2026-01-30",
+    "Raipur": 44200.0,
+    "Delhi/NCR": 48300.0,
+    "Durgapur": 44300.0
+  },
+  {
+    "date": "2026-01-31",
+    "Raipur": 44000.0,
+    "Delhi/NCR": 48100.0,
+    "Durgapur": 44100.0
+  },
+  {
+    "date": "2026-02-02",
+    "Raipur": 43900.0,
+    "Delhi/NCR": 48000.0,
+    "Durgapur": 44200.0
+  },
+  {
+    "date": "2026-02-03",
+    "Raipur": 44000.0,
+    "Delhi/NCR": 47700.0,
+    "Durgapur": 44400.0
+  },
+  {
+    "date": "2026-02-04",
+    "Raipur": 44700.0,
+    "Delhi/NCR": 48650.0,
+    "Durgapur": 44900.0
+  },
+  {
+    "date": "2026-02-05",
+    "Raipur": 44500.0,
+    "Delhi/NCR": 48500.0,
+    "Durgapur": 44900.0
+  },
+  {
+    "date": "2026-02-06",
+    "Raipur": 44500.0,
+    "Delhi/NCR": 48500.0,
+    "Durgapur": 45000.0
+  },
+  {
+    "date": "2026-02-07",
+    "Raipur": 45300.0,
+    "Delhi/NCR": 48900.0,
+    "Durgapur": 45300.0
+  },
+  {
+    "date": "2026-02-09",
+    "Raipur": 45200.0,
+    "Delhi/NCR": 49200.0,
+    "Durgapur": 45700.0
+  },
+  {
+    "date": "2026-02-10",
+    "Raipur": 45700.0,
+    "Delhi/NCR": 49500.0,
+    "Durgapur": 46000.0
+  },
+  {
+    "date": "2026-02-11",
+    "Raipur": 45300.0,
+    "Delhi/NCR": 49050.0,
+    "Durgapur": 45900.0
+  },
+  {
+    "date": "2026-02-12",
+    "Raipur": 45200.0,
+    "Delhi/NCR": 48800.0,
+    "Durgapur": 45700.0
+  },
+  {
+    "date": "2026-02-13",
+    "Raipur": 45000.0,
+    "Delhi/NCR": 48500.0,
+    "Durgapur": 45500.0
+  },
+  {
+    "date": "2026-02-14",
+    "Raipur": 45200.0,
+    "Delhi/NCR": 48500.0,
+    "Durgapur": 45700.0
+  },
+  {
+    "date": "2026-02-16",
+    "Raipur": 44900.0,
+    "Delhi/NCR": 48350.0,
+    "Durgapur": 45500.0
+  },
+  {
+    "date": "2026-02-17",
+    "Raipur": 44800.0,
+    "Delhi/NCR": 47750.0,
+    "Durgapur": 45400.0
+  },
+  {
+    "date": "2026-02-18",
+    "Raipur": 44700.0,
+    "Delhi/NCR": 48000.0,
+    "Durgapur": 45400.0
+  },
+  {
+    "date": "2026-02-19",
+    "Raipur": 44400.0,
+    "Delhi/NCR": 47500.0,
+    "Durgapur": 45200.0
+  },
+  {
+    "date": "2026-02-20",
+    "Raipur": 44200.0,
+    "Delhi/NCR": 47500.0,
+    "Durgapur": 45100.0
+  },
+  {
+    "date": "2026-02-21",
+    "Raipur": 44400.0,
+    "Delhi/NCR": 48400.0,
+    "Durgapur": 45300.0
+  },
+  {
+    "date": "2026-02-23",
+    "Raipur": 44300.0,
+    "Delhi/NCR": 47950.0,
+    "Durgapur": 45300.0
+  },
+  {
+    "date": "2026-02-24",
+    "Raipur": 43700.0,
+    "Delhi/NCR": 47600.0,
+    "Durgapur": 45000.0
+  },
+  {
+    "date": "2026-02-25",
+    "Raipur": 43700.0,
+    "Delhi/NCR": 47900.0,
+    "Durgapur": 44900.0
+  },
+  {
+    "date": "2026-02-26",
+    "Raipur": 43800.0,
+    "Delhi/NCR": 48000.0,
+    "Durgapur": 45100.0
+  },
+  {
+    "date": "2026-02-27",
+    "Raipur": 43600.0,
+    "Delhi/NCR": 48000.0,
+    "Durgapur": 44900.0
+  },
+  {
+    "date": "2026-02-28",
+    "Raipur": 43600.0,
+    "Delhi/NCR": 47850.0,
+    "Durgapur": 44900.0
+  },
+  {
+    "date": "2026-03-02",
+    "Raipur": 45600.0,
+    "Delhi/NCR": 49500.0,
+    "Durgapur": 46100.0
+  },
+  {
+    "date": "2026-03-03",
+    "Raipur": 45300.0,
+    "Delhi/NCR": 49350.0,
+    "Durgapur": 46000.0
+  },
+  {
+    "date": "2026-03-05",
+    "Raipur": 46000.0,
+    "Delhi/NCR": 50550.0,
+    "Durgapur": 46300.0
+  },
+  {
+    "date": "2026-03-06",
+    "Raipur": 46300.0,
+    "Delhi/NCR": 50550.0,
+    "Durgapur": 46800.0
+  },
+  {
+    "date": "2026-03-07",
+    "Raipur": 46000.0,
+    "Delhi/NCR": 50400.0,
+    "Durgapur": 46800.0
+  },
+  {
+    "date": "2026-03-09",
+    "Raipur": 46500.0,
+    "Delhi/NCR": 50950.0,
+    "Durgapur": 47000.0
+  },
+  {
+    "date": "2026-03-10",
+    "Raipur": 46400.0,
+    "Delhi/NCR": 51500.0,
+    "Durgapur": 47100.0
+  },
+  {
+    "date": "2026-03-11",
+    "Raipur": 46000.0,
+    "Delhi/NCR": 51400.0,
+    "Durgapur": 47000.0
+  },
+  {
+    "date": "2026-03-12",
+    "Raipur": 46400.0,
+    "Delhi/NCR": 51400.0,
+    "Durgapur": 47200.0
+  },
+  {
+    "date": "2026-03-13",
+    "Raipur": 46000.0,
+    "Delhi/NCR": 51400.0,
+    "Durgapur": 47000.0
+  },
+  {
+    "date": "2026-03-14",
+    "Raipur": 45800.0,
+    "Delhi/NCR": 51400.0,
+    "Durgapur": 46800.0
+  },
+  {
+    "date": "2026-03-16",
+    "Raipur": 46200.0,
+    "Delhi/NCR": 50750.0,
+    "Durgapur": 46900.0
+  },
+  {
+    "date": "2026-03-17",
+    "Raipur": 46200.0,
+    "Delhi/NCR": 50900.0,
+    "Durgapur": 46700.0
+  },
+  {
+    "date": "2026-03-18",
+    "Raipur": 46100.0,
+    "Delhi/NCR": 50600.0,
+    "Durgapur": 46300.0
+  },
+  {
+    "date": "2026-03-19",
+    "Raipur": 46000.0,
+    "Delhi/NCR": 50600.0,
+    "Durgapur": 46200.0
+  },
+  {
+    "date": "2026-03-20",
+    "Raipur": 46200.0,
+    "Delhi/NCR": 50600.0,
+    "Durgapur": 46200.0
+  },
+  {
+    "date": "2026-03-23",
+    "Raipur": 46000.0,
+    "Delhi/NCR": 50500.0,
+    "Durgapur": 46200.0
+  },
+  {
+    "date": "2026-03-24",
+    "Raipur": 45700.0,
+    "Delhi/NCR": 50250.0,
+    "Durgapur": 46100.0
+  },
+  {
+    "date": "2026-03-25",
+    "Raipur": 45200.0,
+    "Delhi/NCR": 49500.0,
+    "Durgapur": 45700.0
+  },
+  {
+    "date": "2026-03-26",
+    "Raipur": 45300.0,
+    "Delhi/NCR": 49700.0,
+    "Durgapur": 45500.0
+  },
+  {
+    "date": "2026-03-27",
+    "Raipur": 45600.0,
+    "Delhi/NCR": 50300.0,
+    "Durgapur": 45700.0
+  },
+  {
+    "date": "2026-03-28",
+    "Raipur": 45500.0,
+    "Delhi/NCR": 50300.0,
+    "Durgapur": 45800.0
+  },
+  {
+    "date": "2026-03-30",
+    "Raipur": 48000.0,
+    "Delhi/NCR": 52400.0,
+    "Durgapur": 47000.0
+  },
+  {
+    "date": "2026-03-31",
+    "Raipur": 47500.0,
+    "Delhi/NCR": 52400.0,
+    "Durgapur": 46900.0
+  },
+  {
+    "date": "2026-04-01",
+    "Raipur": 48200.0,
+    "Delhi/NCR": 52950.0,
+    "Durgapur": 47300.0
+  },
+  {
+    "date": "2026-04-02",
+    "Raipur": 48500.0,
+    "Delhi/NCR": 53000.0,
+    "Durgapur": 47200.0
+  },
+  {
+    "date": "2026-04-03",
+    "Raipur": 47800.0,
+    "Delhi/NCR": 52450.0,
+    "Durgapur": 47000.0
+  },
+  {
+    "date": "2026-04-06",
+    "Raipur": 48400.0,
+    "Delhi/NCR": 53850.0,
+    "Durgapur": 47700.0
+  },
+  {
+    "date": "2026-04-07",
+    "Raipur": 48700.0,
+    "Delhi/NCR": 54400.0,
+    "Durgapur": 47700.0
+  },
+  {
+    "date": "2026-04-08",
+    "Raipur": 47700.0,
+    "Delhi/NCR": 53450.0,
+    "Durgapur": 47600.0
+  },
+  {
+    "date": "2026-04-09",
+    "Raipur": 47800.0,
+    "Delhi/NCR": 53550.0,
+    "Durgapur": 47600.0
+  }
+]
