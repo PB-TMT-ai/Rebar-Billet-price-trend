@@ -232,9 +232,15 @@ with tab2:
                 template="plotly_white",
                 margin=dict(l=60, r=20, t=20, b=40),
                 showlegend=False,
+                yaxis_tickformat="+,",
+                shapes=[
+                    dict(
+                        type="line", x0=0, x1=1, xref="paper",
+                        y0=0, y1=0, yref="y",
+                        line=dict(color="#94a3b8", width=1, dash="dash"),
+                    )
+                ],
             )
-            fig2.update_layout(yaxis_tickformat="+,")
-            fig2.add_hline(y=0, line_dash="dash", line_color="#94a3b8", line_width=1)
 
             st.plotly_chart(fig2, use_container_width=True)
 
