@@ -195,16 +195,16 @@ with tab2:
             city_valid = filtered.dropna(subset=[city])
             if len(city_valid) < 2:
                 continue
-            start_price = city_valid.iloc[0][city]
-            end_price = city_valid.iloc[-1][city]
+            start_price = float(city_valid.iloc[0][city])
+            end_price = float(city_valid.iloc[-1][city])
             delta = end_price - start_price
             pct = (delta / start_price) * 100 if start_price != 0 else 0
             delta_data.append({
                 "City": city,
-                "Start Price": start_price,
-                "End Price": end_price,
-                "Delta (₹)": delta,
-                "Change (%)": pct,
+                "Start Price (INR)": start_price,
+                "End Price (INR)": end_price,
+                "Delta": delta,
+                "Change %": pct,
             })
 
         if not delta_data:
@@ -213,16 +213,15 @@ with tab2:
             delta_df = pd.DataFrame(delta_data)
 
             # Bar chart
-            colors = ["#059669" if d >= 0 else "#dc2626" for d in delta_df["Delta (₹)"]]
+            bar_colors = ["#059669" if d >= 0 else "#dc2626" for d in delta_df["Delta"]]
 
             fig2 = go.Figure()
             fig2.add_trace(go.Bar(
                 x=delta_df["City"],
-                y=delta_df["Delta (₹)"],
-                marker_color=colors,
-                text=[f"₹{d:+,.0f}" for d in delta_df["Delta (₹)"]],
+                y=delta_df["Delta"],
+                marker=dict(color=bar_colors),
+                text=[f"INR {d:+,.0f}" for d in delta_df["Delta"]],
                 textposition="outside",
-                hovertemplate="<b>%{x}</b><br>Delta: ₹%{y:+,.0f}<extra></extra>",
             ))
 
             fig2.update_layout(
@@ -232,14 +231,6 @@ with tab2:
                 template="plotly_white",
                 margin=dict(l=60, r=20, t=20, b=40),
                 showlegend=False,
-                yaxis_tickformat="+,",
-                shapes=[
-                    dict(
-                        type="line", x0=0, x1=1, xref="paper",
-                        y0=0, y1=0, yref="y",
-                        line=dict(color="#94a3b8", width=1, dash="dash"),
-                    )
-                ],
             )
 
             st.plotly_chart(fig2, use_container_width=True)
@@ -248,10 +239,10 @@ with tab2:
             st.subheader("Summary")
 
             display_df = delta_df.copy()
-            display_df["Start Price"] = display_df["Start Price"].apply(lambda x: f"₹{x:,.0f}")
-            display_df["End Price"] = display_df["End Price"].apply(lambda x: f"₹{x:,.0f}")
-            display_df["Delta (₹)"] = display_df["Delta (₹)"].apply(lambda x: f"₹{x:+,.0f}")
-            display_df["Change (%)"] = display_df["Change (%)"].apply(lambda x: f"{x:+.2f}%")
+            display_df["Start Price (INR)"] = display_df["Start Price (INR)"].apply(lambda x: f"{x:,.0f}")
+            display_df["End Price (INR)"] = display_df["End Price (INR)"].apply(lambda x: f"{x:,.0f}")
+            display_df["Delta"] = display_df["Delta"].apply(lambda x: f"{x:+,.0f}")
+            display_df["Change %"] = display_df["Change %"].apply(lambda x: f"{x:+.2f}%")
 
             st.dataframe(display_df, use_container_width=True, hide_index=True)
 
