@@ -1,5 +1,5 @@
 """
-Rebar & Billet Price Trend Dashboard
+Rebar & Billet Price Trend Dashboard v1.1
 
 Streamlit app that reads the 12MM sheet from the main Excel file and displays:
   - Dashboard 1: Price trend line chart for Raipur, Delhi/NCR, Durgapur
