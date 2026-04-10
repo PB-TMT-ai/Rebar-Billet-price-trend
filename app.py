@@ -2,7 +2,7 @@
 Rebar & Billet Price Trend Dashboard v1.1
 
 Streamlit app that reads the 12MM sheet from the main Excel file and displays:
-  - Dashboard 1: Price trend line chart for Raipur, Delhi/NCR, Durgapur
+  - Dashboard 1: Price trend line chart for 10 cities (SteelMint data)
   - Dashboard 2: Price delta bar chart between start and end date
 
 Deploy: https://share.streamlit.io
@@ -21,15 +21,29 @@ HEADER_ROW = 19  # 0-indexed: row 20 in Excel has city names
 DATA_START_ROW = 20  # 0-indexed: row 21 in Excel is first data row
 
 CITY_COLUMNS = {
-    "Raipur": 16,
     "Delhi/NCR": 3,
+    "Mandi Gobindgarh": 11,
+    "Jaipur": 8,
+    "Muzaffarnagar": 13,
+    "Raipur": 16,
+    "Rourkela": 17,
+    "Ahmedabad": 1,
+    "Mumbai": 12,
+    "Hyderabad": 7,
     "Durgapur": 4,
 }
 
 CITY_COLORS = {
-    "Raipur": "#4f46e5",
-    "Delhi/NCR": "#059669",
-    "Durgapur": "#dc2626",
+    "Delhi/NCR": "#4f46e5",
+    "Mandi Gobindgarh": "#7c3aed",
+    "Jaipur": "#db2777",
+    "Muzaffarnagar": "#ea580c",
+    "Raipur": "#059669",
+    "Rourkela": "#0d9488",
+    "Ahmedabad": "#2563eb",
+    "Mumbai": "#dc2626",
+    "Hyderabad": "#ca8a04",
+    "Durgapur": "#64748b",
 }
 
 
@@ -90,7 +104,7 @@ st.set_page_config(
 )
 
 st.title("Rebar & Billet Price Dashboard")
-st.caption("12MM rebar prices for Raipur, Delhi/NCR, and Durgapur")
+st.caption("12MM rebar prices across 10 cities (SteelMint)")
 
 # --- Load Data ---
 
