@@ -173,7 +173,7 @@ with tab1:
             height=500,
             template="plotly_white",
         )
-        fig.update_yaxis(tickformat=",")
+        fig.update_layout(yaxis_tickformat=",")
 
         st.plotly_chart(fig, use_container_width=True)
 
@@ -233,7 +233,7 @@ with tab2:
                 margin=dict(l=60, r=20, t=20, b=40),
                 showlegend=False,
             )
-            fig2.update_yaxis(tickformat="+,")
+            fig2.update_layout(yaxis_tickformat="+,")
             fig2.add_hline(y=0, line_dash="dash", line_color="#94a3b8", line_width=1)
 
             st.plotly_chart(fig2, use_container_width=True)
