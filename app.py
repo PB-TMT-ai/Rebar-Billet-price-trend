@@ -139,8 +139,8 @@ col1, col2, col3 = st.columns([1, 1, 1])
 with col1:
     frequency = st.selectbox(
         "Frequency",
-        options=["Last 5 Days", "Last 10 Days", "Last 15 Days", "Custom Range"],
-        index=1,
+        options=["Yesterday", "Last 5 Days", "Last 10 Days", "Last 15 Days", "Custom Range"],
+        index=2,
     )
 
 if frequency == "Custom Range":
@@ -148,6 +148,14 @@ if frequency == "Custom Range":
         start_date = st.date_input("Start Date", value=max_date - timedelta(days=15), min_value=min_date, max_value=max_date)
     with col3:
         end_date = st.date_input("End Date", value=max_date, min_value=min_date, max_value=max_date)
+elif frequency == "Yesterday":
+    s, e = get_trading_days(df, 2)
+    start_date = s.date()
+    end_date = e.date()
+    with col2:
+        st.date_input("Start Date", value=start_date, disabled=True)
+    with col3:
+        st.date_input("End Date", value=end_date, disabled=True)
 else:
     n_days = {"Last 5 Days": 5, "Last 10 Days": 10, "Last 15 Days": 15}[frequency]
     s, e = get_trading_days(df, n_days)
