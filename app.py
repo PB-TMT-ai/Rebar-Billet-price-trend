@@ -309,7 +309,7 @@ PLANT_CITY_MAP = {
     "N N Ispat": "Ahmedabad",
 }
 
-GRADES = ["Fe 550", "Fe 550D"]
+GRADES = ["Fe 550", "Fe 550D-LRF"]
 
 MARGIN_IMAGE_PATH = "daily rebar prices/margin dashboard/12th Apr'26.png"
 INVENTORY_JSON_PATH = "daily rebar prices/margin dashboard/inventory_costs.json"
