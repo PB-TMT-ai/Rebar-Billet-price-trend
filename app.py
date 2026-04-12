@@ -360,7 +360,7 @@ import os
 
 with tab3:
     st.subheader("Margin Calculator")
-    st.caption("Margin = Base Cost + JSW PMC + BIS + Loading - FOR Price - Freight")
+    st.caption("Actual: FOR - Freight - Inventory Cost - PMF | SteelMint: FOR - Freight - SteelMint - BIS - Loading - PMF")
 
     # Load inventory costs from JSON
     inv_data = load_inventory_costs()
@@ -446,11 +446,12 @@ with tab3:
     st.divider()
 
     # Calculate margins
+    # Actual: FOR - Freight - Base Cost - PMF (no BIS/Loading, already in inventory cost)
+    # SteelMint: FOR - Freight - SteelMint - BIS - Loading - PMF
     if for_price > 0:
-        total_add_costs = jsw_pmc + bis_cost + loading_cost
-        margin_actual = actual_inventory_cost + total_add_costs - for_price - freight if actual_inventory_cost > 0 else None
-        margin_15day = avg_steelmint_15 + total_add_costs - for_price - freight
-        margin_last = last_steelmint_price + total_add_costs - for_price - freight
+        margin_actual = for_price - freight - actual_inventory_cost - jsw_pmc if actual_inventory_cost > 0 else None
+        margin_15day = for_price - freight - avg_steelmint_15 - bis_cost - loading_cost - jsw_pmc
+        margin_last = for_price - freight - last_steelmint_price - bis_cost - loading_cost - jsw_pmc
 
         plant_label = freight_plant if freight_plant else "N/A"
         st.markdown(f"**Plant:** {plant_label} | **Grade:** {selected_grade} | **SteelMint City:** {plant_city}")
@@ -462,7 +463,7 @@ with tab3:
             st.markdown("#### 1. Actual Inventory")
             if margin_actual is not None:
                 st.metric(
-                    label=f"Cost: INR {actual_inventory_cost:,.0f}",
+                    label=f"Inventory Cost: INR {actual_inventory_cost:,.0f}",
                     value=f"INR {margin_actual:,.0f}",
                     delta=f"{'Profit' if margin_actual >= 0 else 'Loss'}",
                     delta_color="normal" if margin_actual >= 0 else "inverse",
@@ -492,40 +493,71 @@ with tab3:
         st.divider()
         st.subheader("Breakdown")
 
-        components = [
-            "Base Cost",
-            "+ JSW Project Mgmt Cost",
-            "+ BIS",
-            "+ Loading Charges",
-            "- FOR Price",
+        # Actual: no BIS/Loading
+        actual_components = [
+            "FOR Price",
             "- Freight",
+            "- Base Cost (Avg Inventory 12-32MM)",
+            "- JSW Project Mgmt Cost",
             "= Margin",
         ]
         actual_vals = [
+            f"{for_price:,.0f}",
+            f"{freight:,.0f}",
             f"{actual_inventory_cost:,.0f}" if actual_inventory_cost > 0 else "-",
-            f"{jsw_pmc:,.0f}", f"{bis_cost:,.0f}", f"{loading_cost:,.0f}",
-            f"{for_price:,.0f}", f"{freight:,.0f}",
+            f"{jsw_pmc:,.0f}",
             f"{margin_actual:+,.0f}" if margin_actual is not None else "-",
         ]
+
+        # SteelMint: includes BIS + Loading
+        sm_components = [
+            "FOR Price",
+            "- Freight",
+            "- Base Cost (SteelMint Price)",
+            "- BIS",
+            "- Loading Charges",
+            "- JSW Project Mgmt Cost",
+            "= Margin",
+        ]
         sm15_vals = [
+            f"{for_price:,.0f}",
+            f"{freight:,.0f}",
             f"{avg_steelmint_15:,.0f}",
-            f"{jsw_pmc:,.0f}", f"{bis_cost:,.0f}", f"{loading_cost:,.0f}",
-            f"{for_price:,.0f}", f"{freight:,.0f}", f"{margin_15day:+,.0f}",
+            f"{bis_cost:,.0f}",
+            f"{loading_cost:,.0f}",
+            f"{jsw_pmc:,.0f}",
+            f"{margin_15day:+,.0f}",
         ]
         smlast_vals = [
+            f"{for_price:,.0f}",
+            f"{freight:,.0f}",
             f"{last_steelmint_price:,.0f}",
-            f"{jsw_pmc:,.0f}", f"{bis_cost:,.0f}", f"{loading_cost:,.0f}",
-            f"{for_price:,.0f}", f"{freight:,.0f}", f"{margin_last:+,.0f}",
+            f"{bis_cost:,.0f}",
+            f"{loading_cost:,.0f}",
+            f"{jsw_pmc:,.0f}",
+            f"{margin_last:+,.0f}",
         ]
 
-        breakdown = {
-            "Component": components,
-            "Actual": actual_vals,
-            "SteelMint 15-Day Avg": sm15_vals,
-            f"SteelMint ({last_steelmint_date})": smlast_vals,
-        }
-
-        st.dataframe(pd.DataFrame(breakdown), use_container_width=True, hide_index=True)
+        # Show tables side by side
+        bc1, bc2, bc3 = st.columns(3)
+        with bc1:
+            st.markdown("**Actual**")
+            st.dataframe(
+                pd.DataFrame({"Component": actual_components, "Value (INR)": actual_vals}),
+                use_container_width=True, hide_index=True,
+            )
+        with bc2:
+            st.markdown("**SteelMint 15-Day Avg**")
+            st.dataframe(
+                pd.DataFrame({"Component": sm_components, "Value (INR)": sm15_vals}),
+                use_container_width=True, hide_index=True,
+            )
+        with bc3:
+            st.markdown(f"**SteelMint ({last_steelmint_date})**")
+            st.dataframe(
+                pd.DataFrame({"Component": sm_components, "Value (INR)": smlast_vals}),
+                use_container_width=True, hide_index=True,
+            )
 
     else:
         st.info("Enter a FOR Price to calculate margins.")
