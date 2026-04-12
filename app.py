@@ -439,15 +439,18 @@ with tab3:
     # Get SteelMint price for the freight plant's city
     plant_city = PLANT_CITY_MAP.get(freight_plant, "Delhi/NCR") if freight_plant else "Delhi/NCR"
 
-    # Last 15 days avg SteelMint price
-    last15_start, last15_end = get_trading_days(df, 15)
-    last15_mask = (df["Date"] >= last15_start) & (df["Date"] <= last15_end)
+    # Last 15 calendar days avg SteelMint price (today - 15 to today)
+    city_data_all = df.dropna(subset=[plant_city]).copy()
+    last_available_date = city_data_all.iloc[-1]["Date"] if len(city_data_all) > 0 else pd.Timestamp.now()
+    cal_15_start = last_available_date - pd.Timedelta(days=14)  # 15 days inclusive
+    last15_mask = (df["Date"] >= cal_15_start) & (df["Date"] <= last_available_date)
     last15_data = df[last15_mask][plant_city].dropna()
     price_adj = PLANT_PRICE_ADJUSTMENT.get(plant_for_cost, 0)
     avg_steelmint_15 = (last15_data.mean() + price_adj) if len(last15_data) > 0 else 0
+    avg_15_start_str = cal_15_start.strftime("%d %b")
+    avg_15_end_str = last_available_date.strftime("%d %b %Y")
 
     # SteelMint date selection dropdown
-    city_data_all = df.dropna(subset=[plant_city]).copy()
     if len(city_data_all) > 0:
         # Get last 30 available dates for the dropdown
         available_dates = city_data_all.tail(30)["Date"].dt.strftime("%d %b %Y").tolist()
@@ -506,9 +509,9 @@ with tab3:
                 st.info("Enter Actual Inventory Cost above")
 
         with s2:
-            st.markdown("#### 2. SteelMint (15-Day Avg)")
+            st.markdown(f"#### 2. SteelMint 15-Day Avg")
             st.metric(
-                label=f"Avg Price: INR {avg_steelmint_15:,.0f}",
+                label=f"{avg_15_start_str} to {avg_15_end_str}: INR {avg_steelmint_15:,.0f}",
                 value=f"INR {margin_15day:,.0f}",
                 delta=f"{'Profit' if margin_15day >= 0 else 'Loss'}",
                 delta_color="normal" if margin_15day >= 0 else "inverse",
