@@ -20,30 +20,38 @@ SHEET_NAME = "12MM"
 HEADER_ROW = 19  # 0-indexed: row 20 in Excel has city names
 DATA_START_ROW = 20  # 0-indexed: row 21 in Excel is first data row
 
-CITY_COLUMNS = {
+# Fixed cities — always shown on the chart
+FIXED_CITIES = {
     "Delhi/NCR": 3,
+    "Raipur": 16,
+    "Durgapur": 4,
+}
+
+# Optional cities — selectable via dropdown
+OPTIONAL_CITIES = {
     "Mandi Gobindgarh": 11,
     "Jaipur": 8,
     "Muzaffarnagar": 13,
-    "Raipur": 16,
     "Rourkela": 17,
     "Ahmedabad": 1,
     "Mumbai": 12,
     "Hyderabad": 7,
-    "Durgapur": 4,
 }
+
+# All cities combined (for data loading)
+CITY_COLUMNS = {**FIXED_CITIES, **OPTIONAL_CITIES}
 
 CITY_COLORS = {
     "Delhi/NCR": "#4f46e5",
+    "Raipur": "#059669",
+    "Durgapur": "#dc2626",
     "Mandi Gobindgarh": "#7c3aed",
     "Jaipur": "#db2777",
     "Muzaffarnagar": "#ea580c",
-    "Raipur": "#059669",
     "Rourkela": "#0d9488",
     "Ahmedabad": "#2563eb",
-    "Mumbai": "#dc2626",
+    "Mumbai": "#9333ea",
     "Hyderabad": "#ca8a04",
-    "Durgapur": "#64748b",
 }
 
 
@@ -150,6 +158,16 @@ else:
     with col3:
         st.date_input("End Date", value=end_date, disabled=True)
 
+# City selection
+extra_cities = st.multiselect(
+    "Add more cities (Delhi/NCR, Raipur, Durgapur are always shown)",
+    options=list(OPTIONAL_CITIES.keys()),
+    default=[],
+)
+
+# Build active city list: fixed + selected optional
+active_cities = list(FIXED_CITIES.keys()) + extra_cities
+
 # Filter data
 mask = (df["Date"].dt.date >= start_date) & (df["Date"].dt.date <= end_date)
 filtered = df[mask].copy()
@@ -168,15 +186,17 @@ with tab1:
     else:
         fig = go.Figure()
 
-        for city, color in CITY_COLORS.items():
+        for city in active_cities:
+            color = CITY_COLORS.get(city, "#64748b")
+            is_fixed = city in FIXED_CITIES
             city_data = filtered.dropna(subset=[city])
             fig.add_trace(go.Scatter(
                 x=city_data["Date"],
                 y=city_data[city],
                 name=city,
                 mode="lines",
-                line=dict(color=color, width=2.5),
-                hovertemplate=f"<b>{city}</b><br>Date: %{{x|%d %b %Y}}<br>Price: ₹%{{y:,.0f}}<extra></extra>",
+                line=dict(color=color, width=2.5 if is_fixed else 1.5, dash="solid" if is_fixed else "dot"),
+                hovertemplate=f"<b>{city}</b><br>Date: %{{x|%d %b %Y}}<br>Price: INR %{{y:,.0f}}<extra></extra>",
             ))
 
         fig.update_layout(
@@ -206,7 +226,7 @@ with tab2:
         st.info("Need at least 2 data points to calculate delta.")
     else:
         delta_data = []
-        for city in CITY_COLUMNS:
+        for city in active_cities:
             city_valid = filtered.dropna(subset=[city])
             if len(city_valid) < 2:
                 continue
