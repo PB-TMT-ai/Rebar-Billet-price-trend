@@ -312,15 +312,34 @@ PLANT_CITY_MAP = {
 GRADES = ["Fe 550", "Fe 550D"]
 
 MARGIN_IMAGE_PATH = "daily rebar prices/margin dashboard/12th Apr'26.png"
+INVENTORY_JSON_PATH = "daily rebar prices/margin dashboard/inventory_costs.json"
+
+
+@st.cache_data(ttl=60)
+def load_inventory_costs() -> dict:
+    """Load inventory costs from JSON (extracted from uploaded image)."""
+    import json
+    if os.path.exists(INVENTORY_JSON_PATH):
+        with open(INVENTORY_JSON_PATH) as f:
+            return json.load(f)
+    return {"costs": {}, "grade_averages": {}, "image_date": "N/A"}
+
+
+import os
 
 with tab3:
     st.subheader("Margin Calculator")
     st.caption("Margin = Avg Inventory Cost + JSW Project Management Cost - FOR Price - Freight")
 
+    # Load inventory costs from JSON
+    inv_data = load_inventory_costs()
+    inv_costs = inv_data.get("costs", {})
+    inv_date = inv_data.get("image_date", "N/A")
+    grade_avgs = inv_data.get("grade_averages", {})
+
     # Show the uploaded inventory cost image for reference
-    import os
     if os.path.exists(MARGIN_IMAGE_PATH):
-        with st.expander("View Actual Inventory Cost Image (reference)", expanded=False):
+        with st.expander(f"View Actual Inventory Cost Image — {inv_date} (reference)", expanded=False):
             st.image(MARGIN_IMAGE_PATH, use_container_width=True)
 
     st.divider()
@@ -353,12 +372,28 @@ with tab3:
                 disabled=True,
                 help="Enter freight first",
             )
+
+    # Auto-fill inventory cost from JSON based on plant + grade
+    plant_for_cost = freight_plant if freight_plant else list(PLANT_CITY_MAP.keys())[0]
+    lookup_key = f"{plant_for_cost}|{selected_grade}"
+    auto_cost = inv_costs.get(lookup_key, 0)
+
+    # Fallback to grade average if exact plant+grade not found
+    if auto_cost == 0:
+        auto_cost = grade_avgs.get(selected_grade, 0)
+
     with mc6:
-        actual_inventory_cost = st.number_input(
-            "Actual Inventory Cost (INR, from image)",
-            min_value=0, value=0, step=100,
-            help="Enter the Avg Inventory Cost (12-32MM) from the uploaded image for your plant & grade"
-        )
+        if auto_cost > 0:
+            st.markdown(f"**Actual Inventory Cost** (auto from image)")
+            st.markdown(f"### INR {auto_cost:,.0f}")
+            st.caption(f"Source: {inv_date} | {plant_for_cost} | {selected_grade}")
+            actual_inventory_cost = auto_cost
+        else:
+            actual_inventory_cost = st.number_input(
+                "Actual Inventory Cost (INR)",
+                min_value=0, value=0, step=100,
+                help="No auto-fill available for this plant+grade. Enter manually."
+            )
 
     # Get SteelMint price for the freight plant's city
     plant_city = PLANT_CITY_MAP.get(freight_plant, "Delhi/NCR") if freight_plant else "Delhi/NCR"
