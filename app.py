@@ -182,7 +182,7 @@ filtered = df[mask].copy()
 
 # --- Tabs ---
 
-tab1, tab2 = st.tabs(["📈 Price Trend", "📊 Price Delta"])
+tab1, tab2, tab3 = st.tabs(["📈 Price Trend", "📊 Price Delta", "💰 Margin Calculator"])
 
 # --- Dashboard 1: Price Trend ---
 
@@ -294,6 +294,150 @@ with tab2:
             display_df["Change %"] = display_df["Change %"].apply(lambda x: f"{x:+.2f}%")
 
             st.dataframe(display_df, use_container_width=True, hide_index=True)
+
+# --- Dashboard 3: Margin Calculator ---
+
+# Plant-to-city mapping for SteelMint prices
+PLANT_CITY_MAP = {
+    "API Ispat": "Delhi/NCR",
+    "SKA Ispat": "Delhi/NCR",
+    "Aditya Industries": "Raipur",
+    "ASUL-Gwalior": "Delhi/NCR",
+    "Amba Shakti": "Raipur",
+    "Real Ispat": "Raipur",
+    "German Steel": "Durgapur",
+    "N N Ispat": "Ahmedabad",
+}
+
+GRADES = ["Fe 550", "Fe 500D-LRF", "Fe 500", "Fe 550D-LRF"]
+
+MARGIN_IMAGE_PATH = "daily rebar prices/margin dashboard/12th Apr'26.png"
+
+with tab3:
+    st.subheader("Margin Calculator")
+    st.caption("Margin = Avg Inventory Cost + PMF - FOR Price - Freight")
+
+    # Show the uploaded inventory cost image for reference
+    import os
+    if os.path.exists(MARGIN_IMAGE_PATH):
+        with st.expander("View Actual Inventory Cost Image (reference)", expanded=False):
+            st.image(MARGIN_IMAGE_PATH, use_container_width=True)
+
+    st.divider()
+
+    # User inputs
+    mc1, mc2, mc3, mc4 = st.columns(4)
+
+    with mc1:
+        selected_plant = st.selectbox("Plant", options=list(PLANT_CITY_MAP.keys()))
+    with mc2:
+        selected_grade = st.selectbox("Grade", options=GRADES)
+    with mc3:
+        for_price = st.number_input("FOR Price (INR)", min_value=0, value=0, step=100)
+    with mc4:
+        freight = st.number_input("Freight (INR)", min_value=0, value=0, step=100)
+
+    mc5, mc6, _ = st.columns(3)
+    with mc5:
+        pmf = st.number_input("Project Management Fee (INR)", min_value=0, value=0, step=100)
+    with mc6:
+        actual_inventory_cost = st.number_input(
+            "Actual Inventory Cost (INR, from image)",
+            min_value=0, value=0, step=100,
+            help="Enter the Avg Inventory Cost (12-32MM) from the uploaded image for your plant & grade"
+        )
+
+    # Get SteelMint price for the plant's city
+    plant_city = PLANT_CITY_MAP.get(selected_plant, "Delhi/NCR")
+
+    # Last 15 days avg SteelMint price
+    last15_start, last15_end = get_trading_days(df, 15)
+    last15_mask = (df["Date"] >= last15_start) & (df["Date"] <= last15_end)
+    last15_data = df[last15_mask][plant_city].dropna()
+    avg_steelmint_15 = last15_data.mean() if len(last15_data) > 0 else 0
+
+    # Last date SteelMint price
+    last_date_data = df.dropna(subset=[plant_city])
+    last_steelmint_price = float(last_date_data.iloc[-1][plant_city]) if len(last_date_data) > 0 else 0
+    last_steelmint_date = last_date_data.iloc[-1]["Date"].strftime("%d %b %Y") if len(last_date_data) > 0 else "N/A"
+
+    st.divider()
+
+    # Calculate margins
+    if for_price > 0:
+        margin_actual = actual_inventory_cost + pmf - for_price - freight if actual_inventory_cost > 0 else None
+        margin_15day = avg_steelmint_15 + pmf - for_price - freight
+        margin_last = last_steelmint_price + pmf - for_price - freight
+
+        st.markdown(f"**Plant:** {selected_plant} | **Grade:** {selected_grade} | **SteelMint City:** {plant_city}")
+
+        # Three columns for the three margin sections
+        s1, s2, s3 = st.columns(3)
+
+        with s1:
+            st.markdown("#### 1. Actual Inventory")
+            if margin_actual is not None:
+                color = "green" if margin_actual >= 0 else "red"
+                st.metric(
+                    label=f"Cost: INR {actual_inventory_cost:,.0f}",
+                    value=f"INR {margin_actual:,.0f}",
+                    delta=f"{'Profit' if margin_actual >= 0 else 'Loss'}",
+                    delta_color="normal" if margin_actual >= 0 else "inverse",
+                )
+            else:
+                st.info("Enter Actual Inventory Cost above")
+
+        with s2:
+            st.markdown("#### 2. SteelMint (15-Day Avg)")
+            st.metric(
+                label=f"Avg Price: INR {avg_steelmint_15:,.0f}",
+                value=f"INR {margin_15day:,.0f}",
+                delta=f"{'Profit' if margin_15day >= 0 else 'Loss'}",
+                delta_color="normal" if margin_15day >= 0 else "inverse",
+            )
+
+        with s3:
+            st.markdown(f"#### 3. SteelMint ({last_steelmint_date})")
+            st.metric(
+                label=f"Price: INR {last_steelmint_price:,.0f}",
+                value=f"INR {margin_last:,.0f}",
+                delta=f"{'Profit' if margin_last >= 0 else 'Loss'}",
+                delta_color="normal" if margin_last >= 0 else "inverse",
+            )
+
+        # Breakdown table
+        st.divider()
+        st.subheader("Breakdown")
+
+        breakdown = {
+            "Component": ["Base Cost", "+ Project Mgmt Fee", "- FOR Price", "- Freight", "= Margin"],
+            "Actual": [
+                f"{actual_inventory_cost:,.0f}" if actual_inventory_cost > 0 else "-",
+                f"{pmf:,.0f}",
+                f"{for_price:,.0f}",
+                f"{freight:,.0f}",
+                f"{margin_actual:+,.0f}" if margin_actual is not None else "-",
+            ],
+            "SteelMint 15-Day Avg": [
+                f"{avg_steelmint_15:,.0f}",
+                f"{pmf:,.0f}",
+                f"{for_price:,.0f}",
+                f"{freight:,.0f}",
+                f"{margin_15day:+,.0f}",
+            ],
+            f"SteelMint ({last_steelmint_date})": [
+                f"{last_steelmint_price:,.0f}",
+                f"{pmf:,.0f}",
+                f"{for_price:,.0f}",
+                f"{freight:,.0f}",
+                f"{margin_last:+,.0f}",
+            ],
+        }
+
+        st.dataframe(pd.DataFrame(breakdown), use_container_width=True, hide_index=True)
+
+    else:
+        st.info("Enter a FOR Price to calculate margins.")
 
 # --- Footer ---
 
