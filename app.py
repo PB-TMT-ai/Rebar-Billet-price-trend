@@ -309,12 +309,38 @@ PLANT_CITY_MAP = {
     "N N Ispat": "Durgapur",
 }
 
-# Additional fixed costs per plant (e.g. ASUL-Gwalior has INR 800 extra)
-PLANT_EXTRA_COST = {
-    "ASUL-Gwalior": 800,
+GRADES = ["Fe 550", "Fe 550D-LRF"]
+
+# SteelMint price adjustment per plant (e.g. ASUL-Gwalior = Delhi/NCR price - 800)
+PLANT_PRICE_ADJUSTMENT = {
+    "ASUL-Gwalior": -800,
 }
 
-GRADES = ["Fe 550", "Fe 550D-LRF"]
+# Per-plant costs: BIS, Loading Charges, JSW PMC (keyed by "Plant|Grade")
+# Falls back to "Plant|*" if exact grade not found
+PLANT_COSTS = {
+    "Amba Shakti|Fe 550":             {"bis": 1200, "loading": 200, "jsw_pmc": 500},
+    "API Ispat|Fe 550":               {"bis": 2150, "loading": 265, "jsw_pmc": 500},
+    "Aditya Industries|Fe 550":       {"bis": 400,  "loading": 250, "jsw_pmc": 500},
+    "SKA Ispat|Fe 550":               {"bis": 1800, "loading": 275, "jsw_pmc": 500},
+    "ASUL-Gwalior|Fe 550":            {"bis": 1200, "loading": 200, "jsw_pmc": 500},
+    "ASUL-Gwalior|Fe 550D-LRF":       {"bis": 3200, "loading": 200, "jsw_pmc": 500},
+    "German Steel|Fe 550":            {"bis": 2500, "loading": 200, "jsw_pmc": 500},
+    "N N Ispat|Fe 550":               {"bis": 2700, "loading": 270, "jsw_pmc": 500},
+    "Real Ispat|Fe 550D-LRF":         {"bis": 4235, "loading": 265, "jsw_pmc": 500},
+}
+
+
+def get_plant_costs(plant: str, grade: str) -> dict:
+    """Get BIS, Loading, JSW PMC for a plant+grade combo."""
+    key = f"{plant}|{grade}"
+    if key in PLANT_COSTS:
+        return PLANT_COSTS[key]
+    # Fallback: try any grade for this plant
+    for k, v in PLANT_COSTS.items():
+        if k.startswith(f"{plant}|"):
+            return v
+    return {"bis": 0, "loading": 0, "jsw_pmc": 500}
 
 MARGIN_IMAGE_PATH = "daily rebar prices/margin dashboard/12th Apr'26.png"
 INVENTORY_JSON_PATH = "daily rebar prices/margin dashboard/inventory_costs.json"
@@ -334,7 +360,7 @@ import os
 
 with tab3:
     st.subheader("Margin Calculator")
-    st.caption("Margin = Avg Inventory Cost + JSW Project Management Cost - FOR Price - Freight")
+    st.caption("Margin = Base Cost + JSW PMC + BIS + Loading - FOR Price - Freight")
 
     # Load inventory costs from JSON
     inv_data = load_inventory_costs()
@@ -349,56 +375,55 @@ with tab3:
 
     st.divider()
 
-    # User inputs - Row 1: Grade, FOR Price
+    # User inputs - Row 1: FOR Price, Freight, Plant
     mc1, mc2, mc3 = st.columns(3)
 
     with mc1:
-        selected_grade = st.selectbox("Grade", options=GRADES)
-    with mc2:
         for_price = st.number_input("FOR Price (INR)", min_value=0, value=0, step=100)
-    with mc3:
-        jsw_pmc = st.number_input("JSW Project Management Cost (INR)", min_value=0, value=0, step=100)
-
-    # Row 2: Freight and Plant (freight depends on plant)
-    mc4, mc5, mc6 = st.columns(3)
-
-    with mc4:
+    with mc2:
         freight = st.number_input("Freight (INR)", min_value=0, value=0, step=100)
-    with mc5:
+    with mc3:
         freight_plant = st.selectbox(
             "Freight is from which Plant?",
             options=list(PLANT_CITY_MAP.keys()),
-            help="Select the plant from which this freight cost applies",
-        ) if freight > 0 else None
-        if freight == 0:
-            freight_plant = st.selectbox(
-                "Freight is from which Plant?",
-                options=list(PLANT_CITY_MAP.keys()),
-                disabled=True,
-                help="Enter freight first",
-            )
+            disabled=(freight == 0),
+            help="Enter freight first" if freight == 0 else "Select the plant",
+        ) if True else None
 
-    # Auto-fill inventory cost from JSON based on plant + grade
+    # Row 2: Grade
+    mc4, _, _ = st.columns(3)
+    with mc4:
+        selected_grade = st.selectbox("Grade", options=GRADES)
+
+    # Auto-fill plant costs (BIS, Loading, JSW PMC)
     plant_for_cost = freight_plant if freight_plant else list(PLANT_CITY_MAP.keys())[0]
+    pcosts = get_plant_costs(plant_for_cost, selected_grade)
+    bis_cost = pcosts["bis"]
+    loading_cost = pcosts["loading"]
+    jsw_pmc = pcosts["jsw_pmc"]
+
+    # Auto-fill inventory cost from JSON
     lookup_key = f"{plant_for_cost}|{selected_grade}"
     auto_cost = inv_costs.get(lookup_key, 0)
-
-    # Fallback to grade average if exact plant+grade not found
     if auto_cost == 0:
         auto_cost = grade_avgs.get(selected_grade, 0)
+    actual_inventory_cost = auto_cost
 
-    with mc6:
-        if auto_cost > 0:
-            st.markdown(f"**Actual Inventory Cost** (auto from image)")
-            st.markdown(f"### INR {auto_cost:,.0f}")
-            st.caption(f"Source: {inv_date} | {plant_for_cost} | {selected_grade}")
-            actual_inventory_cost = auto_cost
+    # Show auto-filled costs
+    st.divider()
+    st.markdown(f"**Auto-filled costs for {plant_for_cost} ({selected_grade}):**")
+    ac1, ac2, ac3, ac4 = st.columns(4)
+    with ac1:
+        st.metric("BIS", f"INR {bis_cost:,}")
+    with ac2:
+        st.metric("Loading Charges", f"INR {loading_cost:,}")
+    with ac3:
+        st.metric("JSW Project Mgmt Cost", f"INR {jsw_pmc:,}")
+    with ac4:
+        if actual_inventory_cost > 0:
+            st.metric("Inventory Cost (from image)", f"INR {actual_inventory_cost:,}")
         else:
-            actual_inventory_cost = st.number_input(
-                "Actual Inventory Cost (INR)",
-                min_value=0, value=0, step=100,
-                help="No auto-fill available for this plant+grade. Enter manually."
-            )
+            actual_inventory_cost = st.number_input("Inventory Cost (INR)", min_value=0, value=0, step=100)
 
     # Get SteelMint price for the freight plant's city
     plant_city = PLANT_CITY_MAP.get(freight_plant, "Delhi/NCR") if freight_plant else "Delhi/NCR"
@@ -407,25 +432,28 @@ with tab3:
     last15_start, last15_end = get_trading_days(df, 15)
     last15_mask = (df["Date"] >= last15_start) & (df["Date"] <= last15_end)
     last15_data = df[last15_mask][plant_city].dropna()
-    avg_steelmint_15 = last15_data.mean() if len(last15_data) > 0 else 0
+    price_adj = PLANT_PRICE_ADJUSTMENT.get(plant_for_cost, 0)
+    avg_steelmint_15 = (last15_data.mean() + price_adj) if len(last15_data) > 0 else 0
 
     # Last date SteelMint price
     last_date_data = df.dropna(subset=[plant_city])
-    last_steelmint_price = float(last_date_data.iloc[-1][plant_city]) if len(last_date_data) > 0 else 0
+    last_steelmint_price = (float(last_date_data.iloc[-1][plant_city]) + price_adj) if len(last_date_data) > 0 else 0
     last_steelmint_date = last_date_data.iloc[-1]["Date"].strftime("%d %b %Y") if len(last_date_data) > 0 else "N/A"
+
+    if price_adj != 0:
+        st.caption(f"Note: {plant_for_cost} uses {plant_city} SteelMint price {price_adj:+,} adjustment")
 
     st.divider()
 
     # Calculate margins
     if for_price > 0:
-        extra = PLANT_EXTRA_COST.get(freight_plant, 0) if freight_plant else 0
-        margin_actual = actual_inventory_cost + jsw_pmc + extra - for_price - freight if actual_inventory_cost > 0 else None
-        margin_15day = avg_steelmint_15 + jsw_pmc + extra - for_price - freight
-        margin_last = last_steelmint_price + jsw_pmc + extra - for_price - freight
+        total_add_costs = jsw_pmc + bis_cost + loading_cost
+        margin_actual = actual_inventory_cost + total_add_costs - for_price - freight if actual_inventory_cost > 0 else None
+        margin_15day = avg_steelmint_15 + total_add_costs - for_price - freight
+        margin_last = last_steelmint_price + total_add_costs - for_price - freight
 
         plant_label = freight_plant if freight_plant else "N/A"
-        extra_label = f" | **Plant Extra Cost:** INR {extra:,}" if extra > 0 else ""
-        st.markdown(f"**Plant:** {plant_label} | **Grade:** {selected_grade} | **SteelMint City:** {plant_city}{extra_label}")
+        st.markdown(f"**Plant:** {plant_label} | **Grade:** {selected_grade} | **SteelMint City:** {plant_city}")
 
         # Three columns for the three margin sections
         s1, s2, s3 = st.columns(3)
@@ -464,24 +492,31 @@ with tab3:
         st.divider()
         st.subheader("Breakdown")
 
-        components = ["Base Cost", "+ JSW Project Mgmt Cost"]
+        components = [
+            "Base Cost",
+            "+ JSW Project Mgmt Cost",
+            "+ BIS",
+            "+ Loading Charges",
+            "- FOR Price",
+            "- Freight",
+            "= Margin",
+        ]
         actual_vals = [
             f"{actual_inventory_cost:,.0f}" if actual_inventory_cost > 0 else "-",
-            f"{jsw_pmc:,.0f}",
+            f"{jsw_pmc:,.0f}", f"{bis_cost:,.0f}", f"{loading_cost:,.0f}",
+            f"{for_price:,.0f}", f"{freight:,.0f}",
+            f"{margin_actual:+,.0f}" if margin_actual is not None else "-",
         ]
-        sm15_vals = [f"{avg_steelmint_15:,.0f}", f"{jsw_pmc:,.0f}"]
-        smlast_vals = [f"{last_steelmint_price:,.0f}", f"{jsw_pmc:,.0f}"]
-
-        if extra > 0:
-            components.append(f"+ Plant Extra Cost ({plant_label})")
-            actual_vals.append(f"{extra:,.0f}")
-            sm15_vals.append(f"{extra:,.0f}")
-            smlast_vals.append(f"{extra:,.0f}")
-
-        components += ["- FOR Price", "- Freight", "= Margin"]
-        actual_vals += [f"{for_price:,.0f}", f"{freight:,.0f}", f"{margin_actual:+,.0f}" if margin_actual is not None else "-"]
-        sm15_vals += [f"{for_price:,.0f}", f"{freight:,.0f}", f"{margin_15day:+,.0f}"]
-        smlast_vals += [f"{for_price:,.0f}", f"{freight:,.0f}", f"{margin_last:+,.0f}"]
+        sm15_vals = [
+            f"{avg_steelmint_15:,.0f}",
+            f"{jsw_pmc:,.0f}", f"{bis_cost:,.0f}", f"{loading_cost:,.0f}",
+            f"{for_price:,.0f}", f"{freight:,.0f}", f"{margin_15day:+,.0f}",
+        ]
+        smlast_vals = [
+            f"{last_steelmint_price:,.0f}",
+            f"{jsw_pmc:,.0f}", f"{bis_cost:,.0f}", f"{loading_cost:,.0f}",
+            f"{for_price:,.0f}", f"{freight:,.0f}", f"{margin_last:+,.0f}",
+        ]
 
         breakdown = {
             "Component": components,
