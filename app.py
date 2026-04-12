@@ -309,13 +309,13 @@ PLANT_CITY_MAP = {
     "N N Ispat": "Ahmedabad",
 }
 
-GRADES = ["Fe 550", "Fe 500D-LRF", "Fe 500", "Fe 550D-LRF"]
+GRADES = ["Fe 550", "Fe 550D"]
 
 MARGIN_IMAGE_PATH = "daily rebar prices/margin dashboard/12th Apr'26.png"
 
 with tab3:
     st.subheader("Margin Calculator")
-    st.caption("Margin = Avg Inventory Cost + PMF - FOR Price - Freight")
+    st.caption("Margin = Avg Inventory Cost + JSW Project Management Cost - FOR Price - Freight")
 
     # Show the uploaded inventory cost image for reference
     import os
@@ -325,21 +325,34 @@ with tab3:
 
     st.divider()
 
-    # User inputs
-    mc1, mc2, mc3, mc4 = st.columns(4)
+    # User inputs - Row 1: Grade, FOR Price
+    mc1, mc2, mc3 = st.columns(3)
 
     with mc1:
-        selected_plant = st.selectbox("Plant", options=list(PLANT_CITY_MAP.keys()))
-    with mc2:
         selected_grade = st.selectbox("Grade", options=GRADES)
-    with mc3:
+    with mc2:
         for_price = st.number_input("FOR Price (INR)", min_value=0, value=0, step=100)
+    with mc3:
+        jsw_pmc = st.number_input("JSW Project Management Cost (INR)", min_value=0, value=0, step=100)
+
+    # Row 2: Freight and Plant (freight depends on plant)
+    mc4, mc5, mc6 = st.columns(3)
+
     with mc4:
         freight = st.number_input("Freight (INR)", min_value=0, value=0, step=100)
-
-    mc5, mc6, _ = st.columns(3)
     with mc5:
-        pmf = st.number_input("Project Management Fee (INR)", min_value=0, value=0, step=100)
+        freight_plant = st.selectbox(
+            "Freight is from which Plant?",
+            options=list(PLANT_CITY_MAP.keys()),
+            help="Select the plant from which this freight cost applies",
+        ) if freight > 0 else None
+        if freight == 0:
+            freight_plant = st.selectbox(
+                "Freight is from which Plant?",
+                options=list(PLANT_CITY_MAP.keys()),
+                disabled=True,
+                help="Enter freight first",
+            )
     with mc6:
         actual_inventory_cost = st.number_input(
             "Actual Inventory Cost (INR, from image)",
@@ -347,8 +360,8 @@ with tab3:
             help="Enter the Avg Inventory Cost (12-32MM) from the uploaded image for your plant & grade"
         )
 
-    # Get SteelMint price for the plant's city
-    plant_city = PLANT_CITY_MAP.get(selected_plant, "Delhi/NCR")
+    # Get SteelMint price for the freight plant's city
+    plant_city = PLANT_CITY_MAP.get(freight_plant, "Delhi/NCR") if freight_plant else "Delhi/NCR"
 
     # Last 15 days avg SteelMint price
     last15_start, last15_end = get_trading_days(df, 15)
@@ -365,11 +378,12 @@ with tab3:
 
     # Calculate margins
     if for_price > 0:
-        margin_actual = actual_inventory_cost + pmf - for_price - freight if actual_inventory_cost > 0 else None
-        margin_15day = avg_steelmint_15 + pmf - for_price - freight
-        margin_last = last_steelmint_price + pmf - for_price - freight
+        margin_actual = actual_inventory_cost + jsw_pmc - for_price - freight if actual_inventory_cost > 0 else None
+        margin_15day = avg_steelmint_15 + jsw_pmc - for_price - freight
+        margin_last = last_steelmint_price + jsw_pmc - for_price - freight
 
-        st.markdown(f"**Plant:** {selected_plant} | **Grade:** {selected_grade} | **SteelMint City:** {plant_city}")
+        plant_label = freight_plant if freight_plant else "N/A"
+        st.markdown(f"**Plant:** {plant_label} | **Grade:** {selected_grade} | **SteelMint City:** {plant_city}")
 
         # Three columns for the three margin sections
         s1, s2, s3 = st.columns(3)
@@ -377,7 +391,6 @@ with tab3:
         with s1:
             st.markdown("#### 1. Actual Inventory")
             if margin_actual is not None:
-                color = "green" if margin_actual >= 0 else "red"
                 st.metric(
                     label=f"Cost: INR {actual_inventory_cost:,.0f}",
                     value=f"INR {margin_actual:,.0f}",
@@ -410,24 +423,24 @@ with tab3:
         st.subheader("Breakdown")
 
         breakdown = {
-            "Component": ["Base Cost", "+ Project Mgmt Fee", "- FOR Price", "- Freight", "= Margin"],
+            "Component": ["Base Cost", "+ JSW Project Mgmt Cost", "- FOR Price", "- Freight", "= Margin"],
             "Actual": [
                 f"{actual_inventory_cost:,.0f}" if actual_inventory_cost > 0 else "-",
-                f"{pmf:,.0f}",
+                f"{jsw_pmc:,.0f}",
                 f"{for_price:,.0f}",
                 f"{freight:,.0f}",
                 f"{margin_actual:+,.0f}" if margin_actual is not None else "-",
             ],
             "SteelMint 15-Day Avg": [
                 f"{avg_steelmint_15:,.0f}",
-                f"{pmf:,.0f}",
+                f"{jsw_pmc:,.0f}",
                 f"{for_price:,.0f}",
                 f"{freight:,.0f}",
                 f"{margin_15day:+,.0f}",
             ],
             f"SteelMint ({last_steelmint_date})": [
                 f"{last_steelmint_price:,.0f}",
-                f"{pmf:,.0f}",
+                f"{jsw_pmc:,.0f}",
                 f"{for_price:,.0f}",
                 f"{freight:,.0f}",
                 f"{margin_last:+,.0f}",
