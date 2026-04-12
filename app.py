@@ -299,14 +299,19 @@ with tab2:
 
 # Plant-to-city mapping for SteelMint prices
 PLANT_CITY_MAP = {
-    "API Ispat": "Delhi/NCR",
-    "SKA Ispat": "Delhi/NCR",
-    "Aditya Industries": "Raipur",
+    "API Ispat": "Raipur",
+    "SKA Ispat": "Raipur",
+    "Aditya Industries": "Mandi Gobindgarh",
     "ASUL-Gwalior": "Delhi/NCR",
-    "Amba Shakti": "Raipur",
+    "Amba Shakti": "Delhi/NCR",
     "Real Ispat": "Raipur",
-    "German Steel": "Durgapur",
-    "N N Ispat": "Ahmedabad",
+    "German Steel": "Ahmedabad",
+    "N N Ispat": "Durgapur",
+}
+
+# Additional fixed costs per plant (e.g. ASUL-Gwalior has INR 800 extra)
+PLANT_EXTRA_COST = {
+    "ASUL-Gwalior": 800,
 }
 
 GRADES = ["Fe 550", "Fe 550D-LRF"]
@@ -413,12 +418,14 @@ with tab3:
 
     # Calculate margins
     if for_price > 0:
-        margin_actual = actual_inventory_cost + jsw_pmc - for_price - freight if actual_inventory_cost > 0 else None
-        margin_15day = avg_steelmint_15 + jsw_pmc - for_price - freight
-        margin_last = last_steelmint_price + jsw_pmc - for_price - freight
+        extra = PLANT_EXTRA_COST.get(freight_plant, 0) if freight_plant else 0
+        margin_actual = actual_inventory_cost + jsw_pmc + extra - for_price - freight if actual_inventory_cost > 0 else None
+        margin_15day = avg_steelmint_15 + jsw_pmc + extra - for_price - freight
+        margin_last = last_steelmint_price + jsw_pmc + extra - for_price - freight
 
         plant_label = freight_plant if freight_plant else "N/A"
-        st.markdown(f"**Plant:** {plant_label} | **Grade:** {selected_grade} | **SteelMint City:** {plant_city}")
+        extra_label = f" | **Plant Extra Cost:** INR {extra:,}" if extra > 0 else ""
+        st.markdown(f"**Plant:** {plant_label} | **Grade:** {selected_grade} | **SteelMint City:** {plant_city}{extra_label}")
 
         # Three columns for the three margin sections
         s1, s2, s3 = st.columns(3)
@@ -457,29 +464,30 @@ with tab3:
         st.divider()
         st.subheader("Breakdown")
 
+        components = ["Base Cost", "+ JSW Project Mgmt Cost"]
+        actual_vals = [
+            f"{actual_inventory_cost:,.0f}" if actual_inventory_cost > 0 else "-",
+            f"{jsw_pmc:,.0f}",
+        ]
+        sm15_vals = [f"{avg_steelmint_15:,.0f}", f"{jsw_pmc:,.0f}"]
+        smlast_vals = [f"{last_steelmint_price:,.0f}", f"{jsw_pmc:,.0f}"]
+
+        if extra > 0:
+            components.append(f"+ Plant Extra Cost ({plant_label})")
+            actual_vals.append(f"{extra:,.0f}")
+            sm15_vals.append(f"{extra:,.0f}")
+            smlast_vals.append(f"{extra:,.0f}")
+
+        components += ["- FOR Price", "- Freight", "= Margin"]
+        actual_vals += [f"{for_price:,.0f}", f"{freight:,.0f}", f"{margin_actual:+,.0f}" if margin_actual is not None else "-"]
+        sm15_vals += [f"{for_price:,.0f}", f"{freight:,.0f}", f"{margin_15day:+,.0f}"]
+        smlast_vals += [f"{for_price:,.0f}", f"{freight:,.0f}", f"{margin_last:+,.0f}"]
+
         breakdown = {
-            "Component": ["Base Cost", "+ JSW Project Mgmt Cost", "- FOR Price", "- Freight", "= Margin"],
-            "Actual": [
-                f"{actual_inventory_cost:,.0f}" if actual_inventory_cost > 0 else "-",
-                f"{jsw_pmc:,.0f}",
-                f"{for_price:,.0f}",
-                f"{freight:,.0f}",
-                f"{margin_actual:+,.0f}" if margin_actual is not None else "-",
-            ],
-            "SteelMint 15-Day Avg": [
-                f"{avg_steelmint_15:,.0f}",
-                f"{jsw_pmc:,.0f}",
-                f"{for_price:,.0f}",
-                f"{freight:,.0f}",
-                f"{margin_15day:+,.0f}",
-            ],
-            f"SteelMint ({last_steelmint_date})": [
-                f"{last_steelmint_price:,.0f}",
-                f"{jsw_pmc:,.0f}",
-                f"{for_price:,.0f}",
-                f"{freight:,.0f}",
-                f"{margin_last:+,.0f}",
-            ],
+            "Component": components,
+            "Actual": actual_vals,
+            "SteelMint 15-Day Avg": sm15_vals,
+            f"SteelMint ({last_steelmint_date})": smlast_vals,
         }
 
         st.dataframe(pd.DataFrame(breakdown), use_container_width=True, hide_index=True)
