@@ -202,8 +202,9 @@ with tab1:
                 x=city_data["Date"],
                 y=city_data[city],
                 name=city,
-                mode="lines",
+                mode="lines+markers",
                 line=dict(color=color, width=2.5 if is_fixed else 1.5, dash="solid" if is_fixed else "dot"),
+                marker=dict(size=6 if is_fixed else 4),
                 hovertemplate=f"<b>{city}</b><br>Date: %{{x|%d %b %Y}}<br>Price: INR %{{y:,.0f}}<extra></extra>",
             ))
 
@@ -215,8 +216,13 @@ with tab1:
             margin=dict(l=60, r=20, t=40, b=40),
             height=500,
             template="plotly_white",
+            yaxis_tickformat=",",
+            xaxis=dict(
+                type="date",
+                tickformat="%d %b %Y",
+                dtick="D1",
+            ),
         )
-        fig.update_layout(yaxis_tickformat=",")
 
         st.plotly_chart(fig, use_container_width=True)
 
