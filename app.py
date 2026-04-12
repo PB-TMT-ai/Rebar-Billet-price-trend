@@ -411,6 +411,17 @@ with tab3:
 
     # Show auto-filled costs
     st.divider()
+
+    # Ex-Works Price
+    ex_works = for_price - freight if for_price > 0 else 0
+    ew1, ew2, _ = st.columns(3)
+    with ew1:
+        if ex_works > 0:
+            st.metric("Ex-Works Price (FOR - Freight)", f"INR {ex_works:,}")
+        else:
+            st.markdown("**Ex-Works Price:** Enter FOR Price and Freight above")
+
+    st.divider()
     st.markdown(f"**Auto-filled costs for {plant_for_cost} ({selected_grade}):**")
     ac1, ac2, ac3, ac4 = st.columns(4)
     with ac1:
@@ -435,10 +446,33 @@ with tab3:
     price_adj = PLANT_PRICE_ADJUSTMENT.get(plant_for_cost, 0)
     avg_steelmint_15 = (last15_data.mean() + price_adj) if len(last15_data) > 0 else 0
 
-    # Last date SteelMint price
-    last_date_data = df.dropna(subset=[plant_city])
-    last_steelmint_price = (float(last_date_data.iloc[-1][plant_city]) + price_adj) if len(last_date_data) > 0 else 0
-    last_steelmint_date = last_date_data.iloc[-1]["Date"].strftime("%d %b %Y") if len(last_date_data) > 0 else "N/A"
+    # SteelMint date selection dropdown
+    city_data_all = df.dropna(subset=[plant_city]).copy()
+    if len(city_data_all) > 0:
+        # Get last 30 available dates for the dropdown
+        available_dates = city_data_all.tail(30)["Date"].dt.strftime("%d %b %Y").tolist()
+        available_dates.reverse()  # Most recent first
+
+        sd1, sd2, _ = st.columns(3)
+        with sd1:
+            selected_sm_date = st.selectbox(
+                "SteelMint Date (for Section 3)",
+                options=available_dates,
+                index=0,
+                help="Select a date for SteelMint price comparison",
+            )
+
+        # Get price for selected date
+        from datetime import datetime as dt_cls
+        sel_date_parsed = pd.to_datetime(selected_sm_date, format="%d %b %Y")
+        sel_row = city_data_all[city_data_all["Date"] == sel_date_parsed]
+        if len(sel_row) > 0:
+            selected_steelmint_price = float(sel_row.iloc[0][plant_city]) + price_adj
+        else:
+            selected_steelmint_price = 0
+    else:
+        selected_sm_date = "N/A"
+        selected_steelmint_price = 0
 
     if price_adj != 0:
         st.caption(f"Note: {plant_for_cost} uses {plant_city} SteelMint price {price_adj:+,} adjustment")
@@ -451,7 +485,7 @@ with tab3:
     if for_price > 0:
         margin_actual = for_price - freight - actual_inventory_cost - jsw_pmc if actual_inventory_cost > 0 else None
         margin_15day = for_price - freight - avg_steelmint_15 - bis_cost - loading_cost - jsw_pmc
-        margin_last = for_price - freight - last_steelmint_price - bis_cost - loading_cost - jsw_pmc
+        margin_selected = for_price - freight - selected_steelmint_price - bis_cost - loading_cost - jsw_pmc
 
         plant_label = freight_plant if freight_plant else "N/A"
         st.markdown(f"**Plant:** {plant_label} | **Grade:** {selected_grade} | **SteelMint City:** {plant_city}")
@@ -481,12 +515,12 @@ with tab3:
             )
 
         with s3:
-            st.markdown(f"#### 3. SteelMint ({last_steelmint_date})")
+            st.markdown(f"#### 3. SteelMint ({selected_sm_date})")
             st.metric(
-                label=f"Price: INR {last_steelmint_price:,.0f}",
-                value=f"INR {margin_last:,.0f}",
-                delta=f"{'Profit' if margin_last >= 0 else 'Loss'}",
-                delta_color="normal" if margin_last >= 0 else "inverse",
+                label=f"Price: INR {selected_steelmint_price:,.0f}",
+                value=f"INR {margin_selected:,.0f}",
+                delta=f"{'Profit' if margin_selected >= 0 else 'Loss'}",
+                delta_color="normal" if margin_selected >= 0 else "inverse",
             )
 
         # Breakdown table
@@ -528,14 +562,14 @@ with tab3:
             f"{jsw_pmc:,.0f}",
             f"{margin_15day:+,.0f}",
         ]
-        smlast_vals = [
+        smsel_vals = [
             f"{for_price:,.0f}",
             f"{freight:,.0f}",
-            f"{last_steelmint_price:,.0f}",
+            f"{selected_steelmint_price:,.0f}",
             f"{bis_cost:,.0f}",
             f"{loading_cost:,.0f}",
             f"{jsw_pmc:,.0f}",
-            f"{margin_last:+,.0f}",
+            f"{margin_selected:+,.0f}",
         ]
 
         # Show tables side by side
@@ -553,9 +587,9 @@ with tab3:
                 use_container_width=True, hide_index=True,
             )
         with bc3:
-            st.markdown(f"**SteelMint ({last_steelmint_date})**")
+            st.markdown(f"**SteelMint ({selected_sm_date})**")
             st.dataframe(
-                pd.DataFrame({"Component": sm_components, "Value (INR)": smlast_vals}),
+                pd.DataFrame({"Component": sm_components, "Value (INR)": smsel_vals}),
                 use_container_width=True, hide_index=True,
             )
 
