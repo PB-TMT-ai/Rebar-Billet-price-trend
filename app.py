@@ -511,36 +511,119 @@ def get_plant_costs(plant: str, grade: str) -> dict:
             return v
     return {"bis": 0, "loading": 0, "jsw_pmc": 500}
 
-MARGIN_IMAGE_PATH = "daily rebar prices/margin dashboard/12th Apr'26.png"
-INVENTORY_JSON_PATH = "daily rebar prices/margin dashboard/inventory_costs.json"
+import os
+import re
+import glob as _glob
+
+MARGIN_DIR = "daily rebar prices/margin dashboard"
+INVENTORY_JSON_PATH = os.path.join(MARGIN_DIR, "inventory_costs.json")
+
+
+def parse_image_date(filename: str) -> str | None:
+    """Parse 'DDth|st|nd|rd MMM'YY.png' style filenames into 'YYYY-MM-DD' string."""
+    base = os.path.basename(filename)
+    m = re.match(r"(\d+)(?:st|nd|rd|th)?\s*(\w+)['`’]?(\d{2})\.png", base, re.IGNORECASE)
+    if not m:
+        return None
+    day = int(m.group(1))
+    mon_str = m.group(2)[:3].title()
+    yr = 2000 + int(m.group(3))
+    months = {"Jan":1,"Feb":2,"Mar":3,"Apr":4,"May":5,"Jun":6,"Jul":7,"Aug":8,"Sep":9,"Oct":10,"Nov":11,"Dec":12}
+    mon = months.get(mon_str)
+    if not mon:
+        return None
+    try:
+        from datetime import date as _d
+        return _d(yr, mon, day).strftime("%Y-%m-%d")
+    except ValueError:
+        return None
+
+
+def find_latest_image() -> tuple[str | None, str | None]:
+    """Return (path, date_str) of the most recent image in MARGIN_DIR."""
+    candidates = []
+    for path in _glob.glob(os.path.join(MARGIN_DIR, "*.png")) + _glob.glob(os.path.join(MARGIN_DIR, "*.jpg")):
+        d = parse_image_date(path)
+        if d:
+            candidates.append((d, path))
+    if not candidates:
+        return None, None
+    candidates.sort(reverse=True)
+    return candidates[0][1], candidates[0][0]
 
 
 @st.cache_data(ttl=60)
 def load_inventory_costs() -> dict:
-    """Load inventory costs from JSON (extracted from uploaded image)."""
+    """Load inventory costs from JSON. Returns structure with costs for latest date."""
     import json
-    if os.path.exists(INVENTORY_JSON_PATH):
-        with open(INVENTORY_JSON_PATH) as f:
-            return json.load(f)
-    return {"costs": {}, "grade_averages": {}, "image_date": "N/A"}
+    if not os.path.exists(INVENTORY_JSON_PATH):
+        return {"costs": {}, "grade_averages": {}, "image_date": "N/A"}
 
+    with open(INVENTORY_JSON_PATH) as f:
+        data = json.load(f)
 
-import os
+    # New format: {"by_date": {"YYYY-MM-DD": {...}}}
+    if "by_date" in data:
+        dates_sorted = sorted(data["by_date"].keys(), reverse=True)
+        if not dates_sorted:
+            return {"costs": {}, "grade_averages": {}, "image_date": "N/A"}
+        latest = dates_sorted[0]
+        entry = data["by_date"][latest]
+        return {
+            "costs": entry.get("costs", {}),
+            "grade_averages": entry.get("grade_averages", {}),
+            "image_date": latest,
+            "image_file": entry.get("image_file", ""),
+            "all_dates": dates_sorted,
+            "all_data": data["by_date"],
+        }
+
+    # Legacy format (single entry)
+    return {
+        "costs": data.get("costs", {}),
+        "grade_averages": data.get("grade_averages", {}),
+        "image_date": data.get("image_date", "N/A"),
+    }
+
 
 with tab3:
     st.subheader("Margin Calculator")
     st.caption("Actual: FOR - Freight - Inventory Cost - PMF | SteelMint: FOR - Freight - SteelMint - BIS - Loading - PMF")
 
-    # Load inventory costs from JSON
+    # Load inventory costs from JSON (auto-picks latest date)
     inv_data = load_inventory_costs()
-    inv_costs = inv_data.get("costs", {})
-    inv_date = inv_data.get("image_date", "N/A")
-    grade_avgs = inv_data.get("grade_averages", {})
+    all_dates = inv_data.get("all_dates", [inv_data.get("image_date", "N/A")])
+
+    # Date selector (defaults to latest)
+    dsel_col, _, _ = st.columns(3)
+    with dsel_col:
+        selected_inv_date = st.selectbox(
+            "Inventory Cost Date",
+            options=all_dates,
+            index=0,
+            help="Latest date is auto-selected. Choose a different date if needed.",
+        )
+
+    # If using multi-date JSON, load selected date's data
+    if "all_data" in inv_data and selected_inv_date in inv_data["all_data"]:
+        entry = inv_data["all_data"][selected_inv_date]
+        inv_costs = entry.get("costs", {})
+        grade_avgs = entry.get("grade_averages", {})
+        image_filename = entry.get("image_file", "")
+        inv_image_path = os.path.join(MARGIN_DIR, image_filename) if image_filename else None
+    else:
+        inv_costs = inv_data.get("costs", {})
+        grade_avgs = inv_data.get("grade_averages", {})
+        # Fall back to auto-detecting latest image in folder
+        latest_img, _ = find_latest_image()
+        inv_image_path = latest_img
 
     # Show the uploaded inventory cost image for reference
-    if os.path.exists(MARGIN_IMAGE_PATH):
-        with st.expander(f"View Actual Inventory Cost Image — {inv_date} (reference)", expanded=False):
-            st.image(MARGIN_IMAGE_PATH, use_container_width=True)
+    if inv_image_path and os.path.exists(inv_image_path):
+        with st.expander(f"View Actual Inventory Cost Image — {selected_inv_date} (reference)", expanded=False):
+            st.image(inv_image_path, use_container_width=True)
+
+    inv_date = selected_inv_date
 
     st.divider()
 

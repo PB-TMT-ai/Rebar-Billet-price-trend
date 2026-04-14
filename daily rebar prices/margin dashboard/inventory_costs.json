@@ -1,19 +1,40 @@
 {
-  "image_date": "2026-04-12",
-  "image_file": "12th Apr'26.png",
-  "costs": {
-    "API Ispat|Fe 550": 48685,
-    "SKA Ispat|Fe 550": 48719,
-    "Aditya Industries|Fe 550": 51724,
-    "ASUL-Gwalior|Fe 550": 49250,
-    "ASUL-Gwalior|Fe 550D-LRF": 54880,
-    "Amba Shakti|Fe 550": 52020,
-    "Real Ispat|Fe 550D-LRF": 51450,
-    "German Steel|Fe 550D": 50413,
-    "N N Ispat|Fe 550": 49835
-  },
-  "grade_averages": {
-    "Fe 550": 50916,
-    "Fe 550D-LRF": 53747
+  "by_date": {
+    "2026-04-12": {
+      "image_file": "12th Apr'26.png",
+      "costs": {
+        "API Ispat|Fe 550": 48685,
+        "SKA Ispat|Fe 550": 48719,
+        "Aditya Industries|Fe 550": 51724,
+        "ASUL-Gwalior|Fe 550": 49250,
+        "ASUL-Gwalior|Fe 550D-LRF": 54880,
+        "Amba Shakti|Fe 550": 52020,
+        "Real Ispat|Fe 550D-LRF": 51450,
+        "German Steel|Fe 550": 50413,
+        "N N Ispat|Fe 550": 49835
+      },
+      "grade_averages": {
+        "Fe 550": 50916,
+        "Fe 550D-LRF": 53747
+      }
+    },
+    "2026-04-14": {
+      "image_file": "14th Apr'26.png",
+      "costs": {
+        "API Ispat|Fe 550": 48732,
+        "SKA Ispat|Fe 550": 48825,
+        "Aditya Industries|Fe 550": 51724,
+        "ASUL-Gwalior|Fe 550": 49250,
+        "ASUL-Gwalior|Fe 550D-LRF": 54912,
+        "Amba Shakti|Fe 550": 53706,
+        "Real Ispat|Fe 550D-LRF": 51300,
+        "German Steel|Fe 550": 50413,
+        "N N Ispat|Fe 550": 49822
+      },
+      "grade_averages": {
+        "Fe 550": 51406,
+        "Fe 550D-LRF": 53449
+      }
+    }
   }
 }
