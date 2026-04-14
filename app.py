@@ -55,6 +55,23 @@ CITY_COLORS = {
 }
 
 
+# Billet data (D-Billet sheet): columns for same cities
+BILLET_SHEET = "D-Billet"
+BILLET_DATA_START_ROW = 8  # 0-indexed: row 9 is first data row
+BILLET_COLUMNS = {
+    "Raipur": 25,
+    "Durgapur": 16,
+    "Mandi Gobindgarh": 22,
+    "Jaipur": -1,              # Not available in billet sheet
+    "Muzaffarnagar": -1,       # Not available
+    "Rourkela": 26,
+    "Ahmedabad": 12,
+    "Mumbai": 23,
+    "Hyderabad": 18,
+    "Delhi/NCR": -1,           # Not available in billet sheet
+}
+
+
 # --- Data Loading ---
 
 @st.cache_data(ttl=60)
@@ -96,6 +113,46 @@ def load_data(city_names: tuple[str, ...], city_indices: tuple[int, ...]) -> pd.
     return result
 
 
+@st.cache_data(ttl=60)
+def load_billet_data(city_names: tuple[str, ...], city_indices: tuple[int, ...]) -> pd.DataFrame:
+    """Load D-Billet sheet data for configured cities (skipping those with col_idx=-1)."""
+    city_map = {c: i for c, i in zip(city_names, city_indices) if i >= 0}
+    df = pd.read_excel(
+        EXCEL_PATH,
+        sheet_name=BILLET_SHEET,
+        header=None,
+        skiprows=BILLET_DATA_START_ROW,
+        engine="openpyxl",
+    )
+
+    records = []
+    for _, row in df.iterrows():
+        date_val = row.iloc[0]
+        if pd.isna(date_val):
+            continue
+        try:
+            date = pd.to_datetime(date_val)
+        except (ValueError, TypeError):
+            continue
+
+        record = {"Date": date}
+        for city, col_idx in city_map.items():
+            val = row.iloc[col_idx] if col_idx < len(row) else None
+            if pd.isna(val) or val in ("-", "H", "", "#DIV/0!", "#REF!"):
+                record[city] = None
+            else:
+                try:
+                    record[city] = float(val)
+                except (ValueError, TypeError):
+                    record[city] = None
+        records.append(record)
+
+    result = pd.DataFrame(records)
+    if not result.empty:
+        result = result.sort_values("Date").reset_index(drop=True)
+    return result
+
+
 def get_trading_days(df: pd.DataFrame, n: int) -> tuple[pd.Timestamp, pd.Timestamp]:
     """Get start and end dates for last N trading days with data."""
     valid = df.dropna(subset=list(CITY_COLUMNS.keys()), how="all")
@@ -119,6 +176,7 @@ st.caption("12MM rebar prices across 10 cities (SteelMint)")
 
 try:
     df = load_data(tuple(CITY_COLUMNS.keys()), tuple(CITY_COLUMNS.values()))
+    df_billet = load_billet_data(tuple(BILLET_COLUMNS.keys()), tuple(BILLET_COLUMNS.values()))
 except FileNotFoundError:
     st.error(f"Excel file not found: `{EXCEL_PATH}`")
     st.stop()
@@ -180,6 +238,13 @@ active_cities = list(FIXED_CITIES.keys()) + extra_cities
 mask = (df["Date"].dt.date >= start_date) & (df["Date"].dt.date <= end_date)
 filtered = df[mask].copy()
 
+# Same date filter for billet data
+if not df_billet.empty:
+    bmask = (df_billet["Date"].dt.date >= start_date) & (df_billet["Date"].dt.date <= end_date)
+    filtered_billet = df_billet[bmask].copy()
+else:
+    filtered_billet = df_billet
+
 # --- Tabs ---
 
 tab1, tab2, tab3 = st.tabs(["📈 Price Trend", "📊 Price Delta", "💰 Margin Calculator"])
@@ -187,7 +252,7 @@ tab1, tab2, tab3 = st.tabs(["📈 Price Trend", "📊 Price Delta", "💰 Margin
 # --- Dashboard 1: Price Trend ---
 
 with tab1:
-    st.subheader(f"Price Trend — {start_date.strftime('%d %b %Y')} to {end_date.strftime('%d %b %Y')}")
+    st.subheader(f"Rebar (12MM) Price Trend — {start_date.strftime('%d %b %Y')} to {end_date.strftime('%d %b %Y')}")
 
     if filtered.empty:
         st.info("No data available for the selected range.")
@@ -228,10 +293,53 @@ with tab1:
 
         st.caption(f"Showing {len(filtered)} trading days")
 
+    # --- Billet Price Trend ---
+    st.divider()
+    st.subheader("Billet Price Trend")
+
+    # Filter billet cities to those with data columns
+    billet_active_cities = [c for c in active_cities if BILLET_COLUMNS.get(c, -1) >= 0]
+    unavailable = [c for c in active_cities if BILLET_COLUMNS.get(c, -1) < 0]
+
+    if unavailable:
+        st.caption(f"Note: Billet data not available for: {', '.join(unavailable)}")
+
+    if filtered_billet.empty or not billet_active_cities:
+        st.info("No billet data available for the selected cities/range.")
+    else:
+        fig_b = go.Figure()
+        for city in billet_active_cities:
+            color = CITY_COLORS.get(city, "#64748b")
+            is_fixed = city in FIXED_CITIES
+            city_data = filtered_billet.dropna(subset=[city])
+            fig_b.add_trace(go.Scatter(
+                x=city_data["Date"],
+                y=city_data[city],
+                name=city,
+                mode="lines+markers",
+                line=dict(color=color, width=2.5 if is_fixed else 1.5, dash="solid" if is_fixed else "dot"),
+                marker=dict(size=6 if is_fixed else 4),
+                hovertemplate=f"<b>{city}</b><br>Date: %{{x|%d %b %Y}}<br>Price: INR %{{y:,.0f}}<extra></extra>",
+            ))
+
+        fig_b.update_layout(
+            yaxis_title="Billet Price (INR)",
+            xaxis_title="Date",
+            hovermode="x unified",
+            legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="center", x=0.5),
+            margin=dict(l=60, r=20, t=40, b=40),
+            height=500,
+            template="plotly_white",
+            yaxis_tickformat=",",
+            xaxis=dict(type="date", tickformat="%d %b %Y", dtick="D1"),
+        )
+        st.plotly_chart(fig_b, use_container_width=True)
+        st.caption(f"Showing {len(filtered_billet)} trading days")
+
 # --- Dashboard 2: Price Delta ---
 
 with tab2:
-    st.subheader("Price Change (Delta)")
+    st.subheader("Rebar (12MM) Price Change (Delta)")
     st.write(
         f"Price change from **{start_date.strftime('%d %b %Y')}** to **{end_date.strftime('%d %b %Y')}**"
     )
@@ -294,6 +402,67 @@ with tab2:
             display_df["Change %"] = display_df["Change %"].apply(lambda x: f"{x:+.2f}%")
 
             st.dataframe(display_df, use_container_width=True, hide_index=True)
+
+    # --- Billet Price Delta ---
+    st.divider()
+    st.subheader("Billet Price Change (Delta)")
+
+    billet_active_cities_delta = [c for c in active_cities if BILLET_COLUMNS.get(c, -1) >= 0]
+    unavailable_b = [c for c in active_cities if BILLET_COLUMNS.get(c, -1) < 0]
+    if unavailable_b:
+        st.caption(f"Note: Billet data not available for: {', '.join(unavailable_b)}")
+
+    if filtered_billet.empty or len(filtered_billet) < 2 or not billet_active_cities_delta:
+        st.info("Need at least 2 billet data points for the selected cities/range.")
+    else:
+        bdelta_data = []
+        for city in billet_active_cities_delta:
+            city_valid = filtered_billet.dropna(subset=[city])
+            if len(city_valid) < 2:
+                continue
+            start_price = float(city_valid.iloc[0][city])
+            end_price = float(city_valid.iloc[-1][city])
+            delta = end_price - start_price
+            pct = (delta / start_price) * 100 if start_price != 0 else 0
+            bdelta_data.append({
+                "City": city,
+                "Start Price (INR)": start_price,
+                "End Price (INR)": end_price,
+                "Delta": delta,
+                "Change %": pct,
+            })
+
+        if not bdelta_data:
+            st.warning("No valid billet data for the selected range.")
+        else:
+            bdelta_df = pd.DataFrame(bdelta_data)
+            bar_colors_b = ["#059669" if d >= 0 else "#dc2626" for d in bdelta_df["Delta"]]
+
+            fig_bd = go.Figure()
+            fig_bd.add_trace(go.Bar(
+                x=bdelta_df["City"],
+                y=bdelta_df["Delta"],
+                marker=dict(color=bar_colors_b),
+                text=[f"INR {d:+,.0f}" for d in bdelta_df["Delta"]],
+                textposition="outside",
+            ))
+            fig_bd.update_layout(
+                yaxis_title="Billet Price Change (INR)",
+                xaxis_title="City",
+                height=400,
+                template="plotly_white",
+                margin=dict(l=60, r=20, t=20, b=40),
+                showlegend=False,
+            )
+            st.plotly_chart(fig_bd, use_container_width=True)
+
+            st.subheader("Billet Summary")
+            bdisplay_df = bdelta_df.copy()
+            bdisplay_df["Start Price (INR)"] = bdisplay_df["Start Price (INR)"].apply(lambda x: f"{x:,.0f}")
+            bdisplay_df["End Price (INR)"] = bdisplay_df["End Price (INR)"].apply(lambda x: f"{x:,.0f}")
+            bdisplay_df["Delta"] = bdisplay_df["Delta"].apply(lambda x: f"{x:+,.0f}")
+            bdisplay_df["Change %"] = bdisplay_df["Change %"].apply(lambda x: f"{x:+.2f}%")
+            st.dataframe(bdisplay_df, use_container_width=True, hide_index=True)
 
 # --- Dashboard 3: Margin Calculator ---
 
