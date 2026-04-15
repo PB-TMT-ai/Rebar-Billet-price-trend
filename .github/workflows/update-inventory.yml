@@ -1,0 +1,71 @@
+name: Auto-extract inventory costs from image
+
+on:
+  push:
+    paths:
+      - 'daily rebar prices/margin dashboard/*.png'
+      - 'daily rebar prices/margin dashboard/*.jpg'
+
+permissions:
+  contents: write
+
+jobs:
+  extract-inventory:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+          fetch-depth: 2
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Install system tesseract
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y tesseract-ocr
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python dependencies
+        run: pip install pytesseract Pillow
+
+      - name: Find new image files
+        id: find_images
+        run: |
+          IMAGES=$(git diff --name-only HEAD~1 HEAD -- 'daily rebar prices/margin dashboard/*.png' 'daily rebar prices/margin dashboard/*.jpg' || true)
+          echo "images<<EOF" >> $GITHUB_OUTPUT
+          echo "$IMAGES" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+          if [ -z "$IMAGES" ]; then
+            echo "found=false" >> $GITHUB_OUTPUT
+          else
+            echo "found=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Run OCR script for each new image
+        if: steps.find_images.outputs.found == 'true'
+        run: |
+          echo "${{ steps.find_images.outputs.images }}" | while read -r imgfile; do
+            if [ -n "$imgfile" ] && [ -f "$imgfile" ]; then
+              echo "Processing: $imgfile"
+              python scripts/extract_inventory_from_image.py "$imgfile" || echo "OCR failed for $imgfile"
+            fi
+          done
+
+      - name: Commit and push updated JSON
+        if: steps.find_images.outputs.found == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add "daily rebar prices/margin dashboard/inventory_costs.json"
+          if git diff --cached --quiet; then
+            echo "No JSON changes"
+          else
+            git commit -m "Auto-extract inventory costs from new image (OCR)"
+            git push
+          fi

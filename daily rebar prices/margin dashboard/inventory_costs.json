@@ -35,6 +35,24 @@
         "Fe 550": 51406,
         "Fe 550D-LRF": 53449
       }
+    },
+    "2026-04-15": {
+      "image_file": "15th Apr'26.png",
+      "costs": {
+        "API Ispat|Fe 550": 48732,
+        "SKA Ispat|Fe 550": 49365,
+        "Aditya Industries|Fe 550": 52271,
+        "ASUL-Gwalior|Fe 550": 49250,
+        "ASUL-Gwalior|Fe 550D-LRF": 54823,
+        "Amba Shakti|Fe 550": 53508,
+        "Real Ispat|Fe 550D-LRF": 50154,
+        "German Steel|Fe 550": 50413,
+        "N N Ispat|Fe 550": 49921
+      },
+      "grade_averages": {
+        "Fe 550": 51478,
+        "Fe 550D-LRF": 53912
+      }
     }
   }
 }
