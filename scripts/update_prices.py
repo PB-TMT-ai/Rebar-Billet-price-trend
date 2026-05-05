@@ -45,15 +45,7 @@ SHEET_MAPPINGS = [
         "date_col": 0,
         "date_type": "daily",
     },
-    {
-        "source_file": "ingot_D_dom",
-        "source_sheet": "INGOT",
-        "target_sheet": "D-Billet",   # ingot data not in separate sheet; skip if no match
-        "header_rows": 2,
-        "date_col": 0,
-        "date_type": "daily",
-        "skip_if_no_sheet": True,
-    },
+    # ingot_D_dom skipped — different column structure, no matching target sheet
     {
         "source_file": "rebar_dom",
         "source_sheet": "PRIMARY",
@@ -161,23 +153,122 @@ def find_source_file(extract_dir: str, name_substring: str) -> str | None:
     return None
 
 
-def read_source_sheet(file_path: str, sheet_name: str, header_rows: int, date_col: int) -> list[list[Any]]:
-    """Read data rows from a source .xls sheet."""
+def read_source_sheet(file_path: str, sheet_name: str, header_rows: int, date_col: int) -> tuple[list[list[Any]], list[int] | None]:
+    """Read data rows from a source .xls sheet.
+
+    Returns (rows, col_remap) where col_remap maps source col → target col
+    based on header names, or None if headers match the expected layout.
+    """
     wb = xlrd.open_workbook(file_path, ignore_workbook_corruption=True)
 
     if sheet_name not in wb.sheet_names():
         log_warn(f"Sheet '{sheet_name}' not found in {os.path.basename(file_path)}. Available: {wb.sheet_names()}")
-        return []
+        return [], None
 
     sheet = wb.sheet_by_name(sheet_name)
-    rows: list[list[Any]] = []
 
+    # Build column remapping by matching header city names
+    # Read the city header row (row index 1 for most sheets)
+    col_remap: list[int] | None = None
+    if header_rows >= 2:
+        city_row_idx = header_rows - 1  # last header row has city names
+        src_headers = [sheet.cell_value(city_row_idx, c) for c in range(sheet.ncols)]
+
+        # Detect if there's a column shift by finding where 'Date' or first city appears
+        # Build a map: for each source column, find where that city header is in the
+        # "standard" layout (where Date is at col 0)
+        # Standard: the target Excel has fixed column positions.
+        # We remap source to match the target by aligning city names.
+
+        # Find where the date column is in the source
+        src_date_col = 0
+        for i, h in enumerate(src_headers):
+            if isinstance(h, str) and h.strip().lower() in ('date', ''):
+                continue
+            # First non-empty, non-date header indicates data starts
+            break
+
+        # Check if source has the expected number of columns
+        # If source has more columns than expected, there's a shift
+        # Build a name->source_col map from source headers
+        src_name_to_col: dict[str, int] = {}
+        for i, h in enumerate(src_headers):
+            if isinstance(h, str) and h.strip():
+                name = h.strip()
+                if name not in src_name_to_col:
+                    src_name_to_col[name] = i
+
+        # Check the standard (expected) header positions by looking at earlier data
+        # Standard billet: Hindpur=10, Ramgarh=11, Ahmedabad=12, ..., Durgapur=16, ..., Raipur=25
+        # If source has Durgapur at col 17 instead of 16, we need to remap
+
+        # Build expected name->target_col from the FIRST occurrence of each city
+        # We do this by reading row 0 (category) and row 1 (cities) of the source
+        # but mapping to the STANDARD positions
+
+        # Standard positions for D-Billet target sheet:
+        STANDARD_BILLET_CITIES = {
+            "Hindpur": 10, "Ramgarh": 11, "Ahmedabad": 12, "Bellary": 13,
+            "Bhavnagar": 14, "Chennai": 15, "Durgapur": 16, "Goa": 17,
+            "Hyderabad": 18, "Jalna": 19, "Jharsugda": 20, "Kolkata": 21,
+            "Mandi Gobindgarh": 22, "Mumbai": 23, "Raigarh": 24, "Raipur": 25,
+            "Rourkela": 26,
+        }
+
+        # Check if any city is at a different column than standard
+        shifted = False
+        for city, expected_col in STANDARD_BILLET_CITIES.items():
+            src_col = src_name_to_col.get(city)
+            if src_col is not None and src_col != expected_col:
+                shifted = True
+                break
+
+        if shifted:
+            # Detect the column offset using a unique city name (Hindpur is always unique)
+            hindpur_src = src_name_to_col.get("Hindpur")
+            hindpur_tgt = STANDARD_BILLET_CITIES.get("Hindpur", 10)
+            offset = (hindpur_src - hindpur_tgt) if hindpur_src is not None else 1
+
+            log_info(f"  Column shift detected (offset={offset})! Building remap...")
+
+            max_target_col = max(STANDARD_BILLET_CITIES.values()) + 1  # 27
+            remap = list(range(max_target_col + offset + 1))
+
+            # Date col stays at 0
+            remap[0] = 0
+
+            # Early columns (BSE futures etc.) before the city block: shift back by offset
+            # Skip mapping to col 0 (reserved for date)
+            for i in range(1, hindpur_tgt + offset):
+                target = i - offset
+                if target > 0:  # never overwrite date col
+                    remap[i] = target
+
+            # City block: shift each source col back by offset
+            for tgt_col in range(hindpur_tgt, max_target_col):
+                src_col = tgt_col + offset
+                if src_col < len(remap):
+                    remap[src_col] = tgt_col
+
+            col_remap = remap
+            log_info(f"  Remap: src col {hindpur_tgt + offset}→{hindpur_tgt}(Hindpur), src col {16 + offset}→16(Durgapur), src col {25 + offset}→25(Raipur)")
+
+    rows: list[list[Any]] = []
     for row_idx in range(header_rows, sheet.nrows):
         row = [sheet.cell_value(row_idx, col) for col in range(sheet.ncols)]
         if is_data_row(row, date_col):
-            rows.append(row)
+            if col_remap:
+                # Remap columns to standard positions
+                max_col = max(col_remap) + 1
+                remapped = [''] * max(max_col, len(row))
+                for src_i, tgt_i in enumerate(col_remap):
+                    if src_i < len(row):
+                        remapped[tgt_i] = row[src_i]
+                rows.append(remapped)
+            else:
+                rows.append(row)
 
-    return rows
+    return rows, col_remap
 
 
 def append_new_rows(
@@ -273,13 +364,15 @@ def main() -> None:
 
             log_info(f"Processing: {os.path.basename(source_file)} [{mapping['source_sheet']}] → [{target_sheet_name}]")
 
-            # Read source data
-            source_rows = read_source_sheet(
+            # Read source data (with auto column remap if source has shifted columns)
+            source_rows, col_remap = read_source_sheet(
                 source_file,
                 mapping["source_sheet"],
                 mapping["header_rows"],
                 mapping["date_col"],
             )
+            if col_remap:
+                log_info(f"  Column shift detected and remapped")
             log_info(f"  Source rows with data: {len(source_rows)}")
 
             if not source_rows:
