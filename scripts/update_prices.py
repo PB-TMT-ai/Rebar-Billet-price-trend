@@ -169,8 +169,11 @@ def read_source_sheet(file_path: str, sheet_name: str, header_rows: int, date_co
 
     # Build column remapping by matching header city names
     # Read the city header row (row index 1 for most sheets)
+    # NOTE: Only billet (BILLET sheet) needs column-shift detection — the 12MM
+    # rebar sheet shares some city names with billet but has a different layout,
+    # so applying billet remap to it incorrectly drops the first column.
     col_remap: list[int] | None = None
-    if header_rows >= 2:
+    if header_rows >= 2 and sheet_name == "BILLET":
         city_row_idx = header_rows - 1  # last header row has city names
         src_headers = [sheet.cell_value(city_row_idx, c) for c in range(sheet.ncols)]
 
