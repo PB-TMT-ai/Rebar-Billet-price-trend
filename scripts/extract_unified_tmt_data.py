@@ -1,174 +1,117 @@
 """
-Extract master 2026 sheet data from Unified TMT price flash xlsx into JSON
+Extract Master -2026 sheet data from 'Unified TMT price flash (1).xlsx' into JSON
 for the dashboard's Unified TMT Price Flash tab.
 
-Usage:
-    python scripts/extract_unified_tmt_data.py [path_to_xlsx]
+Sheet structure:
+  Row 1: section headers (Distributor landed | Customer landed (direct) | Distr to dealer)
+  Row 2: column headers (Sr No, Date, Zone, State, Major city, then brand columns)
+  Row 3+: data rows — one row per (date, city)
 
-Default input path:
-    daily rebar prices/Unified TMT price flash.xlsx
-
-Output:
-    src/data/unified-tmt-prices.json
+Output: src/data/unified-tmt-prices.json
+  {
+    "columnGroups": [{name, span: [startIdx, endIdx]}, ...],
+    "columns": ["Sr No", "Date", ...],
+    "rows": [{"date": "YYYY-MM-DD", "city": "...", "values": [...]}, ...]
+  }
 """
 
 import json
 import os
 import sys
 from datetime import datetime
+from typing import Any
 
 import openpyxl
 
-DEFAULT_XLSX = "daily rebar prices/Unified TMT price flash.xlsx"
-SHEET_NAME = "master 2026"
+DEFAULT_XLSX = "daily rebar prices/margin dashboard/Unified TMT price flash (1).xlsx"
+SHEET_NAME = "Master -2026"
 OUTPUT_PATH = "src/data/unified-tmt-prices.json"
 
-CITIES = [
-    "DL/NCR",
-    "Bawal/Rewari/Faridabad",
-    "Agra/Ghaziabad",
-    "Gorakhpur",
-    "Jaipur",
-    "Srinagar",
-    "Jammu",
-    "Chandigarh",
-    "Shimla",
-    "Dehradun",
-    "Ludhiana",
-    "Ranchi",
-    "Patna",
-    "Siliguri, Jalpaiguri, Cooch behar",
-    "Kolkata",
-    "Bhubaneshwar",
-    "Rourkela",
-    "Mumbai",
-    "Pune",
-    "Nashik",
-    "Nagpur",
-    "Ahmedabad",
-    "Raipur",
-    "Indore",
-    "North Karnataka-Hubli",
-    "South karnataka- Bangalore",
-    "Chennai",
-    "Coimbatore",
-    "Cochin",
-    "Hyderabad",
-    "Non Hyderabad",
-    "AP- Vizag",
-]
+DATE_COL = 1
+CITY_COL = 4
+MAX_COL = 26  # cols 0..25 inclusive
 
 
-def parse_price(value):
-    if value is None:
+def cell_to_json(v: Any) -> Any:
+    if v is None:
         return None
-    if isinstance(value, (int, float)):
-        return float(value)
-    if isinstance(value, str):
-        s = value.strip()
-        if s in ("", "-", "H", "#DIV/0!", "#REF!", "N/A", "NA"):
+    if isinstance(v, datetime):
+        return v.strftime("%Y-%m-%d")
+    if isinstance(v, float):
+        if v != v:  # NaN
             return None
-        try:
-            return float(s.replace(",", ""))
-        except ValueError:
+        if v == int(v):
+            return int(v)
+        return v
+    if isinstance(v, str):
+        s = v.strip()
+        if s in ("", "-", "NA", "N/A", "#DIV/0!", "#REF!"):
             return None
+        return s
+    return v
+
+
+def find_sheet_name(wb) -> str | None:
+    if SHEET_NAME in wb.sheetnames:
+        return SHEET_NAME
+    for s in wb.sheetnames:
+        norm = s.lower().replace(" ", "").replace("-", "")
+        if "master" in norm and "2026" in norm:
+            return s
     return None
 
 
-def find_header_row(ws, max_scan=30):
-    """Find row containing 'DL/NCR' (case-insensitive) — the city header row."""
-    for row in ws.iter_rows(min_row=1, max_row=max_scan, values_only=True):
-        for cell in row:
-            if isinstance(cell, str) and "dl/ncr" in cell.strip().lower():
-                return row
-    return None
-
-
-def build_city_columns(header_row):
-    """Map our canonical city names to column indices using fuzzy match."""
-    by_norm = {}
-    for i, cell in enumerate(header_row):
-        if isinstance(cell, str) and cell.strip():
-            key = cell.strip().lower().replace(" ", "").replace(",", "")
-            by_norm.setdefault(key, i)
-
-    city_cols = {}
-    for city in CITIES:
-        key = city.strip().lower().replace(" ", "").replace(",", "")
-        if key in by_norm:
-            city_cols[city] = by_norm[key]
-    return city_cols
-
-
-def find_date_column(header_row):
-    for i, cell in enumerate(header_row):
-        if isinstance(cell, str) and cell.strip().lower() in ("date", "dt"):
-            return i
-    return 0  # default to column A
-
-
-def main():
+def main() -> None:
     xlsx_path = sys.argv[1] if len(sys.argv) > 1 else DEFAULT_XLSX
 
     if not os.path.exists(xlsx_path):
         print(f"[ERROR] xlsx not found: {xlsx_path}")
-        print("[INFO] Upload 'Unified TMT price flash.xlsx' to the path above, then re-run.")
         return
 
     print(f"[INFO] Reading {xlsx_path}...")
-    wb = openpyxl.load_workbook(xlsx_path, data_only=True, read_only=True)
-
-    if SHEET_NAME not in wb.sheetnames:
-        # Try fuzzy match
-        match = None
-        for s in wb.sheetnames:
-            if "master" in s.lower() and "2026" in s:
-                match = s
-                break
-        if match:
-            print(f"[WARN] Sheet '{SHEET_NAME}' not found; using '{match}' instead.")
-            sheet_name = match
-        else:
-            print(f"[ERROR] Sheet '{SHEET_NAME}' not found. Available: {wb.sheetnames}")
-            return
-    else:
-        sheet_name = SHEET_NAME
-
-    ws = wb[sheet_name]
-
-    # Locate header row
-    header_row = find_header_row(ws)
-    if header_row is None:
-        print("[ERROR] Could not find header row (no cell matching 'DL/NCR').")
+    # First pass: load with merged-cell info to derive section groups
+    wb_meta = openpyxl.load_workbook(xlsx_path, data_only=True)
+    sheet_name = find_sheet_name(wb_meta)
+    if not sheet_name:
+        print(f"[ERROR] Could not find 'Master -2026' sheet. Available: {wb_meta.sheetnames}")
         return
 
-    date_col = find_date_column(header_row)
-    city_cols = build_city_columns(header_row)
-    print(f"[INFO] Date column: {date_col}, matched {len(city_cols)}/{len(CITIES)} cities")
+    ws_meta = wb_meta[sheet_name]
+    column_groups: list[dict[str, Any]] = []
+    for mr in sorted(ws_meta.merged_cells.ranges, key=lambda r: r.min_col):
+        if mr.min_row == 1 and mr.max_row == 1:
+            label = ws_meta.cell(row=1, column=mr.min_col).value
+            if isinstance(label, str) and label.strip():
+                column_groups.append({
+                    "name": label.strip(),
+                    "start": mr.min_col - 1,
+                    "end": mr.max_col - 1,
+                })
+    wb_meta.close()
 
-    missing = [c for c in CITIES if c not in city_cols]
-    if missing:
-        print(f"[WARN] Missing cities: {missing}")
+    # Second pass: fast streaming read for the data
+    wb = openpyxl.load_workbook(xlsx_path, data_only=True, read_only=True)
+    ws = wb[sheet_name]
 
-    # Find the row index of header so data starts after
-    header_row_idx = None
+    header_row: list[Any] | None = None
+    rows: list[dict[str, Any]] = []
+
     for i, row in enumerate(ws.iter_rows(values_only=True), start=1):
-        if row == header_row:
-            header_row_idx = i
-            break
+        row = list(row)[:MAX_COL]
+        if i == 1:
+            continue
+        if i == 2:
+            header_row = row
+            continue
+        if not row or row[DATE_COL] is None:
+            continue
 
-    records = []
-    for row in ws.iter_rows(min_row=(header_row_idx or 1) + 1, values_only=True):
-        if not row:
-            continue
-        date_val = row[date_col] if date_col < len(row) else None
-        if date_val is None:
-            continue
+        date_val = row[DATE_COL]
         if isinstance(date_val, datetime):
             date_str = date_val.strftime("%Y-%m-%d")
         elif isinstance(date_val, str):
             s = date_val.strip()
-            if not s or s.lower() in ("date", "-", "h"):
+            if not s or s.lower() in ("date", "-"):
                 continue
             try:
                 date_str = datetime.strptime(s, "%Y-%m-%d").strftime("%Y-%m-%d")
@@ -180,27 +123,42 @@ def main():
         else:
             continue
 
-        record = {"date": date_str}
-        any_price = False
-        for city in CITIES:
-            col = city_cols.get(city)
-            price = parse_price(row[col]) if (col is not None and col < len(row)) else None
-            record[city] = price
-            if price is not None:
-                any_price = True
+        city = row[CITY_COL]
+        if not city:
+            continue
 
-        if any_price:
-            records.append(record)
+        values = [cell_to_json(v) for v in row]
+        # replace the date cell with the canonical string
+        values[DATE_COL] = date_str
+
+        rows.append({
+            "date": date_str,
+            "city": str(city).strip(),
+            "values": values,
+        })
 
     wb.close()
 
+    if header_row is None:
+        print("[ERROR] No header row found")
+        return
+
+    columns = [(str(h).strip() if h is not None else "") for h in header_row[:MAX_COL]]
+
+    output = {
+        "columns": columns,
+        "columnGroups": column_groups,
+        "rows": rows,
+    }
+
     os.makedirs(os.path.dirname(OUTPUT_PATH), exist_ok=True)
     with open(OUTPUT_PATH, "w") as f:
-        json.dump(records, f, indent=2)
+        json.dump(output, f, indent=2)
 
-    print(f"[INFO] Exported {len(records)} records to {OUTPUT_PATH}")
-    if records:
-        print(f"[INFO] Date range: {records[0]['date']} to {records[-1]['date']}")
+    dates = sorted({r["date"] for r in rows})
+    cities = sorted({r["city"] for r in rows})
+    print(f"[INFO] Exported {len(rows)} rows to {OUTPUT_PATH}")
+    print(f"[INFO] {len(dates)} dates ({dates[0]} to {dates[-1]}), {len(cities)} cities")
 
 
 if __name__ == "__main__":

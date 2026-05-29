@@ -1,18 +1,41 @@
-import { UNIFIED_CITIES } from '../types/unified'
-import type { UnifiedRecord } from '../types/unified'
+import type { UnifiedColumnGroup, UnifiedRow } from '../types/unified'
 
 interface UnifiedTableProps {
-  record: UnifiedRecord | null
+  columns: string[]
+  columnGroups: UnifiedColumnGroup[]
+  rows: UnifiedRow[]
   date: string
 }
 
-function formatPrice(value: number | null): string {
+function formatCell(value: string | number | null): string {
   if (value === null || value === undefined) return '—'
-  return value.toLocaleString('en-IN')
+  if (typeof value === 'number') return value.toLocaleString('en-IN')
+  return value
 }
 
-export function UnifiedTable({ record, date }: UnifiedTableProps): React.ReactElement {
-  if (!record) {
+function buildGroupHeader(
+  columnCount: number,
+  groups: UnifiedColumnGroup[],
+): Array<{ name: string; span: number }> {
+  const cells: Array<{ name: string; span: number }> = []
+  let idx = 0
+  const sorted = [...groups].sort((a, b) => a.start - b.start)
+  for (const g of sorted) {
+    if (idx < g.start) {
+      cells.push({ name: '', span: g.start - idx })
+      idx = g.start
+    }
+    cells.push({ name: g.name, span: g.end - g.start + 1 })
+    idx = g.end + 1
+  }
+  if (idx < columnCount) {
+    cells.push({ name: '', span: columnCount - idx })
+  }
+  return cells
+}
+
+export function UnifiedTable({ columns, columnGroups, rows, date }: UnifiedTableProps): React.ReactElement {
+  if (rows.length === 0) {
     return (
       <div className="flex h-48 items-center justify-center text-sm text-slate-500">
         No data available for {date || 'selected date'}.
@@ -20,27 +43,53 @@ export function UnifiedTable({ record, date }: UnifiedTableProps): React.ReactEl
     )
   }
 
+  const groupHeader = buildGroupHeader(columns.length, columnGroups)
+
   return (
     <div className="overflow-x-auto">
-      <table className="min-w-full divide-y divide-slate-200 text-sm">
-        <thead className="bg-slate-50">
-          <tr>
-            <th className="px-4 py-2.5 text-left font-medium text-slate-700">City</th>
-            <th className="px-4 py-2.5 text-right font-medium text-slate-700">Price (INR)</th>
+      <table className="min-w-full border-collapse text-xs">
+        <thead>
+          <tr className="bg-slate-100">
+            {groupHeader.map((g, i) => (
+              <th
+                key={i}
+                colSpan={g.span}
+                className={`border border-slate-200 px-2 py-1.5 text-center font-semibold text-slate-700 ${
+                  g.name ? 'bg-indigo-50' : ''
+                }`}
+              >
+                {g.name}
+              </th>
+            ))}
+          </tr>
+          <tr className="bg-slate-50">
+            {columns.map((c, i) => (
+              <th
+                key={i}
+                className="border border-slate-200 px-2 py-1.5 text-left font-medium text-slate-700"
+              >
+                {c}
+              </th>
+            ))}
           </tr>
         </thead>
-        <tbody className="divide-y divide-slate-100 bg-white">
-          {UNIFIED_CITIES.map((city) => {
-            const price = record[city]
-            return (
-              <tr key={city} className="hover:bg-slate-50">
-                <td className="px-4 py-2 text-slate-700">{city}</td>
-                <td className="px-4 py-2 text-right font-mono tabular-nums text-slate-900">
-                  {formatPrice(price)}
+        <tbody>
+          {rows.map((row, ri) => (
+            <tr key={ri} className="hover:bg-slate-50">
+              {row.values.map((v, ci) => (
+                <td
+                  key={ci}
+                  className={`border border-slate-200 px-2 py-1 ${
+                    typeof v === 'number'
+                      ? 'text-right font-mono tabular-nums text-slate-900'
+                      : 'text-slate-700'
+                  }`}
+                >
+                  {formatCell(v)}
                 </td>
-              </tr>
-            )
-          })}
+              ))}
+            </tr>
+          ))}
         </tbody>
       </table>
     </div>

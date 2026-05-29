@@ -7,11 +7,12 @@ import {
   CartesianGrid,
   Tooltip,
 } from 'recharts'
-import { UNIFIED_CITIES } from '../types/unified'
-import type { UnifiedRecord } from '../types/unified'
+import type { UnifiedRow } from '../types/unified'
 
 interface UnifiedBarChartProps {
-  record: UnifiedRecord | null
+  rows: UnifiedRow[]
+  columns: string[]
+  selectedColumnIndex: number
   date: string
 }
 
@@ -19,8 +20,13 @@ function formatPrice(value: number): string {
   return value.toLocaleString('en-IN')
 }
 
-export function UnifiedBarChart({ record, date }: UnifiedBarChartProps): React.ReactElement {
-  if (!record) {
+export function UnifiedBarChart({
+  rows,
+  columns,
+  selectedColumnIndex,
+  date,
+}: UnifiedBarChartProps): React.ReactElement {
+  if (rows.length === 0) {
     return (
       <div className="flex h-64 items-center justify-center text-sm text-slate-500">
         No data available for {date || 'selected date'}.
@@ -28,17 +34,26 @@ export function UnifiedBarChart({ record, date }: UnifiedBarChartProps): React.R
     )
   }
 
-  const chartData = UNIFIED_CITIES.map((city) => ({
-    city,
-    price: record[city] ?? null,
-  })).filter((d) => d.price !== null)
+  const chartData = rows
+    .map((r) => ({
+      city: r.city,
+      value: typeof r.values[selectedColumnIndex] === 'number' ? (r.values[selectedColumnIndex] as number) : null,
+    }))
+    .filter((d) => d.value !== null)
+
+  const label = columns[selectedColumnIndex] || 'Value'
+
+  if (chartData.length === 0) {
+    return (
+      <div className="flex h-64 items-center justify-center text-sm text-slate-500">
+        Selected column "{label}" has no numeric values for {date}.
+      </div>
+    )
+  }
 
   return (
-    <ResponsiveContainer width="100%" height={520}>
-      <BarChart
-        data={chartData}
-        margin={{ top: 8, right: 24, left: 16, bottom: 120 }}
-      >
+    <ResponsiveContainer width="100%" height={560}>
+      <BarChart data={chartData} margin={{ top: 8, right: 24, left: 16, bottom: 140 }}>
         <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
         <XAxis
           dataKey="city"
@@ -54,7 +69,7 @@ export function UnifiedBarChart({ record, date }: UnifiedBarChartProps): React.R
           width={80}
         />
         <Tooltip
-          formatter={(value) => [`INR ${formatPrice(Number(value))}`, 'Price']}
+          formatter={(value) => [`INR ${formatPrice(Number(value))}`, label]}
           contentStyle={{
             backgroundColor: '#fff',
             border: '1px solid #e2e8f0',
@@ -62,7 +77,7 @@ export function UnifiedBarChart({ record, date }: UnifiedBarChartProps): React.R
             fontSize: '13px',
           }}
         />
-        <Bar dataKey="price" fill="#4f46e5" radius={[4, 4, 0, 0]} />
+        <Bar dataKey="value" fill="#4f46e5" radius={[4, 4, 0, 0]} name={label} />
       </BarChart>
     </ResponsiveContainer>
   )
