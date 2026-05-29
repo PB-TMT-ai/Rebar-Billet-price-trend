@@ -11,6 +11,7 @@ Deploy: https://share.streamlit.io
 import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
+import openpyxl
 from datetime import timedelta
 
 # --- Config ---
@@ -247,7 +248,12 @@ else:
 
 # --- Tabs ---
 
-tab1, tab2, tab3 = st.tabs(["📈 Price Trend", "📊 Price Delta", "💰 Margin Calculator"])
+tab1, tab2, tab3, tab4 = st.tabs([
+    "📈 Price Trend",
+    "📊 Price Delta",
+    "💰 Margin Calculator",
+    "🏷️ Unified TMT Price Flash",
+])
 
 # --- Dashboard 1: Price Trend ---
 
@@ -851,6 +857,148 @@ with tab3:
 
     else:
         st.info("Enter a FOR Price to calculate margins.")
+
+# --- Dashboard 4: Unified TMT Price Flash ---
+
+UNIFIED_XLSX_PATH = "daily rebar prices/margin dashboard/Unified TMT price flash (1).xlsx"
+UNIFIED_SHEET_NAME = "Master -2026"
+
+
+@st.cache_data(ttl=60)
+def load_unified_data() -> tuple[pd.DataFrame, list[str], list[dict]]:
+    """Load Master -2026 sheet. Returns (dataframe, column_names, column_groups).
+
+    column_groups: list of {name, start, end} (0-indexed col positions) derived
+    from row-1 merged cell ranges in the source sheet.
+    """
+    import os
+    if not os.path.exists(UNIFIED_XLSX_PATH):
+        return pd.DataFrame(), [], []
+
+    wb = openpyxl.load_workbook(UNIFIED_XLSX_PATH, data_only=True)
+    if UNIFIED_SHEET_NAME not in wb.sheetnames:
+        wb.close()
+        return pd.DataFrame(), [], []
+    ws = wb[UNIFIED_SHEET_NAME]
+
+    column_groups: list[dict] = []
+    for mr in sorted(ws.merged_cells.ranges, key=lambda r: r.min_col):
+        if mr.min_row == 1 and mr.max_row == 1:
+            label = ws.cell(row=1, column=mr.min_col).value
+            if isinstance(label, str) and label.strip():
+                column_groups.append({
+                    "name": label.strip(),
+                    "start": mr.min_col - 1,
+                    "end": mr.max_col - 1,
+                })
+    wb.close()
+
+    df = pd.read_excel(
+        UNIFIED_XLSX_PATH,
+        sheet_name=UNIFIED_SHEET_NAME,
+        header=1,        # row 2 (0-indexed 1) is the column-name row
+        engine="openpyxl",
+    )
+    # Drop fully-empty trailing columns
+    df = df.dropna(axis=1, how="all")
+    # Keep only rows with a valid date
+    df = df[pd.to_datetime(df["Date"], errors="coerce").notna()].copy()
+    df["Date"] = pd.to_datetime(df["Date"])
+
+    columns = list(df.columns)
+    return df, columns, column_groups
+
+
+with tab4:
+    st.subheader("Unified TMT Price Flash")
+
+    udf, ucols, ugroups = load_unified_data()
+
+    if udf.empty:
+        st.warning(
+            f"Could not load data from `{UNIFIED_XLSX_PATH}` "
+            f"(sheet `{UNIFIED_SHEET_NAME}`). Make sure the file is uploaded."
+        )
+    else:
+        available_dates = sorted(udf["Date"].dt.date.unique())
+        today = pd.Timestamp.now().date()
+        default_date = today if today in available_dates else available_dates[-1]
+
+        c1, c2 = st.columns([1, 1])
+        with c1:
+            selected_date = st.date_input(
+                "Date",
+                value=default_date,
+                min_value=available_dates[0],
+                max_value=available_dates[-1],
+                key="unified_date",
+            )
+        with c2:
+            view_mode = st.radio(
+                "View",
+                ["Table", "Chart"],
+                horizontal=True,
+                key="unified_view",
+            )
+
+        row_filter = udf["Date"].dt.date == selected_date
+        rows = udf[row_filter].copy()
+
+        if rows.empty:
+            st.info(f"No data available for {selected_date}.")
+        elif view_mode == "Table":
+            # Build a MultiIndex header so the section groups are visible
+            top_header = [""] * len(ucols)
+            for g in ugroups:
+                for i in range(g["start"], min(g["end"] + 1, len(ucols))):
+                    top_header[i] = g["name"]
+            display = rows.copy()
+            display.columns = pd.MultiIndex.from_arrays([top_header, ucols])
+            st.dataframe(display, use_container_width=True, hide_index=True)
+        else:
+            # Chart view: pick a numeric column and bar-chart across cities
+            numeric_cols = [
+                c for c in ucols[5:]  # skip Sr No, Date, Zone, State, Major city
+                if pd.api.types.is_numeric_dtype(udf[c])
+            ]
+            if not numeric_cols:
+                st.info("No numeric columns available to chart.")
+            else:
+                # Label each column with its section group for clarity
+                def col_label(c: str) -> str:
+                    idx = ucols.index(c)
+                    for g in ugroups:
+                        if g["start"] <= idx <= g["end"]:
+                            return f"{g['name']} · {c}"
+                    return c
+
+                selected_col = st.selectbox(
+                    "Column to chart",
+                    numeric_cols,
+                    format_func=col_label,
+                    key="unified_chart_col",
+                )
+                chart_df = rows[["Major city", selected_col]].dropna()
+                fig_u = go.Figure(go.Bar(
+                    x=chart_df["Major city"],
+                    y=chart_df[selected_col],
+                    marker=dict(color="#4f46e5"),
+                    name=selected_col,
+                ))
+                fig_u.update_layout(
+                    title=f"{col_label(selected_col)} — {selected_date.strftime('%d %b %Y')}",
+                    xaxis_title="City",
+                    yaxis_title="Price (INR)",
+                    xaxis=dict(tickangle=-45),
+                    height=560,
+                    margin=dict(l=40, r=20, t=60, b=140),
+                )
+                st.plotly_chart(fig_u, use_container_width=True)
+
+        st.caption(
+            f"Data: {len(available_dates)} dates ({available_dates[0]} to {available_dates[-1]}) "
+            f"· {len(rows)} rows for selected date"
+        )
 
 # --- Footer ---
 
